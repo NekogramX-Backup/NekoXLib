@@ -27,7 +27,7 @@ fun StringBuilder.buildApi(scheme: TlScheme) {
     buildJavaPackage("td")
     append("\n")
     buildJavaImport("org.jetbrains.annotations")
-    buildJavaImport("org.bson.codecs.pojo.annotations")
+   // buildJavaImport("org.bson.codecs.pojo.annotations")
     append("\n")
     append("@SuppressWarnings(\"NotNullFieldNotInitialized\")\n")
     append("public class TdApi ")

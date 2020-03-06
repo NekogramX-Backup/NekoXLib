@@ -1,7 +1,6 @@
 package td;
 
 import org.jetbrains.annotations.*;
-import org.bson.codecs.pojo.annotations.*;
 
 @SuppressWarnings("NotNullFieldNotInitialized")
 public class TdApi {
@@ -44,8 +43,7 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
-        @Override
+                @Override
         public int getConstructor() {
             return -1679978726;
         }
@@ -58,7 +56,6 @@ public class TdApi {
      */
     public static class Ok extends Object {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -722616727;
@@ -132,7 +129,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -761520773;
@@ -165,7 +161,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2079628074;
@@ -192,7 +187,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 962650760;
@@ -219,7 +213,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1636265063;
@@ -247,7 +240,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1395882402;
@@ -284,7 +276,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -860345416;
@@ -315,7 +306,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1151066659;
@@ -348,7 +338,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1951688280;
@@ -375,7 +364,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -933199172;
@@ -409,7 +397,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -252624564;
@@ -443,7 +430,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 739422597;
@@ -463,7 +449,6 @@ public class TdApi {
      */
     public static class AuthorizationStateWaitTdlibParameters extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 904720988;
@@ -490,7 +475,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 612103496;
@@ -505,7 +489,6 @@ public class TdApi {
      */
     public static class AuthorizationStateWaitPhoneNumber extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 306402531;
@@ -532,7 +515,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 52643073;
@@ -560,7 +542,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 860166378;
@@ -587,7 +568,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 550350511;
@@ -622,7 +602,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 187548796;
@@ -637,7 +616,6 @@ public class TdApi {
      */
     public static class AuthorizationStateReady extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1834871737;
@@ -651,7 +629,6 @@ public class TdApi {
      */
     public static class AuthorizationStateLoggingOut extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 154449270;
@@ -667,7 +644,6 @@ public class TdApi {
      */
     public static class AuthorizationStateClosing extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 445855311;
@@ -685,7 +661,6 @@ public class TdApi {
      */
     public static class AuthorizationStateClosed extends AuthorizationState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1526047584;
@@ -726,7 +701,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1154797731;
@@ -753,7 +727,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1290526187;
@@ -783,7 +756,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 939837410;
@@ -836,7 +808,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1166400317;
@@ -885,7 +856,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1822143022;
@@ -926,7 +896,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 766337656;
@@ -959,7 +928,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1788906253;
@@ -989,7 +957,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -107574466;
@@ -1016,7 +983,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2056030919;
@@ -1053,7 +1019,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1781351885;
@@ -1089,7 +1054,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 421980227;
@@ -1122,7 +1086,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -328540758;
@@ -1142,7 +1105,6 @@ public class TdApi {
      */
     public static class MaskPointForehead extends MaskPoint {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1027512005;
@@ -1156,7 +1118,6 @@ public class TdApi {
      */
     public static class MaskPointEyes extends MaskPoint {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1748310861;
@@ -1170,7 +1131,6 @@ public class TdApi {
      */
     public static class MaskPointMouth extends MaskPoint {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 411773406;
@@ -1184,7 +1144,6 @@ public class TdApi {
      */
     public static class MaskPointChin extends MaskPoint {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 534995335;
@@ -1223,7 +1182,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2097433026;
@@ -1262,7 +1220,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1473893797;
@@ -1295,7 +1252,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 641265698;
@@ -1323,7 +1279,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -354461930;
@@ -1376,7 +1331,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1629245379;
@@ -1434,7 +1388,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1475294302;
@@ -1478,7 +1431,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 21881988;
@@ -1512,7 +1464,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2022871583;
@@ -1568,7 +1519,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1835470627;
@@ -1630,7 +1580,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -536898740;
@@ -1675,7 +1624,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1080075672;
@@ -1715,7 +1663,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2066012058;
@@ -1755,7 +1702,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1483002540;
@@ -1787,7 +1733,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 749028016;
@@ -1836,7 +1781,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1070406393;
@@ -1883,7 +1827,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1565597752;
@@ -1931,7 +1874,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -964385924;
@@ -1968,7 +1910,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 978085937;
@@ -2000,7 +1941,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -217062456;
@@ -2021,7 +1961,6 @@ public class TdApi {
      */
     public static class UserTypeRegular extends UserType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -598644325;
@@ -2037,7 +1976,6 @@ public class TdApi {
      */
     public static class UserTypeDeleted extends UserType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1807729372;
@@ -2077,7 +2015,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1262387765;
@@ -2093,7 +2030,6 @@ public class TdApi {
      */
     public static class UserTypeUnknown extends UserType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -724541123;
@@ -2123,7 +2059,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1032140601;
@@ -2153,7 +2088,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1296528907;
@@ -2183,7 +2117,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1566863583;
@@ -2258,7 +2191,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -824771497;
@@ -2308,7 +2240,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 333888500;
@@ -2341,7 +2272,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1882596466;
@@ -2371,7 +2301,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1512709690;
@@ -2401,7 +2330,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 273760088;
@@ -2434,7 +2362,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 487220942;
@@ -2461,7 +2388,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2126186435;
@@ -2513,7 +2439,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1584650463;
@@ -2550,7 +2475,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2038475849;
@@ -2610,7 +2534,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1800612058;
@@ -2624,7 +2547,6 @@ public class TdApi {
      */
     public static class ChatMemberStatusMember extends ChatMemberStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 844723285;
@@ -2660,7 +2582,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1661432998;
@@ -2674,7 +2595,6 @@ public class TdApi {
      */
     public static class ChatMemberStatusLeft extends ChatMemberStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -5815259;
@@ -2704,7 +2624,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1653518666;
@@ -2746,7 +2665,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -806137076;
@@ -2776,7 +2694,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -497558622;
@@ -2796,7 +2713,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterContacts extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1774485671;
@@ -2810,7 +2726,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterAdministrators extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1266893796;
@@ -2824,7 +2739,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterMembers extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 670504342;
@@ -2839,7 +2753,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterRestricted extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1256282813;
@@ -2854,7 +2767,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterBanned extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1863102648;
@@ -2868,7 +2780,6 @@ public class TdApi {
      */
     public static class ChatMembersFilterBots extends ChatMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1422567288;
@@ -2888,7 +2799,6 @@ public class TdApi {
      */
     public static class SupergroupMembersFilterRecent extends SupergroupMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1178199509;
@@ -2915,7 +2825,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1282910856;
@@ -2929,7 +2838,6 @@ public class TdApi {
      */
     public static class SupergroupMembersFilterAdministrators extends SupergroupMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2097380265;
@@ -2956,7 +2864,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1696358469;
@@ -2984,7 +2891,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1107800034;
@@ -3012,7 +2918,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1210621683;
@@ -3026,7 +2931,6 @@ public class TdApi {
      */
     public static class SupergroupMembersFilterBots extends SupergroupMembersFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 492138918;
@@ -3066,7 +2970,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -317839045;
@@ -3104,7 +3007,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 161500149;
@@ -3175,7 +3077,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -103091;
@@ -3268,7 +3169,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1562832718;
@@ -3289,7 +3189,6 @@ public class TdApi {
      */
     public static class SecretChatStatePending extends SecretChatState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1637050756;
@@ -3303,7 +3202,6 @@ public class TdApi {
      */
     public static class SecretChatStateReady extends SecretChatState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1611352087;
@@ -3317,7 +3215,6 @@ public class TdApi {
      */
     public static class SecretChatStateClosed extends SecretChatState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1945106707;
@@ -3369,7 +3266,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1279231629;
@@ -3402,7 +3298,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2781520;
@@ -3429,7 +3324,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -271257885;
@@ -3463,7 +3357,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1490730723;
@@ -3501,7 +3394,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1622371186;
@@ -3521,7 +3413,6 @@ public class TdApi {
      */
     public static class MessageSendingStatePending extends MessageSendingState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1381803582;
@@ -3559,7 +3450,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2054476087;
@@ -3670,7 +3560,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1169109781;
@@ -3701,7 +3590,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -16498159;
@@ -3731,7 +3619,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2135623881;
@@ -3751,7 +3638,6 @@ public class TdApi {
      */
     public static class NotificationSettingsScopePrivateChats extends NotificationSettingsScope {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 937446759;
@@ -3765,7 +3651,6 @@ public class TdApi {
      */
     public static class NotificationSettingsScopeGroupChats extends NotificationSettingsScope {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1212142067;
@@ -3779,7 +3664,6 @@ public class TdApi {
      */
     public static class NotificationSettingsScopeChannelChats extends NotificationSettingsScope {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 548013448;
@@ -3834,7 +3718,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1503183218;
@@ -3874,7 +3757,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -426103745;
@@ -3906,7 +3788,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1902914742;
@@ -3939,7 +3820,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1700720838;
@@ -3966,7 +3846,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 21815278;
@@ -3997,7 +3876,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 955152366;
@@ -4027,7 +3905,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 136722563;
@@ -4047,7 +3924,6 @@ public class TdApi {
      */
     public static class ChatListMain extends ChatList {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -400991316;
@@ -4062,7 +3938,6 @@ public class TdApi {
      */
     public static class ChatListArchive extends ChatList {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 362770115;
@@ -4175,7 +4050,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -861487386;
@@ -4202,7 +4076,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1687756019;
@@ -4232,7 +4105,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 48120405;
@@ -4262,7 +4134,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 187746081;
@@ -4289,7 +4160,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -882072492;
@@ -4337,7 +4207,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -323394424;
@@ -4357,7 +4226,6 @@ public class TdApi {
      */
     public static class PublicChatTypeHasUsername extends PublicChatType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 350789758;
@@ -4371,7 +4239,6 @@ public class TdApi {
      */
     public static class PublicChatTypeIsLocationBased extends PublicChatType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1183735952;
@@ -4391,7 +4258,6 @@ public class TdApi {
      */
     public static class ChatActionBarReportSpam extends ChatActionBar {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1603417249;
@@ -4405,7 +4271,6 @@ public class TdApi {
      */
     public static class ChatActionBarReportUnrelatedLocation extends ChatActionBar {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 758175489;
@@ -4419,7 +4284,6 @@ public class TdApi {
      */
     public static class ChatActionBarReportAddBlock extends ChatActionBar {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -87894249;
@@ -4433,7 +4297,6 @@ public class TdApi {
      */
     public static class ChatActionBarAddContact extends ChatActionBar {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -733325295;
@@ -4447,7 +4310,6 @@ public class TdApi {
      */
     public static class ChatActionBarSharePhoneNumber extends ChatActionBar {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 35188697;
@@ -4467,7 +4329,6 @@ public class TdApi {
      */
     public static class KeyboardButtonTypeText extends KeyboardButtonType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1773037256;
@@ -4482,7 +4343,6 @@ public class TdApi {
      */
     public static class KeyboardButtonTypeRequestPhoneNumber extends KeyboardButtonType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1529235527;
@@ -4497,7 +4357,6 @@ public class TdApi {
      */
     public static class KeyboardButtonTypeRequestLocation extends KeyboardButtonType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -125661955;
@@ -4528,7 +4387,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1902435512;
@@ -4558,7 +4416,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2069836172;
@@ -4591,7 +4448,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1130741420;
@@ -4624,7 +4480,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 281435539;
@@ -4651,7 +4506,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1127515139;
@@ -4666,7 +4520,6 @@ public class TdApi {
      */
     public static class InlineKeyboardButtonTypeCallbackGame extends InlineKeyboardButtonType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -383429528;
@@ -4696,7 +4549,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2035563307;
@@ -4711,7 +4563,6 @@ public class TdApi {
      */
     public static class InlineKeyboardButtonTypeBuy extends InlineKeyboardButtonType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1360739440;
@@ -4741,7 +4592,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -372105704;
@@ -4776,7 +4626,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -691252879;
@@ -4804,7 +4653,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1039104593;
@@ -4841,7 +4689,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -992627133;
@@ -4868,7 +4715,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -619317658;
@@ -4904,7 +4750,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1079045420;
@@ -4940,7 +4785,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1761898342;
@@ -4973,7 +4817,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 482617702;
@@ -5000,7 +4843,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1670844268;
@@ -5027,7 +4869,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1853354047;
@@ -5054,7 +4895,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -536019572;
@@ -5081,7 +4921,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 723413585;
@@ -5108,7 +4947,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1271496249;
@@ -5141,7 +4979,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 83939092;
@@ -5171,7 +5008,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 40018679;
@@ -5198,7 +5034,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -868197812;
@@ -5225,7 +5060,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -382241437;
@@ -5252,7 +5086,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1271999614;
@@ -5282,7 +5115,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 128521539;
@@ -5318,7 +5150,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1480316158;
@@ -5348,7 +5179,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 673137292;
@@ -5375,7 +5205,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1647457821;
@@ -5405,7 +5234,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1180064650;
@@ -5435,7 +5263,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 323186259;
@@ -5455,7 +5282,6 @@ public class TdApi {
      */
     public static class PageBlockHorizontalAlignmentLeft extends PageBlockHorizontalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 848701417;
@@ -5469,7 +5295,6 @@ public class TdApi {
      */
     public static class PageBlockHorizontalAlignmentCenter extends PageBlockHorizontalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1009203990;
@@ -5483,7 +5308,6 @@ public class TdApi {
      */
     public static class PageBlockHorizontalAlignmentRight extends PageBlockHorizontalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1371369214;
@@ -5503,7 +5327,6 @@ public class TdApi {
      */
     public static class PageBlockVerticalAlignmentTop extends PageBlockVerticalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 195500454;
@@ -5517,7 +5340,6 @@ public class TdApi {
      */
     public static class PageBlockVerticalAlignmentMiddle extends PageBlockVerticalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2123096587;
@@ -5531,7 +5353,6 @@ public class TdApi {
      */
     public static class PageBlockVerticalAlignmentBottom extends PageBlockVerticalAlignment {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2092531158;
@@ -5575,7 +5396,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1417658214;
@@ -5622,7 +5442,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 481199251;
@@ -5655,7 +5474,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1629664784;
@@ -5682,7 +5500,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 264524263;
@@ -5713,7 +5530,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1300231184;
@@ -5740,7 +5556,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1402854811;
@@ -5767,7 +5582,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1263956774;
@@ -5794,7 +5608,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1361282635;
@@ -5821,7 +5634,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1182402406;
@@ -5851,7 +5663,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1066346178;
@@ -5878,7 +5689,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 886429480;
@@ -5892,7 +5702,6 @@ public class TdApi {
      */
     public static class PageBlockDivider extends PageBlock {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -618614392;
@@ -5919,7 +5728,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -837994576;
@@ -5946,7 +5754,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1037074852;
@@ -5976,7 +5783,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1657834142;
@@ -6006,7 +5812,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 490242317;
@@ -6040,7 +5845,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1355669513;
@@ -6071,7 +5875,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -63371245;
@@ -6105,7 +5908,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 417601156;
@@ -6142,7 +5944,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 510041394;
@@ -6173,7 +5974,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1823310463;
@@ -6200,7 +6000,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 972174080;
@@ -6251,7 +6050,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1942577763;
@@ -6295,7 +6093,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 397600949;
@@ -6325,7 +6122,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1163760110;
@@ -6355,7 +6151,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 539217375;
@@ -6389,7 +6184,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 214606645;
@@ -6425,7 +6219,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -942649288;
@@ -6458,7 +6251,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1599869809;
@@ -6488,7 +6280,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1807324374;
@@ -6527,7 +6318,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1510961171;
@@ -6568,7 +6358,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 957287214;
@@ -6664,7 +6453,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1092898169;
@@ -6694,7 +6482,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -196454267;
@@ -6724,7 +6511,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2116647730;
@@ -6766,7 +6552,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2043654342;
@@ -6796,7 +6581,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 552789798;
@@ -6850,7 +6634,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -368451690;
@@ -6887,7 +6670,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 783997294;
@@ -6920,7 +6702,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1425690001;
@@ -6950,7 +6731,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -370273060;
@@ -6984,7 +6764,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2034385364;
@@ -7014,7 +6793,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -829689558;
@@ -7041,7 +6819,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1979566832;
@@ -7068,7 +6845,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1246570799;
@@ -7104,7 +6880,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1090791032;
@@ -7152,7 +6927,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -200418230;
@@ -7183,7 +6957,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1511451484;
@@ -7214,7 +6987,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -804263843;
@@ -7258,7 +7030,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1171223545;
@@ -7288,7 +7059,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1840795491;
@@ -7308,7 +7078,6 @@ public class TdApi {
      */
     public static class PassportElementTypePersonalDetails extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1032136365;
@@ -7322,7 +7091,6 @@ public class TdApi {
      */
     public static class PassportElementTypePassport extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -436360376;
@@ -7336,7 +7104,6 @@ public class TdApi {
      */
     public static class PassportElementTypeDriverLicense extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1827298379;
@@ -7350,7 +7117,6 @@ public class TdApi {
      */
     public static class PassportElementTypeIdentityCard extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -502356132;
@@ -7364,7 +7130,6 @@ public class TdApi {
      */
     public static class PassportElementTypeInternalPassport extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -793781959;
@@ -7378,7 +7143,6 @@ public class TdApi {
      */
     public static class PassportElementTypeAddress extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 496327874;
@@ -7392,7 +7156,6 @@ public class TdApi {
      */
     public static class PassportElementTypeUtilityBill extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 627084906;
@@ -7406,7 +7169,6 @@ public class TdApi {
      */
     public static class PassportElementTypeBankStatement extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 574095667;
@@ -7420,7 +7182,6 @@ public class TdApi {
      */
     public static class PassportElementTypeRentalAgreement extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2060583280;
@@ -7434,7 +7195,6 @@ public class TdApi {
      */
     public static class PassportElementTypePassportRegistration extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -159478209;
@@ -7448,7 +7208,6 @@ public class TdApi {
      */
     public static class PassportElementTypeTemporaryRegistration extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1092498527;
@@ -7462,7 +7221,6 @@ public class TdApi {
      */
     public static class PassportElementTypePhoneNumber extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -995361172;
@@ -7476,7 +7234,6 @@ public class TdApi {
      */
     public static class PassportElementTypeEmailAddress extends PassportElementType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -79321405;
@@ -7509,7 +7266,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -277956960;
@@ -7563,7 +7319,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1061656137;
@@ -7608,7 +7363,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 445952972;
@@ -7651,7 +7405,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -381776063;
@@ -7681,7 +7434,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1011634661;
@@ -7711,7 +7463,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1676966826;
@@ -7744,7 +7495,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1217724035;
@@ -7771,7 +7521,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -263985373;
@@ -7798,7 +7547,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1643580589;
@@ -7825,7 +7573,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2083775797;
@@ -7852,7 +7599,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 36220295;
@@ -7879,7 +7625,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -782625232;
@@ -7906,7 +7651,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -234611246;
@@ -7933,7 +7677,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -366464408;
@@ -7960,7 +7703,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -290141400;
@@ -7987,7 +7729,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 618323071;
@@ -8014,7 +7755,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1237626864;
@@ -8041,7 +7781,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1320118375;
@@ -8068,7 +7807,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1528129531;
@@ -8101,7 +7839,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 164791359;
@@ -8128,7 +7865,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -497011356;
@@ -8155,7 +7891,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 304813264;
@@ -8182,7 +7917,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -9963390;
@@ -8209,7 +7943,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 715360043;
@@ -8236,7 +7969,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 461630480;
@@ -8263,7 +7995,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1389203841;
@@ -8290,7 +8021,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -26585208;
@@ -8317,7 +8047,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1736154155;
@@ -8344,7 +8073,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1314562128;
@@ -8371,7 +8099,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1913238047;
@@ -8398,7 +8125,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1319357497;
@@ -8425,7 +8151,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -248605659;
@@ -8452,7 +8177,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1264617556;
@@ -8473,7 +8197,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceUnspecified extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -378320830;
@@ -8501,7 +8224,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -308650776;
@@ -8516,7 +8238,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceFrontSide extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1895658292;
@@ -8531,7 +8252,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceReverseSide extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1918630391;
@@ -8546,7 +8266,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceSelfie extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -797043672;
@@ -8574,7 +8293,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -689621228;
@@ -8589,7 +8307,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceTranslationFiles extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 581280796;
@@ -8617,7 +8334,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2020358960;
@@ -8632,7 +8348,6 @@ public class TdApi {
      */
     public static class PassportElementErrorSourceFiles extends PassportElementErrorSource {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1894164178;
@@ -8665,7 +8380,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1861902395;
@@ -8701,7 +8415,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -789019876;
@@ -8728,7 +8441,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1983641651;
@@ -8762,7 +8474,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1070673218;
@@ -8792,7 +8503,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1308923044;
@@ -8825,7 +8535,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1331106766;
@@ -8879,7 +8588,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2002386193;
@@ -8914,7 +8622,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 267230319;
@@ -8945,7 +8652,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -426795002;
@@ -8973,7 +8679,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 588023741;
@@ -9001,7 +8706,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 413072891;
@@ -9029,7 +8733,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -773575528;
@@ -9057,7 +8760,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 505842299;
@@ -9085,7 +8787,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -527254048;
@@ -9113,7 +8814,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -298492469;
@@ -9141,7 +8841,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2008541640;
@@ -9175,7 +8874,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 285756898;
@@ -9212,7 +8910,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1989037971;
@@ -9245,7 +8942,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1306939396;
@@ -9275,7 +8971,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 276722716;
@@ -9305,7 +9000,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 596945783;
@@ -9338,7 +9032,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1851395174;
@@ -9352,7 +9045,6 @@ public class TdApi {
      */
     public static class MessageExpiredPhoto extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1404641801;
@@ -9379,7 +9071,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1779022878;
@@ -9412,7 +9103,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2021281344;
@@ -9426,7 +9116,6 @@ public class TdApi {
      */
     public static class MessageExpiredVideo extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1212209981;
@@ -9459,7 +9148,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 963323014;
@@ -9492,7 +9180,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 527777781;
@@ -9526,7 +9213,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1301887786;
@@ -9553,7 +9239,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2146492043;
@@ -9580,7 +9265,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -512684966;
@@ -9607,7 +9291,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -69441162;
@@ -9634,7 +9317,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -662130099;
@@ -9687,7 +9369,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1916671476;
@@ -9717,7 +9398,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 366512596;
@@ -9747,7 +9427,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1575377646;
@@ -9774,7 +9453,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -434325733;
@@ -9801,7 +9479,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 748272449;
@@ -9828,7 +9505,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 319630249;
@@ -9842,7 +9518,6 @@ public class TdApi {
      */
     public static class MessageChatDeletePhoto extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -184374809;
@@ -9869,7 +9544,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 401228326;
@@ -9883,7 +9557,6 @@ public class TdApi {
      */
     public static class MessageChatJoinByLink extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1846493311;
@@ -9910,7 +9583,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1164414043;
@@ -9937,7 +9609,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1957816681;
@@ -9967,7 +9638,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1642272558;
@@ -9994,7 +9664,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 953503801;
@@ -10008,7 +9677,6 @@ public class TdApi {
      */
     public static class MessageScreenshotTaken extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1564971605;
@@ -10035,7 +9703,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1810060209;
@@ -10062,7 +9729,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1435879282;
@@ -10096,7 +9762,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1344904575;
@@ -10130,7 +9795,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -595962993;
@@ -10183,7 +9847,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -412310696;
@@ -10197,7 +9860,6 @@ public class TdApi {
      */
     public static class MessageContactRegistered extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1502020353;
@@ -10224,7 +9886,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1074551800;
@@ -10251,7 +9912,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1017405171;
@@ -10282,7 +9942,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1367863624;
@@ -10296,7 +9955,6 @@ public class TdApi {
      */
     public static class MessageUnsupported extends MessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1816726139;
@@ -10316,7 +9974,6 @@ public class TdApi {
      */
     public static class TextEntityTypeMention extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 934535013;
@@ -10330,7 +9987,6 @@ public class TdApi {
      */
     public static class TextEntityTypeHashtag extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1023958307;
@@ -10345,7 +10001,6 @@ public class TdApi {
      */
     public static class TextEntityTypeCashtag extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1222915915;
@@ -10360,7 +10015,6 @@ public class TdApi {
      */
     public static class TextEntityTypeBotCommand extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1150997581;
@@ -10374,7 +10028,6 @@ public class TdApi {
      */
     public static class TextEntityTypeUrl extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1312762756;
@@ -10388,7 +10041,6 @@ public class TdApi {
      */
     public static class TextEntityTypeEmailAddress extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1425545249;
@@ -10402,7 +10054,6 @@ public class TdApi {
      */
     public static class TextEntityTypePhoneNumber extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1160140246;
@@ -10417,7 +10068,6 @@ public class TdApi {
      */
     public static class TextEntityTypeBankCardNumber extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 105986320;
@@ -10431,7 +10081,6 @@ public class TdApi {
      */
     public static class TextEntityTypeBold extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1128210000;
@@ -10445,7 +10094,6 @@ public class TdApi {
      */
     public static class TextEntityTypeItalic extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -118253987;
@@ -10459,7 +10107,6 @@ public class TdApi {
      */
     public static class TextEntityTypeUnderline extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 792317842;
@@ -10473,7 +10120,6 @@ public class TdApi {
      */
     public static class TextEntityTypeStrikethrough extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 961529082;
@@ -10487,7 +10133,6 @@ public class TdApi {
      */
     public static class TextEntityTypeCode extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -974534326;
@@ -10501,7 +10146,6 @@ public class TdApi {
      */
     public static class TextEntityTypePre extends TextEntityType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1648958606;
@@ -10529,7 +10173,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -945325397;
@@ -10556,7 +10199,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 445719651;
@@ -10583,7 +10225,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -791517091;
@@ -10620,7 +10261,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1582387236;
@@ -10654,7 +10294,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1485570073;
@@ -10669,7 +10308,6 @@ public class TdApi {
      */
     public static class MessageSchedulingStateSendWhenOnline extends MessageSchedulingState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2092947464;
@@ -10704,7 +10342,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 669760254;
@@ -10745,7 +10382,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 247050392;
@@ -10790,7 +10426,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 926542724;
@@ -10835,7 +10470,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -626786126;
@@ -10869,7 +10503,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 937970604;
@@ -10916,7 +10549,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1648801584;
@@ -10952,7 +10584,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 740776325;
@@ -11005,7 +10636,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2108486755;
@@ -11042,7 +10672,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 279108859;
@@ -11079,7 +10708,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2136519657;
@@ -11110,7 +10738,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1624179655;
@@ -11137,7 +10764,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1447926269;
@@ -11164,7 +10790,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -982446849;
@@ -11195,7 +10820,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1728000914;
@@ -11254,7 +10878,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1038812175;
@@ -11297,7 +10920,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 743307780;
@@ -11339,7 +10961,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1503132333;
@@ -11359,7 +10980,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterEmpty extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -869395657;
@@ -11373,7 +10993,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterAnimation extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -155713339;
@@ -11387,7 +11006,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterAudio extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 867505275;
@@ -11401,7 +11019,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterDocument extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1526331215;
@@ -11415,7 +11032,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterPhoto extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 925932293;
@@ -11429,7 +11045,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterVideo extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 115538222;
@@ -11443,7 +11058,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterVoiceNote extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1841439357;
@@ -11457,7 +11071,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterPhotoAndVideo extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1352130963;
@@ -11471,7 +11084,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterUrl extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1828724341;
@@ -11485,7 +11097,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterChatPhoto extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1247751329;
@@ -11499,7 +11110,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterCall extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1305231012;
@@ -11513,7 +11123,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterMissedCall extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 970663098;
@@ -11527,7 +11136,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterVideoNote extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 564323321;
@@ -11541,7 +11149,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterVoiceAndVideoNote extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 664174819;
@@ -11555,7 +11162,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterMention extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2001258652;
@@ -11570,7 +11176,6 @@ public class TdApi {
      */
     public static class SearchMessagesFilterUnreadMention extends SearchMessagesFilter {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -95769149;
@@ -11590,7 +11195,6 @@ public class TdApi {
      */
     public static class ChatActionTyping extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 380122167;
@@ -11604,7 +11208,6 @@ public class TdApi {
      */
     public static class ChatActionRecordingVideo extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 216553362;
@@ -11631,7 +11234,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1234185270;
@@ -11645,7 +11247,6 @@ public class TdApi {
      */
     public static class ChatActionRecordingVoiceNote extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -808850058;
@@ -11672,7 +11273,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -613643666;
@@ -11699,7 +11299,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 654240583;
@@ -11726,7 +11325,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 167884362;
@@ -11740,7 +11338,6 @@ public class TdApi {
      */
     public static class ChatActionChoosingLocation extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2017893596;
@@ -11754,7 +11351,6 @@ public class TdApi {
      */
     public static class ChatActionChoosingContact extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1222507496;
@@ -11768,7 +11364,6 @@ public class TdApi {
      */
     public static class ChatActionStartPlayingGame extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -865884164;
@@ -11782,7 +11377,6 @@ public class TdApi {
      */
     public static class ChatActionRecordingVideoNote extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 16523393;
@@ -11809,7 +11403,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1172364918;
@@ -11823,7 +11416,6 @@ public class TdApi {
      */
     public static class ChatActionCancel extends ChatAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1160523958;
@@ -11843,7 +11435,6 @@ public class TdApi {
      */
     public static class UserStatusEmpty extends UserStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 164646985;
@@ -11870,7 +11461,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1529460876;
@@ -11897,7 +11487,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -759984891;
@@ -11911,7 +11500,6 @@ public class TdApi {
      */
     public static class UserStatusRecently extends UserStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -496024847;
@@ -11925,7 +11513,6 @@ public class TdApi {
      */
     public static class UserStatusLastWeek extends UserStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 129960444;
@@ -11939,7 +11526,6 @@ public class TdApi {
      */
     public static class UserStatusLastMonth extends UserStatus {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2011940674;
@@ -11966,7 +11552,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1974859260;
@@ -11993,7 +11578,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 950339552;
@@ -12057,7 +11641,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 734588298;
@@ -12120,7 +11703,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 228054782;
@@ -12150,7 +11732,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1883828812;
@@ -12170,7 +11751,6 @@ public class TdApi {
      */
     public static class CallDiscardReasonEmpty extends CallDiscardReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1258917949;
@@ -12185,7 +11765,6 @@ public class TdApi {
      */
     public static class CallDiscardReasonMissed extends CallDiscardReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1680358012;
@@ -12200,7 +11779,6 @@ public class TdApi {
      */
     public static class CallDiscardReasonDeclined extends CallDiscardReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1729926094;
@@ -12214,7 +11792,6 @@ public class TdApi {
      */
     public static class CallDiscardReasonDisconnected extends CallDiscardReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1342872670;
@@ -12228,7 +11805,6 @@ public class TdApi {
      */
     public static class CallDiscardReasonHungUp extends CallDiscardReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 438216166;
@@ -12264,7 +11840,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1042830667;
@@ -12303,7 +11878,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1318542714;
@@ -12330,7 +11904,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 65717769;
@@ -12366,7 +11939,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1073048620;
@@ -12380,7 +11952,6 @@ public class TdApi {
      */
     public static class CallStateExchangingKeys extends CallState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1848149403;
@@ -12422,7 +11993,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1848397705;
@@ -12436,7 +12006,6 @@ public class TdApi {
      */
     public static class CallStateHangingUp extends CallState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2133790038;
@@ -12469,7 +12038,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -190853167;
@@ -12497,7 +12065,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -975215467;
@@ -12517,7 +12084,6 @@ public class TdApi {
      */
     public static class CallProblemEcho extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 801116548;
@@ -12531,7 +12097,6 @@ public class TdApi {
      */
     public static class CallProblemNoise extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1053065359;
@@ -12545,7 +12110,6 @@ public class TdApi {
      */
     public static class CallProblemInterruptions extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1119493218;
@@ -12559,7 +12123,6 @@ public class TdApi {
      */
     public static class CallProblemDistortedSpeech extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 379960581;
@@ -12573,7 +12136,6 @@ public class TdApi {
      */
     public static class CallProblemSilentLocal extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 253652790;
@@ -12587,7 +12149,6 @@ public class TdApi {
      */
     public static class CallProblemSilentRemote extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 573634714;
@@ -12601,7 +12162,6 @@ public class TdApi {
      */
     public static class CallProblemDropped extends CallProblem {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1207311487;
@@ -12637,7 +12197,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1837599107;
@@ -12672,7 +12231,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -859198743;
@@ -12699,7 +12257,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 344216945;
@@ -12731,7 +12288,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -741685354;
@@ -12758,7 +12314,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2018019930;
@@ -12818,7 +12373,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -891474894;
@@ -12872,7 +12426,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1629529888;
@@ -12928,7 +12481,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1973670156;
@@ -12975,7 +12527,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1260139988;
@@ -13022,7 +12573,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1846064594;
@@ -13079,7 +12629,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 578801869;
@@ -13113,7 +12662,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 966074327;
@@ -13166,7 +12714,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1887650218;
@@ -13219,7 +12766,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1123338721;
@@ -13266,7 +12812,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 274007129;
@@ -13313,7 +12858,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 541704509;
@@ -13372,7 +12916,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1724073191;
@@ -13416,7 +12959,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1790072503;
@@ -13465,7 +13007,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -518366710;
@@ -13499,7 +13040,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 410081985;
@@ -13536,7 +13076,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -158305341;
@@ -13570,7 +13109,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1592932211;
@@ -13600,7 +13138,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1706916987;
@@ -13633,7 +13170,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2009984267;
@@ -13663,7 +13199,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 842650360;
@@ -13699,7 +13234,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1491268539;
@@ -13735,7 +13269,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1848319440;
@@ -13765,7 +13298,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1848224245;
@@ -13801,7 +13333,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1373158683;
@@ -13834,7 +13365,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1897393105;
@@ -13875,7 +13405,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1000709656;
@@ -13908,7 +13437,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1977729946;
@@ -13935,7 +13463,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1303571512;
@@ -13968,7 +13495,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 360867933;
@@ -13995,7 +13521,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2009960452;
@@ -14028,7 +13553,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -30778358;
@@ -14055,7 +13579,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -725770727;
@@ -14091,7 +13614,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -430967304;
@@ -14118,7 +13640,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -892974601;
@@ -14145,7 +13666,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2009893861;
@@ -14172,7 +13692,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 438742298;
@@ -14186,7 +13705,6 @@ public class TdApi {
      */
     public static class ChatEventMessageUnpinned extends ChatEventAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2002594849;
@@ -14200,7 +13718,6 @@ public class TdApi {
      */
     public static class ChatEventMemberJoined extends ChatEventAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -235468508;
@@ -14214,7 +13731,6 @@ public class TdApi {
      */
     public static class ChatEventMemberLeft extends ChatEventAction {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -948420593;
@@ -14244,7 +13760,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2093688706;
@@ -14277,7 +13792,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1887176186;
@@ -14310,7 +13824,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 584946294;
@@ -14340,7 +13853,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1134103250;
@@ -14370,7 +13882,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1311557720;
@@ -14400,7 +13911,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 39112478;
@@ -14430,7 +13940,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1728558443;
@@ -14462,7 +13971,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1037662734;
@@ -14489,7 +13997,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -62548373;
@@ -14519,7 +14026,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1797419439;
@@ -14549,7 +14055,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1653195765;
@@ -14576,7 +14081,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1313265634;
@@ -14608,7 +14112,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1243130481;
@@ -14640,7 +14143,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -405930674;
@@ -14667,7 +14169,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1599063019;
@@ -14703,7 +14204,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -609912404;
@@ -14730,7 +14230,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -585329664;
@@ -14784,7 +14283,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 941939684;
@@ -14817,7 +14315,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -249256352;
@@ -14860,7 +14357,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1906840261;
@@ -14874,7 +14370,6 @@ public class TdApi {
      */
     public static class LanguagePackStringValueDeleted extends LanguagePackStringValue {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1834792698;
@@ -14904,7 +14399,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1307632736;
@@ -14931,7 +14425,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1172082922;
@@ -14999,7 +14492,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 542199642;
@@ -15026,7 +14518,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2048670809;
@@ -15065,7 +14556,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -797881849;
@@ -15097,7 +14587,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 387541955;
@@ -15132,7 +14621,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 804275689;
@@ -15161,7 +14649,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1410514289;
@@ -15190,7 +14677,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1224269900;
@@ -15219,7 +14705,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -785603759;
@@ -15254,7 +14739,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1694507273;
@@ -15283,7 +14767,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 49584736;
@@ -15312,7 +14795,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1782320422;
@@ -15341,7 +14823,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1559167234;
@@ -15370,7 +14851,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1359947213;
@@ -15397,7 +14877,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 371056428;
@@ -15430,7 +14909,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1010678813;
@@ -15464,7 +14942,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1839206017;
@@ -15500,7 +14977,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1972128891;
@@ -15533,7 +15009,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 649993914;
@@ -15560,7 +15035,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 993008684;
@@ -15604,7 +15078,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -429971172;
@@ -15631,7 +15104,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 724728704;
@@ -15666,7 +15138,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1747094364;
@@ -15693,7 +15164,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -274976231;
@@ -15720,7 +15190,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 676798885;
@@ -15740,7 +15209,6 @@ public class TdApi {
      */
     public static class CanTransferOwnershipResultOk extends CanTransferOwnershipResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -89881021;
@@ -15754,7 +15222,6 @@ public class TdApi {
      */
     public static class CanTransferOwnershipResultPasswordNeeded extends CanTransferOwnershipResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1548372703;
@@ -15781,7 +15248,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 811440913;
@@ -15808,7 +15274,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 984664289;
@@ -15828,7 +15293,6 @@ public class TdApi {
      */
     public static class CheckChatUsernameResultOk extends CheckChatUsernameResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1498956964;
@@ -15842,7 +15306,6 @@ public class TdApi {
      */
     public static class CheckChatUsernameResultUsernameInvalid extends CheckChatUsernameResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -636979370;
@@ -15856,7 +15319,6 @@ public class TdApi {
      */
     public static class CheckChatUsernameResultUsernameOccupied extends CheckChatUsernameResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1320892201;
@@ -15870,7 +15332,6 @@ public class TdApi {
      */
     public static class CheckChatUsernameResultPublicChatsTooMuch extends CheckChatUsernameResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 858247741;
@@ -15884,7 +15345,6 @@ public class TdApi {
      */
     public static class CheckChatUsernameResultPublicGroupsUnavailable extends CheckChatUsernameResult {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -51833641;
@@ -15917,7 +15377,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -316950436;
@@ -15951,7 +15410,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1034215396;
@@ -15982,7 +15440,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 381581426;
@@ -16012,7 +15469,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -12219820;
@@ -16026,7 +15482,6 @@ public class TdApi {
      */
     public static class PushMessageContentContactRegistered extends PushMessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -303962720;
@@ -16057,7 +15512,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -458379775;
@@ -16087,7 +15541,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -515131109;
@@ -16120,7 +15573,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 901303688;
@@ -16150,7 +15602,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1731687492;
@@ -16180,7 +15631,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1288005709;
@@ -16217,7 +15667,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 140631122;
@@ -16250,7 +15699,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -44403654;
@@ -16264,7 +15712,6 @@ public class TdApi {
      */
     public static class PushMessageContentScreenshotTaken extends PushMessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 214245369;
@@ -16299,7 +15746,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1553513939;
@@ -16329,7 +15775,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 274587305;
@@ -16366,7 +15811,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 310038831;
@@ -16397,7 +15841,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1122764417;
@@ -16428,7 +15871,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 88910987;
@@ -16442,7 +15884,6 @@ public class TdApi {
      */
     public static class PushMessageContentBasicGroupChatCreate extends PushMessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2114855172;
@@ -16475,7 +15916,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1087145158;
@@ -16489,7 +15929,6 @@ public class TdApi {
      */
     public static class PushMessageContentChatChangePhoto extends PushMessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1114222051;
@@ -16516,7 +15955,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1964902749;
@@ -16549,7 +15987,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 598714783;
@@ -16563,7 +16000,6 @@ public class TdApi {
      */
     public static class PushMessageContentChatJoinByLink extends PushMessageContent {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1553719113;
@@ -16590,7 +16026,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1913083876;
@@ -16623,7 +16058,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -874278109;
@@ -16656,7 +16090,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1885935159;
@@ -16670,7 +16103,6 @@ public class TdApi {
      */
     public static class NotificationTypeNewSecretChat extends NotificationType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1198638768;
@@ -16697,7 +16129,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1712734585;
@@ -16732,7 +16163,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1167232404;
@@ -16752,7 +16182,6 @@ public class TdApi {
      */
     public static class NotificationGroupTypeMessages extends NotificationGroupType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1702481123;
@@ -16766,7 +16195,6 @@ public class TdApi {
      */
     public static class NotificationGroupTypeMentions extends NotificationGroupType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2050324051;
@@ -16780,7 +16208,6 @@ public class TdApi {
      */
     public static class NotificationGroupTypeSecretChat extends NotificationGroupType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1390759476;
@@ -16794,7 +16221,6 @@ public class TdApi {
      */
     public static class NotificationGroupTypeCalls extends NotificationGroupType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1379123538;
@@ -16830,7 +16256,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 788743120;
@@ -16869,7 +16294,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 780691541;
@@ -16902,7 +16326,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 63135518;
@@ -16916,7 +16339,6 @@ public class TdApi {
      */
     public static class OptionValueEmpty extends OptionValue {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 918955155;
@@ -16943,7 +16365,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1400911104;
@@ -16970,7 +16391,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 756248212;
@@ -17000,7 +16420,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1803309418;
@@ -17020,7 +16439,6 @@ public class TdApi {
      */
     public static class JsonValueNull extends JsonValue {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -92872499;
@@ -17047,7 +16465,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2142186576;
@@ -17074,7 +16491,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1010822033;
@@ -17101,7 +16517,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1597947313;
@@ -17128,7 +16543,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -183913546;
@@ -17155,7 +16569,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 520252026;
@@ -17175,7 +16588,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingRuleAllowAll extends UserPrivacySettingRule {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1967186881;
@@ -17189,7 +16601,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingRuleAllowContacts extends UserPrivacySettingRule {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1892733680;
@@ -17216,7 +16627,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 427601278;
@@ -17243,7 +16653,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2048749863;
@@ -17257,7 +16666,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingRuleRestrictAll extends UserPrivacySettingRule {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1406495408;
@@ -17271,7 +16679,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingRuleRestrictContacts extends UserPrivacySettingRule {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1008389378;
@@ -17298,7 +16705,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2119951802;
@@ -17325,7 +16731,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 392530897;
@@ -17355,7 +16760,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 322477541;
@@ -17375,7 +16779,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingShowStatus extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1862829310;
@@ -17389,7 +16792,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingShowProfilePhoto extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1408485877;
@@ -17403,7 +16805,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingShowLinkInForwardedMessages extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 592688870;
@@ -17417,7 +16818,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingShowPhoneNumber extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -791567831;
@@ -17431,7 +16831,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingAllowChatInvites extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1271668007;
@@ -17445,7 +16844,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingAllowCalls extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -906967291;
@@ -17459,7 +16857,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingAllowPeerToPeerCalls extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 352500032;
@@ -17475,7 +16872,6 @@ public class TdApi {
      */
     public static class UserPrivacySettingAllowFindingByPhoneNumber extends UserPrivacySetting {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1846645423;
@@ -17503,7 +16899,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1324495492;
@@ -17573,7 +16968,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1920553176;
@@ -17600,7 +16994,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -463118121;
@@ -17651,7 +17044,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1538986855;
@@ -17678,7 +17070,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1727949694;
@@ -17698,7 +17089,6 @@ public class TdApi {
      */
     public static class ChatReportReasonSpam extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -510848863;
@@ -17712,7 +17102,6 @@ public class TdApi {
      */
     public static class ChatReportReasonViolence extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1330235395;
@@ -17726,7 +17115,6 @@ public class TdApi {
      */
     public static class ChatReportReasonPornography extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 722614385;
@@ -17740,7 +17128,6 @@ public class TdApi {
      */
     public static class ChatReportReasonChildAbuse extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1070686531;
@@ -17754,7 +17141,6 @@ public class TdApi {
      */
     public static class ChatReportReasonCopyright extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 986898080;
@@ -17768,7 +17154,6 @@ public class TdApi {
      */
     public static class ChatReportReasonUnrelatedLocation extends ChatReportReason {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2632403;
@@ -17795,7 +17180,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 544575454;
@@ -17825,7 +17209,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -679603433;
@@ -17862,7 +17245,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 657372995;
@@ -17889,7 +17271,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 911821878;
@@ -17909,7 +17290,6 @@ public class TdApi {
      */
     public static class FileTypeNone extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2003009189;
@@ -17923,7 +17303,6 @@ public class TdApi {
      */
     public static class FileTypeAnimation extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -290816582;
@@ -17937,7 +17316,6 @@ public class TdApi {
      */
     public static class FileTypeAudio extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -709112160;
@@ -17951,7 +17329,6 @@ public class TdApi {
      */
     public static class FileTypeDocument extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -564722929;
@@ -17965,7 +17342,6 @@ public class TdApi {
      */
     public static class FileTypePhoto extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1718914651;
@@ -17979,7 +17355,6 @@ public class TdApi {
      */
     public static class FileTypeProfilePhoto extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1795089315;
@@ -17993,7 +17368,6 @@ public class TdApi {
      */
     public static class FileTypeSecret extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1871899401;
@@ -18007,7 +17381,6 @@ public class TdApi {
      */
     public static class FileTypeSecretThumbnail extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1401326026;
@@ -18021,7 +17394,6 @@ public class TdApi {
      */
     public static class FileTypeSecure extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1419133146;
@@ -18035,7 +17407,6 @@ public class TdApi {
      */
     public static class FileTypeSticker extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 475233385;
@@ -18049,7 +17420,6 @@ public class TdApi {
      */
     public static class FileTypeThumbnail extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -12443298;
@@ -18063,7 +17433,6 @@ public class TdApi {
      */
     public static class FileTypeUnknown extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2011566768;
@@ -18077,7 +17446,6 @@ public class TdApi {
      */
     public static class FileTypeVideo extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1430816539;
@@ -18091,7 +17459,6 @@ public class TdApi {
      */
     public static class FileTypeVideoNote extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -518412385;
@@ -18105,7 +17472,6 @@ public class TdApi {
      */
     public static class FileTypeVoiceNote extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -588681661;
@@ -18119,7 +17485,6 @@ public class TdApi {
      */
     public static class FileTypeWallpaper extends FileType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1854930076;
@@ -18152,7 +17517,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 714012840;
@@ -18189,7 +17553,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 635434531;
@@ -18222,7 +17585,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 217237013;
@@ -18261,7 +17623,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -884922271;
@@ -18288,7 +17649,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1123912880;
@@ -18308,7 +17668,6 @@ public class TdApi {
      */
     public static class NetworkTypeNone extends NetworkType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1971691759;
@@ -18322,7 +17681,6 @@ public class TdApi {
      */
     public static class NetworkTypeMobile extends NetworkType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 819228239;
@@ -18336,7 +17694,6 @@ public class TdApi {
      */
     public static class NetworkTypeMobileRoaming extends NetworkType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1435199760;
@@ -18350,7 +17707,6 @@ public class TdApi {
      */
     public static class NetworkTypeWiFi extends NetworkType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -633872070;
@@ -18364,7 +17720,6 @@ public class TdApi {
      */
     public static class NetworkTypeOther extends NetworkType {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1942128539;
@@ -18407,7 +17762,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 188452706;
@@ -18444,7 +17798,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 737000365;
@@ -18474,7 +17827,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1615554212;
@@ -18522,7 +17874,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2144418333;
@@ -18558,7 +17909,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -782099166;
@@ -18579,7 +17929,6 @@ public class TdApi {
      */
     public static class ConnectionStateWaitingForNetwork extends ConnectionState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1695405912;
@@ -18593,7 +17942,6 @@ public class TdApi {
      */
     public static class ConnectionStateConnectingToProxy extends ConnectionState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -93187239;
@@ -18607,7 +17955,6 @@ public class TdApi {
      */
     public static class ConnectionStateConnecting extends ConnectionState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1298400670;
@@ -18621,7 +17968,6 @@ public class TdApi {
      */
     public static class ConnectionStateUpdating extends ConnectionState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -188104009;
@@ -18635,7 +17981,6 @@ public class TdApi {
      */
     public static class ConnectionStateReady extends ConnectionState {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 48608492;
@@ -18655,7 +18000,6 @@ public class TdApi {
      */
     public static class TopChatCategoryUsers extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1026706816;
@@ -18669,7 +18013,6 @@ public class TdApi {
      */
     public static class TopChatCategoryBots extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1577129195;
@@ -18683,7 +18026,6 @@ public class TdApi {
      */
     public static class TopChatCategoryGroups extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1530056846;
@@ -18697,7 +18039,6 @@ public class TdApi {
      */
     public static class TopChatCategoryChannels extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -500825885;
@@ -18711,7 +18052,6 @@ public class TdApi {
      */
     public static class TopChatCategoryInlineBots extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 377023356;
@@ -18725,7 +18065,6 @@ public class TdApi {
      */
     public static class TopChatCategoryCalls extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 356208861;
@@ -18739,7 +18078,6 @@ public class TdApi {
      */
     public static class TopChatCategoryForwardChats extends TopChatCategory {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1695922133;
@@ -18772,7 +18110,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1198700130;
@@ -18799,7 +18136,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1353369944;
@@ -18826,7 +18162,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 313907785;
@@ -18853,7 +18188,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1602473196;
@@ -18883,7 +18217,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1140786622;
@@ -18910,7 +18243,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1130595098;
@@ -18937,7 +18269,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1295577348;
@@ -18964,7 +18295,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 578181272;
@@ -18991,7 +18321,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 959899022;
@@ -19021,7 +18350,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1864081662;
@@ -19054,7 +18382,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 360073407;
@@ -19068,7 +18395,6 @@ public class TdApi {
      */
     public static class TextParseModeHTML extends TextParseMode {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1660208627;
@@ -19106,7 +18432,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -890027341;
@@ -19141,7 +18466,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1547188361;
@@ -19168,7 +18492,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1964826627;
@@ -19211,7 +18534,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 196049779;
@@ -19238,7 +18560,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1200447205;
@@ -19273,7 +18594,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1998602205;
@@ -19306,7 +18626,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1622347490;
@@ -19334,7 +18653,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -563105266;
@@ -19367,7 +18685,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1302843961;
@@ -19398,7 +18715,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1815715197;
@@ -19435,7 +18751,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1032335779;
@@ -19468,7 +18783,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 506903332;
@@ -19506,7 +18820,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -559545626;
@@ -19539,7 +18852,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1854131125;
@@ -19570,7 +18882,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1520523131;
@@ -19603,7 +18914,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -252228282;
@@ -19634,7 +18944,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1308260971;
@@ -19663,7 +18972,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2075757773;
@@ -19695,7 +19003,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -170455894;
@@ -19725,7 +19032,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -175405660;
@@ -19756,7 +19062,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -209353966;
@@ -19786,7 +19091,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1622010003;
@@ -19822,7 +19126,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 580348828;
@@ -19853,7 +19156,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1601888026;
@@ -19886,7 +19188,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 488876260;
@@ -19916,7 +19217,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1468347188;
@@ -19949,7 +19249,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1196180070;
@@ -19979,7 +19278,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2064958167;
@@ -20009,7 +19307,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 464087707;
@@ -20042,7 +19339,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -797952281;
@@ -20072,7 +19368,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 708334213;
@@ -20102,7 +19397,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2131461348;
@@ -20132,7 +19426,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -803163050;
@@ -20162,7 +19455,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1203975309;
@@ -20193,7 +19485,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -643671870;
@@ -20224,7 +19515,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 802160507;
@@ -20256,7 +19546,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1309386144;
@@ -20292,7 +19581,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1436617498;
@@ -20324,7 +19612,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 487369373;
@@ -20354,7 +19641,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1897496876;
@@ -20402,7 +19688,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2049005665;
@@ -20431,7 +19716,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1306672221;
@@ -20462,7 +19746,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 179233243;
@@ -20498,7 +19781,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1669252686;
@@ -20531,7 +19813,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1444133514;
@@ -20561,7 +19842,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1443545195;
@@ -20589,7 +19869,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1183394041;
@@ -20617,7 +19896,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1003239581;
@@ -20645,7 +19923,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -76782300;
@@ -20673,7 +19950,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1666903253;
@@ -20703,7 +19979,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 222103874;
@@ -20733,7 +20008,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 924030531;
@@ -20763,7 +20037,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1288828758;
@@ -20796,7 +20069,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1318622637;
@@ -20823,7 +20095,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 114132831;
@@ -20861,7 +20132,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 216817388;
@@ -20888,7 +20158,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1894449685;
@@ -20915,7 +20184,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1337184477;
@@ -20945,7 +20213,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -912960778;
@@ -20979,7 +20246,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 78987721;
@@ -21023,7 +20289,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1994494530;
@@ -21053,7 +20318,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 900822020;
@@ -21083,7 +20347,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1125575977;
@@ -21110,7 +20373,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 450714593;
@@ -21140,7 +20402,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1906403540;
@@ -21167,7 +20428,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1662240999;
@@ -21194,7 +20454,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 65563814;
@@ -21225,7 +20484,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1715658659;
@@ -21258,7 +20516,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1056319886;
@@ -21285,7 +20542,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1469292078;
@@ -21316,7 +20572,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1304640162;
@@ -21344,7 +20599,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1517109163;
@@ -21385,7 +20639,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2064730634;
@@ -21426,7 +20679,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 527526965;
@@ -21469,7 +20721,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2044226370;
@@ -21509,7 +20760,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1879154829;
@@ -21547,7 +20797,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -817474682;
@@ -21597,7 +20846,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 87964006;
@@ -21625,7 +20873,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1994222092;
@@ -21659,7 +20906,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -687670874;
@@ -21687,7 +20933,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1771342902;
@@ -21721,7 +20966,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1606139344;
@@ -21748,7 +20992,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 475842347;
@@ -21768,7 +21011,6 @@ public class TdApi {
      */
     public static class LogStreamDefault extends LogStream {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1390581436;
@@ -21798,7 +21040,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1880085930;
@@ -21812,7 +21053,6 @@ public class TdApi {
      */
     public static class LogStreamEmpty extends LogStream {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -499912244;
@@ -21839,7 +21079,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1734624234;
@@ -21866,7 +21105,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1604930601;
@@ -21894,7 +21132,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -574804983;
@@ -21922,7 +21159,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -27891572;
@@ -21950,7 +21186,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1541225250;
@@ -21978,7 +21213,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 593682027;
@@ -22006,7 +21240,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 125891546;
@@ -22034,7 +21267,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 79339995;
@@ -22062,7 +21294,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 80780537;
@@ -22079,7 +21310,6 @@ public class TdApi {
      */
     public static class GetAuthorizationState extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1949154877;
@@ -22107,7 +21337,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1912557997;
@@ -22135,7 +21364,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1018769307;
@@ -22166,7 +21394,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 868276259;
@@ -22181,7 +21408,6 @@ public class TdApi {
      */
     public static class ResendAuthenticationCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -814377191;
@@ -22209,7 +21435,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -302103382;
@@ -22237,7 +21462,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -104224560;
@@ -22268,7 +21492,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -109994467;
@@ -22296,7 +21519,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2025698400;
@@ -22311,7 +21533,6 @@ public class TdApi {
      */
     public static class RequestAuthenticationPasswordRecovery extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1393896118;
@@ -22339,7 +21560,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 787436412;
@@ -22369,7 +21589,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 639321206;
@@ -22386,7 +21605,6 @@ public class TdApi {
      */
     public static class LogOut extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1581923301;
@@ -22402,7 +21620,6 @@ public class TdApi {
      */
     public static class Close extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1187782273;
@@ -22419,7 +21636,6 @@ public class TdApi {
      */
     public static class Destroy extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 685331274;
@@ -22448,7 +21664,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -376199379;
@@ -22466,7 +21681,6 @@ public class TdApi {
      */
     public static class GetCurrentState extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1191417719;
@@ -22494,7 +21708,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1204599371;
@@ -22508,7 +21721,6 @@ public class TdApi {
      */
     public static class GetPasswordState extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -174752904;
@@ -22551,7 +21763,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1193589027;
@@ -22579,7 +21790,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1594770947;
@@ -22611,7 +21821,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1981836385;
@@ -22638,7 +21847,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1997039589;
@@ -22652,7 +21860,6 @@ public class TdApi {
      */
     public static class ResendRecoveryEmailAddressCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 433483548;
@@ -22666,7 +21873,6 @@ public class TdApi {
      */
     public static class RequestPasswordRecovery extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -13777582;
@@ -22693,7 +21899,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1660185903;
@@ -22724,7 +21929,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1626509434;
@@ -22738,7 +21942,6 @@ public class TdApi {
      */
     public static class GetTemporaryPasswordState extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -12670830;
@@ -22752,7 +21955,6 @@ public class TdApi {
      */
     public static class GetMe extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -191516033;
@@ -22780,7 +21982,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -47586017;
@@ -22807,7 +22008,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -655443263;
@@ -22835,7 +22035,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 561775568;
@@ -22862,7 +22061,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1770517905;
@@ -22890,7 +22088,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2063063706;
@@ -22917,7 +22114,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1150331262;
@@ -22945,7 +22141,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 40599169;
@@ -22972,7 +22167,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1866601536;
@@ -23002,7 +22196,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1821196160;
@@ -23033,7 +22226,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -603575444;
@@ -23063,7 +22255,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -641918531;
@@ -23090,7 +22281,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 359865008;
@@ -23121,7 +22311,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 425299338;
@@ -23149,7 +22338,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1553923406;
@@ -23184,7 +22372,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2137204530;
@@ -23224,7 +22411,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1847129537;
@@ -23254,7 +22440,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 857135533;
@@ -23285,7 +22470,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 970385337;
@@ -23317,7 +22501,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1879787060;
@@ -23348,7 +22531,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1158402188;
@@ -23377,7 +22559,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -196753377;
@@ -23409,7 +22590,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -388410847;
@@ -23440,7 +22620,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1907876267;
@@ -23469,7 +22648,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1746396787;
@@ -23496,7 +22674,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 717340444;
@@ -23510,7 +22687,6 @@ public class TdApi {
      */
     public static class ClearRecentlyFoundChats extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -285582542;
@@ -23541,7 +22717,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -119119344;
@@ -23568,7 +22743,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 710354415;
@@ -23596,7 +22770,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -445546591;
@@ -23611,7 +22784,6 @@ public class TdApi {
      */
     public static class GetSuitableDiscussionChats extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 49044982;
@@ -23626,7 +22798,6 @@ public class TdApi {
      */
     public static class GetInactiveSupergroupChats extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -657720907;
@@ -23661,7 +22832,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -23238689;
@@ -23707,7 +22877,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -799960451;
@@ -23741,7 +22910,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1472081761;
@@ -23795,7 +22963,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1528846671;
@@ -23842,7 +23009,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -455843835;
@@ -23886,7 +23052,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1670627915;
@@ -23924,7 +23089,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1077230820;
@@ -23955,7 +23119,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 950238950;
@@ -23970,7 +23133,6 @@ public class TdApi {
      */
     public static class GetActiveLiveLocationMessages extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1425459567;
@@ -24000,7 +23162,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1062564150;
@@ -24034,7 +23195,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 205435308;
@@ -24062,7 +23222,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -549638149;
@@ -24093,7 +23252,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 862630734;
@@ -24124,7 +23282,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1713005454;
@@ -24158,7 +23315,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -374642839;
@@ -24190,7 +23346,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1362732326;
@@ -24217,7 +23372,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -700533672;
@@ -24258,7 +23412,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1314396596;
@@ -24296,7 +23449,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -818794592;
@@ -24332,7 +23484,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1112181339;
@@ -24377,7 +23528,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 729880339;
@@ -24427,7 +23577,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1633531094;
@@ -24462,7 +23611,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -940655817;
@@ -24492,7 +23640,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1432535564;
@@ -24520,7 +23667,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 448399457;
@@ -24562,7 +23708,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -348943149;
@@ -24596,7 +23741,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1130090173;
@@ -24628,7 +23772,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1599689199;
@@ -24667,7 +23810,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 196272567;
@@ -24708,7 +23850,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1146772745;
@@ -24750,7 +23891,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1152678125;
@@ -24789,7 +23929,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1154677038;
@@ -24824,7 +23963,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 332127881;
@@ -24859,7 +23997,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -855457307;
@@ -24895,7 +24032,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 655046316;
@@ -24931,7 +24067,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 23553921;
@@ -24966,7 +24101,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -760985929;
@@ -24997,7 +24131,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -67565858;
@@ -25032,7 +24165,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1372976192;
@@ -25062,7 +24194,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -341490693;
@@ -25095,7 +24226,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1709194593;
@@ -25126,7 +24256,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2073879671;
@@ -25157,7 +24286,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -106055372;
@@ -25189,7 +24317,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 967964667;
@@ -25229,7 +24356,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 150789747;
@@ -25259,7 +24385,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1829086715;
@@ -25289,7 +24414,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 663458849;
@@ -25324,7 +24448,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1399388792;
@@ -25366,7 +24489,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2075288734;
@@ -25401,7 +24523,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1659374253;
@@ -25435,7 +24556,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -980042966;
@@ -25473,7 +24593,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 694973925;
@@ -25513,7 +24632,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1182511172;
@@ -25560,7 +24678,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 485879477;
@@ -25594,7 +24711,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 116357727;
@@ -25634,7 +24750,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1153028490;
@@ -25668,7 +24783,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -434601324;
@@ -25699,7 +24813,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1486789653;
@@ -25743,7 +24856,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1768307069;
@@ -25784,7 +24896,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 758435487;
@@ -25818,7 +24929,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1920923753;
@@ -25849,7 +24959,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1833445800;
@@ -25881,7 +24990,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 100637531;
@@ -25911,7 +25019,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -841357536;
@@ -25939,7 +25046,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -323371509;
@@ -25967,7 +25073,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 39749353;
@@ -26001,7 +25106,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1925784915;
@@ -26032,7 +25136,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -739088005;
@@ -26059,7 +25162,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1357558453;
@@ -26090,7 +25192,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1807530364;
@@ -26121,7 +25222,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 642492777;
@@ -26152,7 +25252,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 352742758;
@@ -26179,7 +25278,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1930285615;
@@ -26210,7 +25308,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1874532069;
@@ -26247,7 +25344,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -8999251;
@@ -26275,7 +25371,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1689344881;
@@ -26304,7 +25399,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 300488122;
@@ -26335,7 +25429,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1396517321;
@@ -26368,7 +25461,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 164282047;
@@ -26403,7 +25495,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 132244217;
@@ -26435,7 +25526,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2138507006;
@@ -26466,7 +25556,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -588175579;
@@ -26498,7 +25587,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 777199614;
@@ -26529,7 +25617,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1166802621;
@@ -26559,7 +25646,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -986129697;
@@ -26589,7 +25675,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 314794002;
@@ -26619,7 +25704,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -827119811;
@@ -26651,7 +25735,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1957213277;
@@ -26687,7 +25770,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -918801736;
@@ -26719,7 +25801,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -767091286;
@@ -26752,7 +25833,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -540350914;
@@ -26786,7 +25866,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -554712351;
@@ -26814,7 +25893,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 277557690;
@@ -26842,7 +25920,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 326769313;
@@ -26870,7 +25947,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1825080735;
@@ -26906,7 +25982,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1182817962;
@@ -26940,7 +26015,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1234094617;
@@ -26976,7 +26050,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1754439241;
@@ -26990,7 +26063,6 @@ public class TdApi {
      */
     public static class CanTransferOwnership extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 634602508;
@@ -27027,7 +26099,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1925047127;
@@ -27057,7 +26128,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 677085892;
@@ -27095,7 +26165,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -445823291;
@@ -27122,7 +26191,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1544468155;
@@ -27149,7 +26217,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -46369573;
@@ -27179,7 +26246,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 201199121;
@@ -27206,7 +26272,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -995613361;
@@ -27236,7 +26301,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2049984966;
@@ -27251,7 +26315,6 @@ public class TdApi {
      */
     public static class ResetAllNotificationSettings extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -174020359;
@@ -27281,7 +26344,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -695640000;
@@ -27325,7 +26387,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1102026662;
@@ -27355,7 +26416,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1668864864;
@@ -27387,7 +26447,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1954524450;
@@ -27424,7 +26483,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -745597786;
@@ -27453,7 +26511,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1623539600;
@@ -27487,7 +26544,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2062358189;
@@ -27521,7 +26577,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -540459953;
@@ -27551,7 +26606,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1055060835;
@@ -27588,7 +26642,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -407749314;
@@ -27615,7 +26668,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1807653676;
@@ -27645,7 +26697,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1945532500;
@@ -27672,7 +26723,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -496940997;
@@ -27700,7 +26750,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1049973882;
@@ -27730,7 +26779,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1742408159;
@@ -27760,7 +26808,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -646618416;
@@ -27796,7 +26843,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -923187372;
@@ -27832,7 +26878,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1402719502;
@@ -27862,7 +26907,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2019243839;
@@ -27889,7 +26933,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1239315139;
@@ -27916,7 +26959,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -307286367;
@@ -27946,7 +26988,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -742912777;
@@ -27979,7 +27020,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1869640000;
@@ -28008,7 +27048,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -215132767;
@@ -28022,7 +27061,6 @@ public class TdApi {
      */
     public static class GetContacts extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1417722768;
@@ -28053,7 +27091,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1794690715;
@@ -28080,7 +27117,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -615510759;
@@ -28094,7 +27130,6 @@ public class TdApi {
      */
     public static class GetImportedContactCount extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -656336346;
@@ -28123,7 +27158,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1968207955;
@@ -28137,7 +27171,6 @@ public class TdApi {
      */
     public static class ClearImportedContacts extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 869503298;
@@ -28166,7 +27199,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -370669878;
@@ -28200,7 +27232,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2062927433;
@@ -28232,7 +27263,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1594919556;
@@ -28262,7 +27292,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1555771203;
@@ -28290,7 +27319,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1214523749;
@@ -28324,7 +27352,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1996943238;
@@ -28338,7 +27365,6 @@ public class TdApi {
      */
     public static class GetTrendingStickerSets extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1729129957;
@@ -28366,7 +27392,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1302172429;
@@ -28393,7 +27418,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1052318659;
@@ -28420,7 +27444,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1157930222;
@@ -28454,7 +27477,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 681171344;
@@ -28482,7 +27504,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1082314629;
@@ -28516,7 +27537,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 449357293;
@@ -28543,7 +27563,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -952416520;
@@ -28574,7 +27593,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1114537563;
@@ -28602,7 +27620,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -579622241;
@@ -28636,7 +27653,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1478109026;
@@ -28667,7 +27683,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1246577677;
@@ -28695,7 +27710,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -321242684;
@@ -28709,7 +27723,6 @@ public class TdApi {
      */
     public static class GetFavoriteStickers extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -338964672;
@@ -28739,7 +27752,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 324504799;
@@ -28766,7 +27778,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1152945264;
@@ -28794,7 +27805,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1895508665;
@@ -28829,7 +27839,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 453292808;
@@ -28857,7 +27866,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1404101841;
@@ -28871,7 +27879,6 @@ public class TdApi {
      */
     public static class GetSavedAnimations extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 7051032;
@@ -28903,7 +27910,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1538525088;
@@ -28930,7 +27936,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -495605479;
@@ -28944,7 +27949,6 @@ public class TdApi {
      */
     public static class GetRecentInlineBots extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1437823548;
@@ -28974,7 +27978,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1043637617;
@@ -29001,7 +28004,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1013735260;
@@ -29030,7 +28032,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 573441580;
@@ -29061,7 +28062,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1962649975;
@@ -29090,7 +28090,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1594734550;
@@ -29118,7 +28117,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1319794625;
@@ -29149,7 +28147,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1711693584;
@@ -29176,7 +28173,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1619582124;
@@ -29205,7 +28201,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 439901214;
@@ -29233,7 +28228,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 93926257;
@@ -29264,7 +28258,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -124666973;
@@ -29279,7 +28272,6 @@ public class TdApi {
      */
     public static class ResendChangePhoneNumberCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -786772060;
@@ -29306,7 +28298,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1720278429;
@@ -29320,7 +28311,6 @@ public class TdApi {
      */
     public static class GetActiveSessions extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1119710526;
@@ -29347,7 +28337,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -407385812;
@@ -29361,7 +28350,6 @@ public class TdApi {
      */
     public static class TerminateAllOtherSessions extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1874485523;
@@ -29375,7 +28363,6 @@ public class TdApi {
      */
     public static class GetConnectedWebsites extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -170536110;
@@ -29402,7 +28389,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -778767395;
@@ -29416,7 +28402,6 @@ public class TdApi {
      */
     public static class DisconnectAllWebsites extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1082985981;
@@ -29447,7 +28432,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1428333122;
@@ -29479,7 +28463,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -295782298;
@@ -29510,7 +28493,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -558196581;
@@ -29541,7 +28523,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1701526555;
@@ -29576,7 +28557,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2125451498;
@@ -29616,7 +28596,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1427643098;
@@ -29646,7 +28625,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1999855965;
@@ -29673,7 +28651,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -471006133;
@@ -29722,7 +28699,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 206900967;
@@ -29753,7 +28729,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2146950882;
@@ -29789,7 +28764,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 9480644;
@@ -29828,7 +28802,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 591581572;
@@ -29858,7 +28831,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1013758294;
@@ -29872,7 +28844,6 @@ public class TdApi {
      */
     public static class GetSavedOrderInfo extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1152016675;
@@ -29886,7 +28857,6 @@ public class TdApi {
      */
     public static class DeleteSavedOrderInfo extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1629058164;
@@ -29900,7 +28870,6 @@ public class TdApi {
      */
     public static class DeleteSavedCredentials extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 826300114;
@@ -29914,7 +28883,6 @@ public class TdApi {
      */
     public static class GetSupportUser extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1733497700;
@@ -29941,7 +28909,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 249072633;
@@ -29971,7 +28938,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 733769682;
@@ -29998,7 +28964,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2130996959;
@@ -30034,7 +28999,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1035439225;
@@ -30061,7 +29025,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1484545642;
@@ -30075,7 +29038,6 @@ public class TdApi {
      */
     public static class ResetBackgrounds extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 204852088;
@@ -30104,7 +29066,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1849499526;
@@ -30133,7 +29094,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2077809320;
@@ -30165,7 +29125,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1246259088;
@@ -30194,7 +29153,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2065307858;
@@ -30223,7 +29181,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 4492771;
@@ -30255,7 +29212,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -296742819;
@@ -30283,7 +29239,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1320751257;
@@ -30314,7 +29269,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1316365592;
@@ -30343,7 +29297,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2108761026;
@@ -30374,7 +29327,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1734127493;
@@ -30403,7 +29355,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 786679952;
@@ -30433,7 +29384,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -286505294;
@@ -30460,7 +29410,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 806754961;
@@ -30490,7 +29439,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -473812741;
@@ -30517,7 +29465,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2077223311;
@@ -30545,7 +29492,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1572495746;
@@ -30577,7 +29523,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2114670322;
@@ -30604,7 +29549,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 701389032;
@@ -30618,7 +29562,6 @@ public class TdApi {
      */
     public static class GetAccountTtl extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -443905161;
@@ -30648,7 +29591,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1203056508;
@@ -30675,7 +29617,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1650968070;
@@ -30709,7 +29650,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -312579772;
@@ -30744,7 +29684,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1114621183;
@@ -30774,7 +29713,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -853193929;
@@ -30789,7 +29727,6 @@ public class TdApi {
      */
     public static class GetStorageStatisticsFast extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 61368066;
@@ -30803,7 +29740,6 @@ public class TdApi {
      */
     public static class GetDatabaseStatistics extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1942760263;
@@ -30861,7 +29797,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 980397489;
@@ -30892,7 +29827,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -701635234;
@@ -30920,7 +29854,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -986228706;
@@ -30948,7 +29881,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1264825305;
@@ -30963,7 +29895,6 @@ public class TdApi {
      */
     public static class ResetNetworkStatistics extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1646452102;
@@ -30977,7 +29908,6 @@ public class TdApi {
      */
     public static class GetAutoDownloadSettingsPresets extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1721088201;
@@ -31007,7 +29937,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -353671948;
@@ -31034,7 +29963,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1310515792;
@@ -31064,7 +29992,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1882398342;
@@ -31091,7 +30018,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2038945045;
@@ -31122,7 +30048,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2068173212;
@@ -31149,7 +30074,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1719555468;
@@ -31181,7 +30105,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1455869875;
@@ -31209,7 +30132,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -933049386;
@@ -31239,7 +30161,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2081689035;
@@ -31253,7 +30174,6 @@ public class TdApi {
      */
     public static class ResendPhoneNumberVerificationCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1367629820;
@@ -31280,7 +30200,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1497462718;
@@ -31307,7 +30226,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -221621379;
@@ -31321,7 +30239,6 @@ public class TdApi {
      */
     public static class ResendEmailAddressVerificationCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1872416732;
@@ -31348,7 +30265,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -426386685;
@@ -31384,7 +30300,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1468394095;
@@ -31415,7 +30330,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1738134754;
@@ -31446,7 +30360,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -602402218;
@@ -31480,7 +30393,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1901171495;
@@ -31494,7 +30406,6 @@ public class TdApi {
      */
     public static class ResendPhoneNumberConfirmationCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2069068522;
@@ -31521,7 +30432,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1348060966;
@@ -31552,7 +30462,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1154926191;
@@ -31585,7 +30494,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1134087551;
@@ -31628,7 +30536,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 205093058;
@@ -31663,7 +30570,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1422402800;
@@ -31695,7 +30601,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2075281185;
@@ -31724,7 +30629,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1642196644;
@@ -31768,7 +30672,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -152660070;
@@ -31795,7 +30698,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 2130576356;
@@ -31826,7 +30728,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 285045153;
@@ -31857,7 +30758,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1293603521;
@@ -31886,7 +30786,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -873497067;
@@ -31902,7 +30801,6 @@ public class TdApi {
      */
     public static class GetCountryCode extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1540593906;
@@ -31916,7 +30814,6 @@ public class TdApi {
      */
     public static class GetInviteText extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 794573512;
@@ -31946,7 +30843,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 680673150;
@@ -31961,7 +30857,6 @@ public class TdApi {
      */
     public static class GetApplicationConfig extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1823144318;
@@ -31995,7 +30890,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -811154930;
@@ -32032,7 +30926,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 331529432;
@@ -32072,7 +30965,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1605883821;
@@ -32101,7 +30993,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1494450838;
@@ -32116,7 +31007,6 @@ public class TdApi {
      */
     public static class DisableProxy extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2100095102;
@@ -32144,7 +31034,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1369219847;
@@ -32159,7 +31048,6 @@ public class TdApi {
      */
     public static class GetProxies extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -95026381;
@@ -32188,7 +31076,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1285597664;
@@ -32217,7 +31104,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -979681103;
@@ -32247,7 +31133,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1364199535;
@@ -32264,7 +31149,6 @@ public class TdApi {
      */
     public static class GetLogStream extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1167608667;
@@ -32295,7 +31179,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -303429678;
@@ -32312,7 +31195,6 @@ public class TdApi {
      */
     public static class GetLogVerbosityLevel extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 594057956;
@@ -32329,7 +31211,6 @@ public class TdApi {
      */
     public static class GetLogTags extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -254449190;
@@ -32362,7 +31243,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2095589738;
@@ -32392,7 +31272,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 951004547;
@@ -32425,7 +31304,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1597427692;
@@ -32442,7 +31320,6 @@ public class TdApi {
      */
     public static class TestCallEmpty extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -627291626;
@@ -32472,7 +31349,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1732818385;
@@ -32502,7 +31378,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -736011607;
@@ -32532,7 +31407,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -2137277793;
@@ -32562,7 +31436,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1825428218;
@@ -32592,7 +31465,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -408600900;
@@ -32622,7 +31494,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1527666429;
@@ -32652,7 +31523,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -60135024;
@@ -32668,7 +31538,6 @@ public class TdApi {
      */
     public static class TestNetwork extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1343998901;
@@ -32709,7 +31578,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return -1197366626;
@@ -32724,7 +31592,6 @@ public class TdApi {
      */
     public static class TestGetDifference extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 1747084069;
@@ -32741,7 +31608,6 @@ public class TdApi {
      */
     public static class TestUseUpdate extends Function {
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 717094686;
@@ -32772,7 +31638,6 @@ public class TdApi {
 
         }
 
-        @BsonIgnore
         @Override
         public int getConstructor() {
             return 455179506;

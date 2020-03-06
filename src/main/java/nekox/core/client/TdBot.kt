@@ -19,17 +19,15 @@ package nekox.core.client
 import cn.hutool.core.util.ZipUtil
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
-import td.TdApi.*
+import nekox.TdEnv
+import nekox.core.Fn
 import nekox.core.client.TdBotAbsHandler.Reject
-import nekox.core.env.Env
-import nekox.core.env.Fn
 import nekox.core.fromPrivate
-import nekox.core.langFor
 import nekox.core.shift
-import nekox.core.utils.make
 import nekox.core.utils.makeAnswer
 import nekox.core.utils.readDataFrom
 import nekox.core.utils.writeDataTo
+import td.TdApi.*
 import java.util.*
 
 open class TdBot(val botToken: String) : TdClient(initDataDir("data/${botToken.substringBefore(":")}")), TdBotAbsHandler {
@@ -163,7 +161,7 @@ open class TdBot(val botToken: String) : TdClient(initDataDir("data/${botToken.s
 
             run fn@{
 
-                Env.FUN_PREFIX.forEach {
+                TdEnv.FUN_PREFIX.forEach {
 
                     if (!param.startsWith(it)) return@forEach
 
@@ -390,9 +388,13 @@ open class TdBot(val botToken: String) : TdClient(initDataDir("data/${botToken.s
 
         if (!message.fromPrivate) return
 
+        /*
+
         val L = userId.langFor
 
         sudo make L.CNF sendTo chatId
+
+         */
 
     }
 

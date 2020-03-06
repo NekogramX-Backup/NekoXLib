@@ -105,8 +105,3 @@ operator fun AtomicBoolean.setValue(thisRef: Any?, property: KProperty<*>, value
 
 operator fun AtomicInteger.getValue(thisRef: Any?, property: KProperty<*>): Int = get()
 operator fun AtomicInteger.setValue(thisRef: Any?, property: KProperty<*>, value: Int) = set(value)
-
-fun OutputStream.writeByteArray(array: ByteArray) {
-
-
-}

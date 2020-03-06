@@ -19,14 +19,15 @@ package nekox.core.utils
 import cn.hutool.core.io.FileUtil
 import cn.hutool.core.text.csv.CsvUtil
 import cn.hutool.core.util.CharsetUtil
-import nekox.core.env.Env
+import nekox.TdEnv
 import nekox.core.client.TdAbsHandler
 import nekox.core.shift
 import java.util.*
+import kotlin.collections.HashMap
 
 fun TdAbsHandler.readDataFrom(name: String): List<List<String>>? {
 
-    val csvFile = Env.getFile("data/${sudo.me.id}/.persist/$name.csv")
+    val csvFile = TdEnv.getFile("data/${sudo.me.id}/.persist/$name.csv")
 
     val data = LinkedList<List<String>>()
 
@@ -49,7 +50,7 @@ fun TdAbsHandler.readDataFrom(name: String): List<List<String>>? {
 
 fun TdAbsHandler.writeDataTo(name: String, data: List<List<String>>) {
 
-    val csvFile = Env.getFile("data/${sudo.me.id}/.persist/$name.csv")
+    val csvFile = TdEnv.getFile("data/${sudo.me.id}/.persist/$name.csv")
 
     if (csvFile.isFile) csvFile.delete()
 

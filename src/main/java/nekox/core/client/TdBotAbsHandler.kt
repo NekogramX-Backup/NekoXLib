@@ -16,13 +16,10 @@
 
 package nekox.core.client
 
-import td.TdApi.Message
-import nekox.core.env.Lang
 import nekox.core.fromPrivate
 import nekox.core.toLink
 import nekox.core.utils.delete
-import nekox.core.utils.make
-import nekox.core.utils.removeKeyboard
+import td.TdApi.Message
 import java.util.*
 
 interface TdBotAbsHandler : TdAbsHandler {
@@ -136,14 +133,17 @@ interface TdBotAbsHandler : TdAbsHandler {
 
     suspend fun onSendCanceledMessage(userId: Int) {
 
+        /*
         sudo make Lang.get(userId).CANCELED withMarkup removeKeyboard() sendTo userId
+
+         */
 
     }
 
     suspend fun onSendTimeoutedMessage(userId: Int) {
-
+/*
         sudo make Lang.get(userId).TIMEOUTED withMarkup removeKeyboard() sendTo userId
-
+ */
     }
 
     fun onPersistStore(userId: Int, subId: Int, data: LinkedList<String>)

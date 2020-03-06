@@ -21,13 +21,11 @@ package nekox.core.utils
 import cn.hutool.core.builder.Builder
 import cn.hutool.core.util.ArrayUtil
 import kotlinx.coroutines.CoroutineScope
-import td.TdApi.*
 import nekox.core.*
-import nekox.core.client.*
-import nekox.core.env.*
-import nekox.core.raw.*
-import nekox.core.syncRaw
-import twitter4j.TwitterException
+import nekox.core.client.TdAbsHandler
+import nekox.core.client.TdCallback
+import nekox.core.raw.getMessage
+import td.TdApi.*
 import java.util.*
 import kotlin.properties.Delegates
 
@@ -122,6 +120,7 @@ infix fun TdAbsHandler.makeForward(message: Message): MessageFactory {
 
 }
 
+/*
 
 infix fun TdAbsHandler.make(ex: Throwable): MessageFactory {
 
@@ -138,6 +137,8 @@ infix fun TdAbsHandler.make(ex: Throwable): MessageFactory {
     return make { inputText = text }
 
 }
+
+ */
 
 fun inlineButton(block: InlineButtonBuilder.() -> Unit): ReplyMarkupInlineKeyboard {
 

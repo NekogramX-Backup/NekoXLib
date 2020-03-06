@@ -117,7 +117,8 @@ fun StringBuilder.buildClass(data: TlData, metadata: TlDataMetadata, paramNullab
 
 fun StringBuilder.buildConstructorField(crc: Int) {
 
-    append("@BsonIgnore @Override\n")
+    //append("@BsonIgnore ")
+    append("@Override\n")
     append("public int getConstructor() { return $crc; }")
 
 }
