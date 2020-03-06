@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>moe.wataru</groupId>
-    <artifactId>nekox</artifactId>
+    <groupId>nekox</groupId>
+    <artifactId>lib</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
 
