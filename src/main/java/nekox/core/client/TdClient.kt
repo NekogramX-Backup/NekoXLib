@@ -19,12 +19,12 @@ package nekox.core.client
 import cn.hutool.core.thread.ThreadUtil
 import cn.hutool.core.util.RuntimeUtil
 import kotlinx.coroutines.*
+import nekox.TdEnv
+import nekox.core.*
+import nekox.core.raw.getMe
 import td.TdApi
 import td.TdApi.*
 import td.TdNative
-import nekox.core.*
-import nekox.core.env.*
-import nekox.core.raw.*
 import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicBoolean
@@ -163,7 +163,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
         run fn@{
 
-            Env.FUN_PREFIX.forEach {
+            TdEnv.FUN_PREFIX.forEach {
 
                 if (!param.startsWith(it)) return@forEach
 
@@ -237,15 +237,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
         } else if (authorizationState is AuthorizationStateWaitEncryptionKey) {
 
-            sendRaw(if (Env.PASSWORD.isBlank()) {
-
-                CheckDatabaseEncryptionKey()
-
-            } else {
-
-                CheckDatabaseEncryptionKey(Env.PASSWORD.toByteArray())
-
-            })
+            CheckDatabaseEncryptionKey()
 
         } else if (authorizationState is AuthorizationStateReady) {
 
@@ -338,7 +330,9 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
             while (!executedAtomicBoolean.get()) {
 
-                if (Env.STOP.get()) {
+                /*
+
+                if (TdEnv.STOP.get()) {
 
                     throw TdException(Error(-1, "Server Stopped")).also {
 
@@ -347,6 +341,8 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
                     }
 
                 }
+
+                 */
 
                 delay(100L)
 
@@ -414,7 +410,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
         fun initDataDir(dir: String): TdOptions {
 
-            val dataDir = Env.getFile(dir)
+            val dataDir = TdEnv.getFile(dir)
 
             dataDir.mkdirs()
 
@@ -431,7 +427,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
             val sourceDir = java.io.File(dataDir, target)
 
-            val targetDir = Env.getFile("cache/files/$target")
+            val targetDir = TdEnv.getFile("cache/files/$target")
 
             if (!sourceDir.isDirectory) {
 

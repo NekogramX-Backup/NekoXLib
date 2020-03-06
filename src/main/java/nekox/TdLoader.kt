@@ -23,7 +23,7 @@ import java.io.File
 
 object TdLoader {
 
-    fun load(libsDir : File = File("libs")) {
+    fun load(libsDir : File = TdEnv.getFile("libs")) {
 
         runCatching {
 
@@ -49,7 +49,7 @@ object TdLoader {
 
     }
 
-    fun tryLoad(libsDir : File = File("libs")) {
+    fun tryLoad(libsDir : File = TdEnv.getFile("libs")) {
 
         val target = NativeTarget.current()
 

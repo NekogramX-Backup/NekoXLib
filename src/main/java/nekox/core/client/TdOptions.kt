@@ -16,22 +16,22 @@
 
 package nekox.core.client
 
+import nekox.TdEnv
 import td.TdApi.TdlibParameters
-import nekox.core.env.*
 
 class TdOptions {
 
-    private var useTestDc = Env.USE_TEST_DC
-    private var databaseDirectory = Env.getPath("data")
-    private var filesDirectory = Env.getPath("cache/files")
+    private var useTestDc = false
+    private var databaseDirectory = TdEnv.getPath("data")
+    private var filesDirectory = TdEnv.getPath("cache/files")
     private var useFileDatabase = true
     private var useChatInfoDatabase = true
     private var useMessageDatabase = true
     private var useSecretChats = false
-    private var apiId = 971882
-    private var apiHash = "1232533dd027dc2ec952ba91fc8e3f27"
+    private var apiId = 21724
+    private var apiHash = "3e0cb5efcd52300aec5994fdfc5bdc16"
     private var systemLanguageCode = "en"
-    private var deviceModel = "Tooko"
+    private var deviceModel = "NekoX"
     private var systemVersion = "/"
     private var applicationVersion = "1.0"
     private var enableStorageOptimizer = false
