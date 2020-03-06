@@ -18,11 +18,6 @@
 
 package nekox.core
 
-import td.TdApi.User
-import nekox.core.env.*
-
-val Number.langFor get() = Lang.get(this)
-val User.langFor get() = Lang.get(this)
 
 fun String.containsChinese(): Boolean {
 
