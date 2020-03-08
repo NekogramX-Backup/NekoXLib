@@ -231,13 +231,17 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
             sendUnit(SetTdlibParameters(options.build())) onError {
 
-                defaultLog.warn(it)
+                defaultLog.error(it)
 
             }
 
         } else if (authorizationState is AuthorizationStateWaitEncryptionKey) {
 
-            CheckDatabaseEncryptionKey()
+            sendUnit(CheckDatabaseEncryptionKey()) onError {
+
+                defaultLog.error(it)
+
+            }
 
         } else if (authorizationState is AuthorizationStateReady) {
 
