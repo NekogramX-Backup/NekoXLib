@@ -23,10 +23,10 @@ public class TdApi {
      * An object of this type can be returned on every function call, in case of an error
      *
      * @code - Error code
-     * Subject to future changes
-     * If the error code is 406, the error message must not be processed in any way and must not be displayed to the user
+     *         Subject to future changes
+     *         If the error code is 406, the error message must not be processed in any way and must not be displayed to the user
      * @message - Error message
-     * Subject to future changes
+     *            Subject to future changes
      */
     public static class Error extends Object {
 
@@ -43,7 +43,7 @@ public class TdApi {
 
         }
 
-                @Override
+        @Override
         public int getConstructor() {
             return -1679978726;
         }
@@ -69,14 +69,14 @@ public class TdApi {
      *
      * @useTestDc - If set to true, the Telegram test environment will be used instead of the production environment
      * @databaseDirectory - The path to the directory for the persistent database
-     * If empty, the current working directory will be used
+     *                      If empty, the current working directory will be used
      * @filesDirectory - The path to the directory for storing files
-     * If empty, database_directory will be used
+     *                   If empty, database_directory will be used
      * @useFileDatabase - If set to true, information about downloaded and uploaded files will be saved between application restarts
      * @useChatInfoDatabase - If set to true, the library will maintain a cache of users, basic groups, supergroups, channels and secret chats
-     * Implies use_file_database
+     *                        Implies use_file_database
      * @useMessageDatabase - If set to true, the library will maintain a cache of chats and messages
-     * Implies use_chat_info_database
+     *                       Implies use_chat_info_database
      * @useSecretChats - If set to true, support for secret chats will be enabled
      * @apiId - Application identifier for Telegram API access, which can be obtained at https://my.telegram.org
      * @apiHash - Application identifier hash for Telegram API access, which can be obtained at https://my.telegram.org
@@ -86,7 +86,7 @@ public class TdApi {
      * @applicationVersion - Application version
      * @enableStorageOptimizer - If set to true, old files will automatically be deleted
      * @ignoreFileNames - If set to true, original file names will be ignored
-     * Otherwise, downloaded files will be saved under names as close as possible to the original name
+     *                    Otherwise, downloaded files will be saved under names as close as possible to the original name
      */
     public static class TdlibParameters extends Object {
 
@@ -289,7 +289,7 @@ public class TdApi {
      *
      * @emailAddressPattern - Pattern of the email address to which an authentication code was sent
      * @length - Length of the code
-     * 0 if unknown
+     *           0 if unknown
      */
     public static class EmailAddressAuthenticationCodeInfo extends Object {
 
@@ -377,10 +377,10 @@ public class TdApi {
      *
      * @text - The text
      * @entities - Entities contained in the text
-     * Entities can be nested, but must not mutually intersect with each other
-     * Pre, Code and PreCode entities can't contain other entities
-     * Bold, Italic, Underline and Strikethrough entities can contain and to be contained in all other entities
-     * All other entities can't contain each other
+     *             Entities can be nested, but must not mutually intersect with each other
+     *             Pre, Code and PreCode entities can't contain other entities
+     *             Bold, Italic, Underline and Strikethrough entities can contain and to be contained in all other entities
+     *             All other entities can't contain each other
      */
     public static class FormattedText extends Object {
 
@@ -410,7 +410,7 @@ public class TdApi {
      *
      * @text - Text of the terms of service
      * @minUserAge - The minimum age of a user to be able to accept the terms
-     * 0 if any
+     *               0 if any
      * @showPopup - True, if a blocking popup with terms of service must be shown to the user
      */
     public static class TermsOfService extends Object {
@@ -527,7 +527,7 @@ public class TdApi {
      * The user needs to confirm authorization on another logged in device by scanning a QR code with the provided link
      *
      * @link - A tg:// URL for the QR code
-     * The link will be updated frequently
+     *         The link will be updated frequently
      */
     public static class AuthorizationStateWaitOtherDeviceConfirmation extends AuthorizationState {
 
@@ -582,7 +582,7 @@ public class TdApi {
      * @passwordHint - Hint for the password
      * @hasRecoveryEmailAddress - True, if a recovery email address has been set up
      * @recoveryEmailAddressPattern - Pattern of the email address to which the recovery email was sent
-     * Empty until a recovery email has been sent
+     *                                Empty until a recovery email has been sent
      */
     public static class AuthorizationStateWaitPassword extends AuthorizationState {
 
@@ -773,12 +773,12 @@ public class TdApi {
      * @isDownloadingActive - True, if the file is currently being downloaded (or a local copy is being generated by some other means)
      * @isDownloadingCompleted - True, if the local copy is fully available
      * @downloadOffset - Download will be started from this offset
-     * Downloaded_prefix_size is calculated from this offset
+     *                   Downloaded_prefix_size is calculated from this offset
      * @downloadedPrefixSize - If is_downloading_completed is false, then only some prefix of the file starting from download_offset is ready to be read
-     * Downloaded_prefix_size is the size of that prefix
+     *                         Downloaded_prefix_size is the size of that prefix
      * @downloadedSize - Total downloaded file bytes
-     * Should be used only for calculating download progress
-     * The actual file size may be bigger, and some parts of it may contain garbage
+     *                   Should be used only for calculating download progress
+     *                   The actual file size may be bigger, and some parts of it may contain garbage
      */
     public static class LocalFile extends Object {
 
@@ -820,19 +820,19 @@ public class TdApi {
      * Represents a remote file
      *
      * @id - Remote file identifier
-     * Can be used across application restarts or even from other devices for the current user
-     * Uniquely identifies a file, but a file can have a lot of different valid identifiers
-     * If the ID starts with "http://" or "https://", it represents the HTTP URL of the file
-     * TDLib is currently unable to download files if only their URL is known
-     * If downloadFile is called on such a file or if it is sent to a secret chat, TDLib starts a file generation process by sending updateFileGenerationStart to the client with the HTTP URL in the original_path and "#url#" as the conversion string
-     * Clients should generate the file by downloading it to the specified location
+     *       Can be used across application restarts or even from other devices for the current user
+     *       Uniquely identifies a file, but a file can have a lot of different valid identifiers
+     *       If the ID starts with "http://" or "https://", it represents the HTTP URL of the file
+     *       TDLib is currently unable to download files if only their URL is known
+     *       If downloadFile is called on such a file or if it is sent to a secret chat, TDLib starts a file generation process by sending updateFileGenerationStart to the client with the HTTP URL in the original_path and "#url#" as the conversion string
+     *       Clients should generate the file by downloading it to the specified location
      * @uniqueId - Unique file identifier
-     * May be empty if unknown
-     * The unique file identifier which is the same for the same file even for different users and is persistent over time
+     *             May be empty if unknown
+     *             The unique file identifier which is the same for the same file even for different users and is persistent over time
      * @isUploadingActive - True, if the file is currently being uploaded (or a remote copy is being generated by some other means)
      * @isUploadingCompleted - True, if a remote copy is fully available
      * @uploadedSize - Size of the remote available part of the file
-     * 0 if unknown
+     *                 0 if unknown
      */
     public static class RemoteFile extends Object {
 
@@ -869,9 +869,9 @@ public class TdApi {
      *
      * @id - Unique file identifier
      * @size - File size
-     * 0 if unknown
+     *         0 if unknown
      * @expectedSize - Expected file size in case the exact file size is unknown, but an approximate size is known
-     * Can be used to show download/upload progress
+     *                 Can be used to show download/upload progress
      * @local - Information about the local copy of the file
      * @remote - Information about the remote copy of the file
      */
@@ -995,12 +995,12 @@ public class TdApi {
      * A file generated by the client
      *
      * @originalPath - Local path to a file from which the file is generated
-     * May be empty if there is no such file
+     *                 May be empty if there is no such file
      * @conversion - String specifying the conversion applied to the original file
-     * Should be persistent across application restarts
-     * Conversions beginning with '#' are reserved for internal TDLib usage
+     *               Should be persistent across application restarts
+     *               Conversions beginning with '#' are reserved for internal TDLib usage
      * @expectedSize - Expected size of the generated file
-     * 0 if unknown
+     *                 0 if unknown
      */
     public static class InputFileGenerated extends InputFile {
 
@@ -1157,11 +1157,11 @@ public class TdApi {
      *
      * @point - Part of the face, relative to which the mask should be placed
      * @xShift - Shift by X-axis measured in widths of the mask scaled to the face size, from left to right
-     * (For example, -1.0 will place the mask just to the left of the default mask position)
+     *           (For example, -1.0 will place the mask just to the left of the default mask position)
      * @yShift - Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom
-     * (For example, 1.0 will place the mask just below the default mask position)
+     *           (For example, 1.0 will place the mask just below the default mask position)
      * @scale - Mask scaling coefficient
-     * (For example, 2.0 means a doubled size)
+     *          (For example, 2.0 means a doubled size)
      */
     public static class MaskPosition extends Object {
 
@@ -1264,7 +1264,7 @@ public class TdApi {
      * A poll in quiz mode, which has exactly one correct answer option and can be answered only once
      *
      * @correctOptionId - 0-based identifier of the correct answer option
-     * -1 for a yet unanswered poll
+     *                    -1 for a yet unanswered poll
      */
     public static class PollTypeQuiz extends PollType {
 
@@ -1292,11 +1292,11 @@ public class TdApi {
      * The animation must be encoded in GIF or MPEG4 format
      *
      * @duration - Duration of the animation, in seconds
-     * As defined by the sender
+     *             As defined by the sender
      * @width - Width of the animation
      * @height - Height of the animation
      * @fileName - Original name of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @mimeType - MIME type of the file, usually "image/gif" or "video/mp4"
      * @minithumbnail - Animation minithumbnail
      * @thumbnail - Animation thumbnail
@@ -1344,19 +1344,19 @@ public class TdApi {
      * Audio is usually in MP3 or M4A format
      *
      * @duration - Duration of the audio, in seconds
-     * As defined by the sender
+     *             As defined by the sender
      * @title - Title of the audio
-     * As defined by the sender
+     *          As defined by the sender
      * @performer - Performer of the audio
-     * As defined by the sender
+     *              As defined by the sender
      * @fileName - Original name of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @mimeType - The MIME type of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @albumCoverMinithumbnail - The minithumbnail of the album cover
      * @albumCoverThumbnail - The thumbnail of the album cover
-     * As defined by the sender
-     * The full size thumbnail should be extracted from the downloaded file
+     *                        As defined by the sender
+     *                        The full size thumbnail should be extracted from the downloaded file
      * @audio - File containing the audio
      */
     public static class Audio extends Object {
@@ -1400,12 +1400,12 @@ public class TdApi {
      * Describes a document of any type
      *
      * @fileName - Original name of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @mimeType - MIME type of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @minithumbnail - Document minithumbnail
      * @thumbnail - Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns)
-     * As defined by the sender
+     *              As defined by the sender
      * @document - File containing the document
      */
     public static class Document extends Object {
@@ -1476,11 +1476,11 @@ public class TdApi {
      * Describes a sticker
      *
      * @setId - The identifier of the sticker set to which the sticker belongs
-     * 0 if none
+     *          0 if none
      * @width - Sticker width
-     * As defined by the sender
+     *          As defined by the sender
      * @height - Sticker height
-     * As defined by the sender
+     *           As defined by the sender
      * @emoji - Emoji corresponding to the sticker
      * @isAnimated - True, if the sticker is an animated sticker in TGS format
      * @isMask - True, if the sticker is a mask
@@ -1531,20 +1531,20 @@ public class TdApi {
      * Describes a video file
      *
      * @duration - Duration of the video, in seconds
-     * As defined by the sender
+     *             As defined by the sender
      * @width - Video width
-     * As defined by the sender
+     *          As defined by the sender
      * @height - Video height
-     * As defined by the sender
+     *           As defined by the sender
      * @fileName - Original name of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @mimeType - MIME type of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @hasStickers - True, if stickers were added to the video
      * @supportsStreaming - True, if the video should be tried to be streamed
      * @minithumbnail - Video minithumbnail
      * @thumbnail - Video thumbnail
-     * As defined by the sender
+     *              As defined by the sender
      * @video - File containing the video
      */
     public static class Video extends Object {
@@ -1593,12 +1593,12 @@ public class TdApi {
      * The video must be equal in width and height, cropped to a circle, and stored in MPEG4 format
      *
      * @duration - Duration of the video, in seconds
-     * As defined by the sender
+     *             As defined by the sender
      * @length - Video width and height
-     * As defined by the sender
+     *           As defined by the sender
      * @minithumbnail - Video minithumbnail
      * @thumbnail - Video thumbnail
-     * As defined by the sender
+     *              As defined by the sender
      * @video - File containing the video
      */
     public static class VideoNote extends Object {
@@ -1638,10 +1638,10 @@ public class TdApi {
      * Voice notes can have only a single audio channel
      *
      * @duration - Duration of the voice note, in seconds
-     * As defined by the sender
+     *             As defined by the sender
      * @waveform - A waveform representation of the voice note in 5-bit format
      * @mimeType - MIME type of the file
-     * As defined by the sender
+     *             As defined by the sender
      * @voice - File containing the voice note
      */
     public static class VoiceNote extends Object {
@@ -1679,7 +1679,7 @@ public class TdApi {
      * @lastName - Last name of the user
      * @vcard - Additional data about the user in a form of vCard
      * @userId - Identifier of the user, if known
-     * Otherwise 0
+     *           Otherwise 0
      */
     public static class Contact extends Object {
 
@@ -1714,9 +1714,9 @@ public class TdApi {
      * Describes a location on planet Earth
      *
      * @latitude - Latitude of the location in degrees
-     * As defined by the sender
+     *             As defined by the sender
      * @longitude - Longitude of the location, in degrees
-     * As defined by the sender
+     *              As defined by the sender
      */
     public static class Location extends Object {
 
@@ -1745,18 +1745,18 @@ public class TdApi {
      * Describes a venue
      *
      * @location - Venue location
-     * As defined by the sender
+     *             As defined by the sender
      * @title - Venue name
-     * As defined by the sender
+     *          As defined by the sender
      * @address - Venue address
-     * As defined by the sender
+     *            As defined by the sender
      * @provider - Provider of the venue database
-     * As defined by the sender
-     * Currently only "foursquare" needs to be supported
+     *             As defined by the sender
+     *             Currently only "foursquare" needs to be supported
      * @id - Identifier of the venue in the provider database
-     * As defined by the sender
+     *       As defined by the sender
      * @type - Type of the venue in the provider database
-     * As defined by the sender
+     *         As defined by the sender
      */
     public static class Venue extends Object {
 
@@ -1794,7 +1794,7 @@ public class TdApi {
      *
      * @id - Game ID
      * @shortName - Game short name
-     * To share a game use the URL https://t.me/{bot_username}?game={game_short_name}
+     *              To share a game use the URL https://t.me/{bot_username}?game={game_short_name}
      * @title - Game title
      * @text - Game text, usually containing scoreboards for a game
      * @description - Game description
@@ -1886,12 +1886,12 @@ public class TdApi {
      * Describes a user profile photo
      *
      * @id - Photo identifier
-     * 0 for an empty photo
-     * Can be used to find a photo in a list of userProfilePhotos
+     *       0 for an empty photo
+     *       Can be used to find a photo in a list of userProfilePhotos
      * @small - A small (160x160) user profile photo
-     * The file can be downloaded only before the photo is changed
+     *          The file can be downloaded only before the photo is changed
      * @big - A big (640x640) user profile photo
-     * The file can be downloaded only before the photo is changed
+     *        The file can be downloaded only before the photo is changed
      */
     public static class ProfilePhoto extends Object {
 
@@ -1922,9 +1922,9 @@ public class TdApi {
      * Describes the photo of a chat
      *
      * @small - A small (160x160) chat photo
-     * The file can be downloaded only before the photo is changed
+     *          The file can be downloaded only before the photo is changed
      * @big - A big (640x640) chat photo
-     * The file can be downloaded only before the photo is changed
+     *        The file can be downloaded only before the photo is changed
      */
     public static class ChatPhoto extends Object {
 
@@ -1989,7 +1989,7 @@ public class TdApi {
      *
      * @canJoinGroups - True, if the bot can be invited to basic group and supergroup chats
      * @canReadAllGroupMessages - True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot
-     * In private and channel chats a bot can always read all messages
+     *                            In private and channel chats a bot can always read all messages
      * @isInline - True, if the bot supports inline queries
      * @inlineQueryPlaceholder - Placeholder for inline queries (displayed on the client input field)
      * @needLocation - True, if the location of the user should be sent with every inline query to this bot
@@ -2142,10 +2142,10 @@ public class TdApi {
      * @restrictionReason - If non-empty, it contains a human-readable description of the reason why access to this user must be restricted
      * @isScam - True, if many users reported this user as a scam
      * @haveAccess - If false, the user is inaccessible, and the only information known about the user is inside this class
-     * It can't be passed to any method except GetUser
+     *               It can't be passed to any method except GetUser
      * @type - Type of the user
      * @languageCode - IETF language tag of the user's language
-     * Only available to bots
+     *                 Only available to bots
      */
     public static class User extends Object {
 
@@ -2209,7 +2209,7 @@ public class TdApi {
      * @bio - A short user bio
      * @shareText - For bots, the text that is included with the link when users share the bot
      * @groupInCommonCount - Number of group chats where both the other user and the current user are a member
-     * 0 for the current user
+     *                       0 for the current user
      * @botInfo - If the user is a bot, information about the bot
      */
     public static class UserFullInfo extends Object {
@@ -2401,13 +2401,13 @@ public class TdApi {
      *
      * @canSendMessages - True, if the user can send text messages, contacts, locations, and venues
      * @canSendMediaMessages - True, if the user can send audio files, documents, photos, videos, video notes, and voice notes
-     * Implies can_send_messages permissions
+     *                         Implies can_send_messages permissions
      * @canSendPolls - True, if the user can send polls
-     * Implies can_send_messages permissions
+     *                 Implies can_send_messages permissions
      * @canSendOtherMessages - True, if the user can send animations, games, and stickers and use inline bots
-     * Implies can_send_messages permissions
+     *                         Implies can_send_messages permissions
      * @canAddWebPagePreviews - True, if the user may add a web page preview to their messages
-     * Implies can_send_messages permissions
+     *                          Implies can_send_messages permissions
      * @canChangeInfo - True, if the user can change the chat title, photo, and other settings
      * @canInviteUsers - True, if the user can invite new users to the chat
      * @canPinMessages - True, if the user can pin messages
@@ -2457,7 +2457,7 @@ public class TdApi {
      * The user is the owner of a chat and has all the administrator privileges
      *
      * @customTitle - A custom title of the owner
-     * Applicable to supergroups only
+     *                Applicable to supergroups only
      * @isMember - True, if the user is a member of the chat
      */
     public static class ChatMemberStatusCreator extends ChatMemberStatus {
@@ -2489,18 +2489,18 @@ public class TdApi {
      * In supergroups and channels, there are more detailed options for administrator privileges
      *
      * @customTitle - A custom title of the administrator
-     * Applicable to supergroups only
+     *                Applicable to supergroups only
      * @canBeEdited - True, if the current user can edit the administrator privileges for the called user
      * @canChangeInfo - True, if the administrator can change the chat title, photo, and other settings
      * @canPostMessages - True, if the administrator can create channel posts
-     * Applicable to channels only
+     *                    Applicable to channels only
      * @canEditMessages - True, if the administrator can edit messages of other users and pin messages
-     * Applicable to channels only
+     *                    Applicable to channels only
      * @canDeleteMessages - True, if the administrator can delete messages of other users
      * @canInviteUsers - True, if the administrator can invite new users to the chat
      * @canRestrictMembers - True, if the administrator can restrict, ban, or unban chat members
      * @canPinMessages - True, if the administrator can pin messages
-     * Applicable to groups only
+     *                   Applicable to groups only
      * @canPromoteMembers - True, if the administrator can add new administrators with a subset of their own privileges or demote administrators that were directly or indirectly promoted by them
      */
     public static class ChatMemberStatusAdministrator extends ChatMemberStatus {
@@ -2561,8 +2561,8 @@ public class TdApi {
      *
      * @isMember - True, if the user is a member of the chat
      * @restrictedUntilDate - Point in time (Unix timestamp) when restrictions will be lifted from the user
-     * 0 if never
-     * If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever
+     *                        0 if never
+     *                        If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever
      * @permissions - User permissions in the chat
      */
     public static class ChatMemberStatusRestricted extends ChatMemberStatus {
@@ -2608,8 +2608,8 @@ public class TdApi {
      * Implies the user can't return to the chat or view messages
      *
      * @bannedUntilDate - Point in time (Unix timestamp) when the user will be unbanned
-     * 0 if never
-     * If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever
+     *                    0 if never
+     *                    If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever
      */
     public static class ChatMemberStatusBanned extends ChatMemberStatus {
 
@@ -2637,11 +2637,11 @@ public class TdApi {
      *
      * @userId - User identifier of the chat member
      * @inviterUserId - Identifier of a user that invited/promoted/banned this member in the chat
-     * 0 if unknown
+     *                  0 if unknown
      * @joinedChatDate - Point in time (Unix timestamp) when the user joined a chat
      * @status - Status of the member in the chat
      * @botInfo - If the user is a bot, information about the bot
-     * Can be null even for a bot if the bot is not a chat member
+     *            Can be null even for a bot if the bot is not a chat member
      */
     public static class ChatMember extends Object {
 
@@ -2947,7 +2947,7 @@ public class TdApi {
      * @status - Status of the current user in the group
      * @isActive - True, if the group is active
      * @upgradedToSupergroupId - Identifier of the supergroup to which this group was upgraded
-     * 0 if none
+     *                           0 if none
      */
     public static class BasicGroup extends Object {
 
@@ -2983,10 +2983,10 @@ public class TdApi {
      *
      * @description - Group description
      * @creatorUserId - User identifier of the creator of the group
-     * 0 if unknown
+     *                  0 if unknown
      * @members - Group members
      * @inviteLink - Invite link for this group
-     * Available only after it has been generated at least once and only for the group creator
+     *               Available only after it has been generated at least once and only for the group creator
      */
     public static class BasicGroupFullInfo extends Object {
 
@@ -3022,18 +3022,18 @@ public class TdApi {
      *
      * @id - Supergroup or channel identifier
      * @username - Username of the supergroup or channel
-     * Empty for private supergroups or channels
+     *             Empty for private supergroups or channels
      * @date - Point in time (Unix timestamp) when the current user joined, or the point in time when the supergroup or channel was created, in case the user is not a member
      * @status - Status of the current user in the supergroup or channel
-     * Custom title will be always empty
-     * @memberCount - Member count
-     * 0 if unknown
-     * Currently it is guaranteed to be known only if the supergroup or channel was found through SearchPublicChats
+     *           Custom title will be always empty
+     * @memberCount - Number of members in the supergroup or channel
+     *                0 if unknown
+     *                Currently it is guaranteed to be known only if the supergroup or channel was found through SearchPublicChats
      * @hasLinkedChat - True, if the channel has a discussion group, or the supergroup is the designated discussion group for a channel
      * @hasLocation - True, if the supergroup is connected to a location, i.e
-     * The supergroup is a location-based supergroup
+     *                The supergroup is a location-based supergroup
      * @signMessages - True, if messages sent to the channel should contain information about the sender
-     * This field is only applicable to channels
+     *                 This field is only applicable to channels
      * @isSlowModeEnabled - True, if the slow mode is enabled in the supergroup
      * @isChannel - True, if the supergroup is a channel
      * @isVerified - True, if the supergroup or channel is verified
@@ -3090,34 +3090,34 @@ public class TdApi {
      *
      * @description - Supergroup or channel description
      * @memberCount - Number of members in the supergroup or channel
-     * 0 if unknown
+     *                0 if unknown
      * @administratorCount - Number of privileged users in the supergroup or channel
-     * 0 if unknown
+     *                       0 if unknown
      * @restrictedCount - Number of restricted users in the supergroup
-     * 0 if unknown
+     *                    0 if unknown
      * @bannedCount - Number of users banned from chat
-     * 0 if unknown
+     *                0 if unknown
      * @linkedChatId - Chat identifier of a discussion group for the channel, or a channel, for which the supergroup is the designated discussion group
-     * 0 if none or unknown
+     *                 0 if none or unknown
      * @slowModeDelay - Delay between consecutive sent messages for non-administrator supergroup members, in seconds
      * @slowModeDelayExpiresIn - Time left before next message can be sent in the supergroup, in seconds
-     * An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero
+     *                           An updateSupergroupFullInfo update is not triggered when value of this field changes, but both new and old values are non-zero
      * @canGetMembers - True, if members of the chat can be retrieved
      * @canSetUsername - True, if the chat username can be changed
      * @canSetStickerSet - True, if the supergroup sticker set can be changed
      * @canSetLocation - True, if the supergroup location can be changed
      * @canViewStatistics - True, if the channel statistics is available through getChatStatisticsUrl
      * @isAllHistoryAvailable - True, if new chat members will have access to old messages
-     * In public or discussion groups and both public and private channels, old messages are always available, so this option affects only private supergroups without a linked chat
-     * The value of this field is only available for chat administrators
+     *                          In public or discussion groups and both public and private channels, old messages are always available, so this option affects only private supergroups without a linked chat
+     *                          The value of this field is only available for chat administrators
      * @stickerSetId - Identifier of the supergroup sticker set
-     * 0 if none
+     *                 0 if none
      * @location - Location to which the supergroup is connected
      * @inviteLink - Invite link for this chat
      * @upgradedFromBasicGroupId - Identifier of the basic group from which supergroup was upgraded
-     * 0 if none
+     *                             0 if none
      * @upgradedFromMaxMessageId - Identifier of the last message in the basic group from which supergroup was upgraded
-     * 0 if none
+     *                             0 if none
      */
     public static class SupergroupFullInfo extends Object {
 
@@ -3230,16 +3230,16 @@ public class TdApi {
      * @userId - Identifier of the chat partner
      * @state - State of the secret chat
      * @isOutbound - True, if the chat was created by the current user
-     * Otherwise false
+     *               Otherwise false
      * @ttl - Current message Time To Live setting (self-destruct timer) for the chat, in seconds
      * @keyHash - Hash of the currently used key for comparison with the hash of the chat partner's key
-     * This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9
-     * The pixels must be used to make a 12x12 square image filled from left to right, top to bottom
-     * Alternatively, the first 32 bytes of the hash can be converted to the hexadecimal format and printed as 32 2-digit hex numbers
+     *            This is a string of 36 little-endian bytes, which must be split into groups of 2 bits, each denoting a pixel of one of 4 colors FFFFFF, D5E6F3, 2D5775, and 2F99C9
+     *            The pixels must be used to make a 12x12 square image filled from left to right, top to bottom
+     *            Alternatively, the first 32 bytes of the hash can be converted to the hexadecimal format and printed as 32 2-digit hex numbers
      * @layer - Secret chat layer
-     * Determines features supported by the other client
-     * Video notes are supported if the layer >= 66
-     * Nested text entities and underline and strikethrough entities are supported if the layer >= 101
+     *          Determines features supported by the other client
+     *          Video notes are supported if the layer >= 66
+     *          Nested text entities and underline and strikethrough entities are supported if the layer >= 101
      */
     public static class SecretChat extends Object {
 
@@ -3337,7 +3337,7 @@ public class TdApi {
      *
      * @chatId - Identifier of the chat from which the message was originally forwarded
      * @messageId - Message identifier of the original message
-     * 0 if unknown
+     *              0 if unknown
      * @authorSignature - Original post author signature
      */
     public static class MessageForwardOriginChannel extends MessageForwardOrigin {
@@ -3371,9 +3371,9 @@ public class TdApi {
      * @origin - Origin of a forwarded message
      * @date - Point in time (Unix timestamp) when the message was originally sent
      * @fromChatId - For messages forwarded to the chat with the current user (Saved Messages) or to the channel's discussion group, the identifier of the chat from which the message was forwarded last time
-     * 0 if unknown
+     *               0 if unknown
      * @fromMessageId - For messages forwarded to the chat with the current user (Saved Messages) or to the channel's discussion group, the identifier of the original message from which the new message was forwarded last time
-     * 0 if unknown
+     *                  0 if unknown
      */
     public static class MessageForwardInfo extends Object {
 
@@ -3425,11 +3425,11 @@ public class TdApi {
      * The message failed to be sent
      *
      * @errorCode - An error code
-     * 0 if unknown
+     *              0 if unknown
      * @errorMessage - Error message
      * @canRetry - True, if the message can be re-sent
      * @retryAfter - Time left before the message can be re-sent, in seconds
-     * No update is sent when this field changes
+     *               No update is sent when this field changes
      */
     public static class MessageSendingStateFailed extends MessageSendingState {
 
@@ -3463,34 +3463,34 @@ public class TdApi {
      *
      * @id - Message identifier, unique for the chat to which the message belongs
      * @senderUserId - Identifier of the user who sent the message
-     * 0 if unknown
-     * Currently, it is unknown for channel posts and for channel posts automatically forwarded to discussion group
+     *                 0 if unknown
+     *                 Currently, it is unknown for channel posts and for channel posts automatically forwarded to discussion group
      * @chatId - Chat identifier
      * @sendingState - Information about the sending state of the message
      * @schedulingState - Information about the scheduling state of the message
      * @isOutgoing - True, if the message is outgoing
      * @canBeEdited - True, if the message can be edited
-     * For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message by the client
+     *                For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message by the client
      * @canBeForwarded - True, if the message can be forwarded
      * @canBeDeletedOnlyForSelf - True, if the message can be deleted only for the current user while other users will continue to see it
      * @canBeDeletedForAllUsers - True, if the message can be deleted for all users
      * @isChannelPost - True, if the message is a channel post
-     * All messages to channels are channel posts, all other messages are not channel posts
+     *                  All messages to channels are channel posts, all other messages are not channel posts
      * @containsUnreadMention - True, if the message contains an unread mention for the current user
      * @date - Point in time (Unix timestamp) when the message was sent
      * @editDate - Point in time (Unix timestamp) when the message was last edited
      * @forwardInfo - Information about the initial message sender
      * @replyToMessageId - If non-zero, the identifier of the message this message is replying to
-     * Can be the identifier of a deleted message
+     *                     Can be the identifier of a deleted message
      * @ttl - For self-destructing messages, the message's TTL (Time To Live), in seconds
-     * 0 if none
-     * TDLib will send updateDeleteMessages or updateMessageContent once the TTL expires
+     *        0 if none
+     *        TDLib will send updateDeleteMessages or updateMessageContent once the TTL expires
      * @ttlExpiresIn - Time left before the message expires, in seconds
      * @viaBotUserId - If non-zero, the user identifier of the bot through which this message was sent
      * @authorSignature - For channel posts, optional author signature
      * @views - Number of times this message was viewed
      * @mediaAlbumId - Unique identifier of an album this message belongs to
-     * Only photos and videos can be grouped together in albums
+     *                 Only photos and videos can be grouped together in albums
      * @restrictionReason - If non-empty, contains a human-readable description of the reason why access to this message must be restricted
      * @content - Content of the message
      * @replyMarkup - Reply markup for the message
@@ -3573,7 +3573,7 @@ public class TdApi {
      *
      * @totalCount - Approximate total count of messages found
      * @messages - List of messages
-     * Messages may be null
+     *             Messages may be null
      */
     public static class Messages extends Object {
 
@@ -3679,7 +3679,7 @@ public class TdApi {
      * @muteFor - Time left before notifications will be unmuted, in seconds
      * @useDefaultSound - If true, sound is ignored and the value for the relevant type of chat is used instead
      * @sound - The name of an audio file to be used for notification sounds
-     * Only applies to iOS applications
+     *          Only applies to iOS applications
      * @useDefaultShowPreview - If true, show_preview is ignored and the value for the relevant type of chat is used instead
      * @showPreview - True, if message content should be displayed in notifications
      * @useDefaultDisablePinnedMessageNotifications - If true, disable_pinned_message_notifications is ignored and the value for the relevant type of chat is used instead
@@ -3731,7 +3731,7 @@ public class TdApi {
      *
      * @muteFor - Time left before notifications will be unmuted, in seconds
      * @sound - The name of an audio file to be used for notification sounds
-     * Only applies to iOS applications
+     *          Only applies to iOS applications
      * @showPreview - True, if message content should be displayed in notifications
      * @disablePinnedMessageNotifications - True, if notifications for incoming pinned messages will be created as for an ordinary unread message
      * @disableMentionNotifications - True, if notifications for messages with mentions will be created as for an ordinary unread message
@@ -3769,9 +3769,9 @@ public class TdApi {
      * Contains information about a message draft
      *
      * @replyToMessageId - Identifier of the message to reply to
-     * 0 if none
+     *                     0 if none
      * @inputMessageText - Content of the message draft
-     * This should always be of type inputMessageText
+     *                     This should always be of type inputMessageText
      */
     public static class DraftMessage extends Object {
 
@@ -3958,8 +3958,8 @@ public class TdApi {
      * @permissions - Actions that non-administrator chat members are allowed to take in the chat
      * @lastMessage - Last message in the chat
      * @order - Descending parameter by which chats are sorted in the main chat list
-     * If the order number of two chats is the same, they must be sorted in descending order by ID
-     * If 0, the position of the chat in the list is undetermined
+     *          If the order number of two chats is the same, they must be sorted in descending order by ID
+     *          If 0, the position of the chat in the list is undetermined
      * @isPinned - True, if the chat is pinned
      * @isMarkedAsUnread - True, if the chat is marked as unread
      * @isSponsored - True, if the chat is sponsored by the user's MTProxy server
@@ -3975,12 +3975,12 @@ public class TdApi {
      * @notificationSettings - Notification settings for this chat
      * @actionBar - Describes actions which should be possible to do through a chat action bar
      * @pinnedMessageId - Identifier of the pinned message in the chat
-     * 0 if none
+     *                    0 if none
      * @replyMarkupMessageId - Identifier of the message from which reply markup needs to be used
-     * 0 if there is no default custom reply markup in the chat
+     *                         0 if there is no default custom reply markup in the chat
      * @draftMessage - A draft of a message in the chat
      * @clientData - Contains client-specific data associated with the chat
-     * (For example, the chat position or local chat notification settings can be stored here.) Persistent if the message database is used
+     *               (For example, the chat position or local chat notification settings can be stored here.) Persistent if the message database is used
      */
     public static class Chat extends Object {
 
@@ -4176,7 +4176,7 @@ public class TdApi {
      * @type - Contains information about the type of the chat
      * @title - Title of the chat
      * @photo - Chat photo
-     * @memberCount - Number of members
+     * @memberCount - Number of members in the chat
      * @memberUserIds - User identifiers of some chat members that may be known to the current user
      * @isPublic - True, if the chat is a public supergroup or channel, i.e
      * It has a username or it is a location-based supergroup
@@ -4638,7 +4638,7 @@ public class TdApi {
      * Instructs clients to force a reply to this message
      *
      * @isPersonal - True, if a forced reply must automatically be shown to the current user
-     * For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply
+     *               For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply
      */
     public static class ReplyMarkupForceReply extends ReplyMarkup {
 
@@ -4668,7 +4668,7 @@ public class TdApi {
      * @resizeKeyboard - True, if the client needs to resize the keyboard vertically
      * @oneTime - True, if the client needs to hide the keyboard after use
      * @isPersonal - True, if the keyboard must automatically be shown to the current user
-     * For outgoing messages, specify true to show the keyboard only for the mentioned users and for the target user of a reply
+     *               For outgoing messages, specify true to show the keyboard only for the mentioned users and for the target user of a reply
      */
     public static class ReplyMarkupShowKeyboard extends ReplyMarkup {
 
@@ -5127,11 +5127,11 @@ public class TdApi {
      * A small image inside the text
      *
      * @document - The image represented as a document
-     * The image can be in GIF, JPEG or PNG format
+     *             The image can be in GIF, JPEG or PNG format
      * @width - Width of a bounding box in which the image should be shown
-     * 0 if unknown
+     *          0 if unknown
      * @height - Height of a bounding box in which the image should be shown
-     * 0 if unknown
+     *           0 if unknown
      */
     public static class RichTextIcon extends RichText {
 
@@ -5365,7 +5365,7 @@ public class TdApi {
      * Represents a cell of a table
      *
      * @text - Cell text
-     * If the text is null, then the cell should be invisible
+     *         If the text is null, then the cell should be invisible
      * @isHeader - True, if it is a header cell
      * @colspan - The number of columns the cell should span
      * @rowspan - The number of rows the cell should span
@@ -5513,7 +5513,7 @@ public class TdApi {
      *
      * @author - Author
      * @publishDate - Point in time (Unix timestamp) when the article was published
-     * 0 if unknown
+     *                0 if unknown
      */
     public static class PageBlockAuthorDate extends PageBlock {
 
@@ -5829,8 +5829,7 @@ public class TdApi {
      */
     public static class PageBlockAnimation extends PageBlock {
 
-        @Nullable
-        public Animation animation;
+        @Nullable public Animation animation;
         public PageBlockCaption caption;
         public boolean needAutoplay;
 
@@ -5861,8 +5860,7 @@ public class TdApi {
      */
     public static class PageBlockAudio extends PageBlock {
 
-        @Nullable
-        public Audio audio;
+        @Nullable public Audio audio;
         public PageBlockCaption caption;
 
         public PageBlockAudio() {
@@ -5892,8 +5890,7 @@ public class TdApi {
      */
     public static class PageBlockPhoto extends PageBlock {
 
-        @Nullable
-        public Photo photo;
+        @Nullable public Photo photo;
         public PageBlockCaption caption;
         public String url;
 
@@ -5926,8 +5923,7 @@ public class TdApi {
      */
     public static class PageBlockVideo extends PageBlock {
 
-        @Nullable
-        public Video video;
+        @Nullable public Video video;
         public PageBlockCaption caption;
         public boolean needAutoplay;
         public boolean isLooped;
@@ -5960,8 +5956,7 @@ public class TdApi {
      */
     public static class PageBlockVoiceNote extends PageBlock {
 
-        @Nullable
-        public VoiceNote voiceNote;
+        @Nullable public VoiceNote voiceNote;
         public PageBlockCaption caption;
 
         public PageBlockVoiceNote() {
@@ -6015,9 +6010,9 @@ public class TdApi {
      * @html - HTML-markup of the embedded page
      * @posterPhoto - Poster photo, if available
      * @width - Block width
-     * 0 if unknown
+     *          0 if unknown
      * @height - Block height
-     * 0 if unknown
+     *           0 if unknown
      * @caption - Block caption
      * @isFullWidth - True, if the block should be full width
      * @allowScrolling - True, if scrolling should be allowed
@@ -6061,11 +6056,11 @@ public class TdApi {
     /**
      * An embedded post
      *
-     * @author - Post author
      * @url - Web page URL
+     * @author - Post author
      * @authorPhoto - Post author photo
      * @date - Point in time (Unix timestamp) when the post was created
-     * 0 if unknown
+     *         0 if unknown
      * @pageBlocks - Post content
      * @caption - Post caption
      */
@@ -6329,13 +6324,13 @@ public class TdApi {
     /**
      * Describes an instant view page for a web page
      *
-     * @version - Version of the instant view, currently can be 1 or 2
      * @pageBlocks - Content of the web page
+     * @version - Version of the instant view, currently can be 1 or 2
      * @url - Instant view URL
-     * May be different from WebPage.url and must be used for the correct anchors handling
+     *        May be different from WebPage.url and must be used for the correct anchors handling
      * @isRtl - True, if the instant view must be shown from right to left
      * @isFull - True, if the instant view contains the full page
-     * A network request might be needed to get the full web page instant view
+     *           A network request might be needed to get the full web page instant view
      */
     public static class WebPageInstantView extends Object {
 
@@ -6369,11 +6364,10 @@ public class TdApi {
     /**
      * Describes a web page preview
      *
-     * @author - Author of the content
      * @url - Original URL of the link
      * @displayUrl - URL to display
      * @type - Type of the web page
-     * Can be: article, photo, audio, video, document, profile, app, or something else
+     *         Can be: article, photo, audio, video, document, profile, app, or something else
      * @siteName - Short name of the site (e.g., Google Docs, App Store)
      * @title - Title of the content
      * @description - Description of the content
@@ -6383,6 +6377,7 @@ public class TdApi {
      * @embedWidth - Width of the embedded preview
      * @embedHeight - Height of the embedded preview
      * @duration - Duration of the content, in seconds
+     * @author - Author of the content
      * @animation - Preview of the content as an animation, if available
      * @audio - Preview of the content as an audio file, if available
      * @document - Preview of the content as a document, if available (currently only available for small PDF files and ZIP archives)
@@ -6969,7 +6964,7 @@ public class TdApi {
      * Contains the result of a payment request
      *
      * @success - True, if the payment request was successful
-     * Otherwise the verification_url will be not empty
+     *            Otherwise the verification_url will be not empty
      * @verificationUrl - URL for additional payment credentials verification
      */
     public static class PaymentResult extends Object {
@@ -7334,7 +7329,7 @@ public class TdApi {
      * @expiryDate - Document expiry date
      * @frontSide - Front side of the document
      * @reverseSide - Reverse side of the document
-     * Only for driver license and identity card
+     *                Only for driver license and identity card
      * @selfie - Selfie with the document
      * @translation - List of files containing a certified English translation of the document
      */
@@ -7378,7 +7373,7 @@ public class TdApi {
      * @expiryDate - Document expiry date, if available
      * @frontSide - Front side of the document
      * @reverseSide - Reverse side of the document
-     * Only for driver license and identity card
+     *                Only for driver license and identity card
      * @selfie - Selfie with the document, if available
      * @translation - List of files containing a certified English translation of the document
      */
@@ -9194,7 +9189,7 @@ public class TdApi {
      * @location - The location description
      * @livePeriod - Time relative to the message sent date until which the location can be updated, in seconds
      * @expiresIn - Left time for which the location can be updated, in seconds
-     * UpdateMessageContent is not sent when this field changes
+     *              UpdateMessageContent is not sent when this field changes
      */
     public static class MessageLocation extends MessageContent {
 
@@ -9334,7 +9329,7 @@ public class TdApi {
      * @currency - Currency for the product price
      * @totalAmount - Product total price in the minimal quantity of the currency
      * @startParameter - Unique invoice bot start_parameter
-     * To share an invoice use the URL https://t.me/{bot_username}?start={start_parameter}
+     *                   To share an invoice use the URL https://t.me/{bot_username}?start={start_parameter}
      * @isTest - True, if the invoice is a test invoice
      * @needShippingAddress - True, if the shipping address should be specified
      * @receiptMessageId - The identifier of the message with the receipt, after the product has been purchased
@@ -9742,7 +9737,7 @@ public class TdApi {
      *
      * @gameMessageId - Identifier of the message with the game, can be an identifier of a deleted message
      * @gameId - Identifier of the game
-     * May be different from the games presented in the message with the game
+     *           May be different from the games presented in the message with the game
      * @score - New score
      */
     public static class MessageGameScore extends MessageContent {
@@ -9774,7 +9769,7 @@ public class TdApi {
      * A payment has been completed
      *
      * @invoiceMessageId - Identifier of the message with the corresponding invoice
-     * Can be an identifier of a deleted message
+     *                     Can be an identifier of a deleted message
      * @currency - Currency for the price of the product
      * @totalAmount - Total price for the product, in the minimal quantity of the currency
      */
@@ -9808,12 +9803,12 @@ public class TdApi {
      * For bots only
      *
      * @invoiceMessageId - Identifier of the message with the corresponding invoice
-     * Can be an identifier of a deleted message
+     *                     Can be an identifier of a deleted message
      * @currency - Currency for price of the product
      * @totalAmount - Total price for the product, in the minimal quantity of the currency
      * @invoicePayload - Invoice payload
      * @shippingOptionId - Identifier of the shipping option chosen by the user
-     * May be empty if not applicable
+     *                     May be empty if not applicable
      * @orderInfo - Information about the order
      * @telegramPaymentChargeId - Telegram payment identifier
      * @providerPaymentChargeId - Provider payment identifier
@@ -10158,7 +10153,7 @@ public class TdApi {
      * Text that must be formatted as if inside pre, and code HTML tags
      *
      * @language - Programming language of the code
-     * As defined by the sender
+     *             As defined by the sender
      */
     public static class TextEntityTypePreCode extends TextEntityType {
 
@@ -10238,11 +10233,11 @@ public class TdApi {
      * Should be in JPEG or WEBP format for stickers, and less than 200 kB in size
      *
      * @thumbnail - Thumbnail file to send
-     * Sending thumbnails by file_id is currently not supported
+     *              Sending thumbnails by file_id is currently not supported
      * @width - Thumbnail width, usually shouldn't exceed 320
-     * Use 0 if unknown
+     *          Use 0 if unknown
      * @height - Thumbnail height, usually shouldn't exceed 320
-     * Use 0 if unknown
+     *           Use 0 if unknown
      */
     public static class InputThumbnail extends Object {
 
@@ -10279,7 +10274,7 @@ public class TdApi {
      * The message will be sent at the specified date
      *
      * @sendDate - Date the message will be sent
-     * The date must be within 367 days in the future
+     *             The date must be within 367 days in the future
      */
     public static class MessageSchedulingStateSendAtDate extends MessageSchedulingState {
 
@@ -10320,10 +10315,10 @@ public class TdApi {
      * Options to be used when a message is send
      *
      * @disableNotification - Pass true to disable notification for the message
-     * Must be false if the message is sent to a secret chat
+     *                        Must be false if the message is sent to a secret chat
      * @fromBackground - Pass true if the message is sent from the background
      * @schedulingState - Message scheduling state
-     * Messages sent to a secret chat, live location messages and self-destructing messages can't be scheduled
+     *                    Messages sent to a secret chat, live location messages and self-destructing messages can't be scheduled
      */
     public static class SendMessageOptions extends Object {
 
@@ -10360,8 +10355,8 @@ public class TdApi {
      * A text message
      *
      * @text - Formatted text to be sent
-     * 1-GetOption("message_text_length_max") characters
-     * Only Bold, Italic, Underline, Strikethrough, Code, Pre, PreCode, TextUrl and MentionName entities are allowed to be specified manually
+     *         1-GetOption("message_text_length_max") characters
+     *         Only Bold, Italic, Underline, Strikethrough, Code, Pre, PreCode, TextUrl and MentionName entities are allowed to be specified manually
      * @disableWebPagePreview - True, if rich web page previews for URLs in the message text should be disabled
      * @clearDraft - True, if a chat message draft should be deleted
      */
@@ -10397,11 +10392,11 @@ public class TdApi {
      * @thumbnail - Animation thumbnail, if available
      * @duration - Duration of the animation, in seconds
      * @width - Width of the animation
-     * May be replaced by the server
+     *          May be replaced by the server
      * @height - Height of the animation
-     * May be replaced by the server
+     *           May be replaced by the server
      * @caption - Animation caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class InputMessageAnimation extends InputMessageContent {
 
@@ -10440,12 +10435,12 @@ public class TdApi {
      * @audio - Audio file to be sent
      * @albumCoverThumbnail - Thumbnail of the cover for the album, if available
      * @duration - Duration of the audio, in seconds
-     * May be replaced by the server
+     *             May be replaced by the server
      * @title - Title of the audio
-     * May be replaced by the server
+     *          May be replaced by the server
      * @performer - Performer of the audio
      * @caption - Audio caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class InputMessageAudio extends InputMessageContent {
 
@@ -10484,7 +10479,7 @@ public class TdApi {
      * @document - Document to be sent
      * @thumbnail - Document thumbnail, if available
      * @caption - Document caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class InputMessageDocument extends InputMessageContent {
 
@@ -10520,9 +10515,9 @@ public class TdApi {
      * @width - Photo width
      * @height - Photo height
      * @caption - Photo caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      * @ttl - Photo TTL (Time To Live), in seconds (0-60)
-     * A non-zero TTL can be specified only in private chats
+     *        A non-zero TTL can be specified only in private chats
      */
     public static class InputMessagePhoto extends InputMessageContent {
 
@@ -10603,9 +10598,9 @@ public class TdApi {
      * @height - Video height
      * @supportsStreaming - True, if the video should be tried to be streamed
      * @caption - Video caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      * @ttl - Video TTL (Time To Live), in seconds (0-60)
-     * A non-zero TTL can be specified only in private chats
+     *        A non-zero TTL can be specified only in private chats
      */
     public static class InputMessageVideo extends InputMessageContent {
 
@@ -10651,7 +10646,7 @@ public class TdApi {
      * @thumbnail - Video thumbnail, if available
      * @duration - Duration of the video, in seconds
      * @length - Video width and height
-     * Must be positive and not greater than 640
+     *           Must be positive and not greater than 640
      */
     public static class InputMessageVideoNote extends InputMessageContent {
 
@@ -10687,7 +10682,7 @@ public class TdApi {
      * @duration - Duration of the voice note, in seconds
      * @waveform - Waveform representation of the voice note, in 5-bit format
      * @caption - Voice note caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class InputMessageVoiceNote extends InputMessageContent {
 
@@ -10721,7 +10716,7 @@ public class TdApi {
      *
      * @location - Location to be sent
      * @livePeriod - Period for which the location can be updated, in seconds
-     * Should be between 60 and 86400 for a live location and 0 otherwise
+     *               Should be between 60 and 86400 for a live location and 0 otherwise
      */
     public static class InputMessageLocation extends InputMessageContent {
 
@@ -10894,10 +10889,10 @@ public class TdApi {
      * @question - Poll question, 1-255 characters
      * @options - List of poll answer options, 2-10 strings 1-100 characters each
      * @isAnonymous - True, if the poll voters are anonymous
-     * Non-anonymous polls can't be sent or forwarded to channels
+     *                Non-anonymous polls can't be sent or forwarded to channels
      * @type - Type of the poll
      * @isClosed - True, if the poll needs to be sent already closed
-     * For bots only
+     *             For bots only
      */
     public static class InputMessagePoll extends InputMessageContent {
 
@@ -10934,11 +10929,11 @@ public class TdApi {
      * @fromChatId - Identifier for the chat this forwarded message came from
      * @messageId - Identifier of the message to forward
      * @inGameShare - True, if a game message should be shared within a launched game
-     * Applies only to game messages
+     *                Applies only to game messages
      * @sendCopy - True, if content of the message needs to be copied without a link to the original message
-     * Always true if the message is forwarded to a secret chat
+     *             Always true if the message is forwarded to a secret chat
      * @removeCaption - True, if media caption of the message copy needs to be removed
-     * Ignored if send_copy is false
+     *                  Ignored if send_copy is false
      */
     public static class InputMessageForwarded extends InputMessageContent {
 
@@ -11593,17 +11588,17 @@ public class TdApi {
      * @title - Title of the sticker set
      * @name - Name of the sticker set
      * @thumbnail - Sticker set thumbnail in WEBP format with width and height 100
-     * The file can be downloaded only before the thumbnail is changed
+     *              The file can be downloaded only before the thumbnail is changed
      * @isInstalled - True, if the sticker set has been installed by the current user
      * @isArchived - True, if the sticker set has been archived
-     * A sticker set can't be installed and archived simultaneously
+     *               A sticker set can't be installed and archived simultaneously
      * @isOfficial - True, if the sticker set is official
      * @isAnimated - True, is the stickers in the set are animated
      * @isMasks - True, if the stickers in the set are masks
      * @isViewed - True for already viewed trending sticker sets
      * @stickers - List of stickers in this set
      * @emojis - A list of emoji corresponding to the stickers in the same order
-     * The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object
+     *           The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object
      */
     public static class StickerSet extends Object {
 
@@ -11658,14 +11653,14 @@ public class TdApi {
      * @thumbnail - Sticker set thumbnail in WEBP format with width and height 100
      * @isInstalled - True, if the sticker set has been installed by current user
      * @isArchived - True, if the sticker set has been archived
-     * A sticker set can't be installed and archived simultaneously
+     *               A sticker set can't be installed and archived simultaneously
      * @isOfficial - True, if the sticker set is official
      * @isAnimated - True, is the stickers in the set are animated
      * @isMasks - True, if the stickers in the set are masks
      * @isViewed - True for already viewed trending sticker sets
      * @size - Total number of stickers in the set
      * @covers - Contains up to the first 5 stickers from the set, depending on the context
-     * If the client needs more stickers the full set should be requested
+     *           If the client needs more stickers the full set should be requested
      */
     public static class StickerSetInfo extends Object {
 
@@ -12050,7 +12045,7 @@ public class TdApi {
      * The call has ended with an error
      *
      * @error - Error
-     * An error with the code 4005000 will be returned if an outgoing call is missed because of an expired timeout
+     *          An error with the code 4005000 will be returned if an outgoing call is missed because of an expired timeout
      */
     public static class CallStateError extends CallState {
 
@@ -12211,8 +12206,8 @@ public class TdApi {
      * @allowFlashCall - Pass true if the authentication code may be sent via flash call to the specified phone number
      * @isCurrentPhoneNumber - Pass true if the authenticated phone number is used on the current device
      * @allowSmsRetrieverApi - For official applications only
-     * True, if the app can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS
-     * See https://developers.google.com/identity/sms-retriever/ for more details
+     *                         True, if the app can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS
+     *                         See https://developers.google.com/identity/sms-retriever/ for more details
      */
     public static class PhoneNumberAuthenticationSettings extends Object {
 
@@ -12269,9 +12264,9 @@ public class TdApi {
      * Represents the result of an ImportContacts request
      *
      * @userIds - User identifiers of the imported contacts in the same order as they were specified in the request
-     * 0 if the contact is not yet a registered user
+     *            0 if the contact is not yet a registered user
      * @importerCount - The number of users that imported the corresponding contact
-     * 0 for already registered users or if unavailable
+     *                  0 for already registered users or if unavailable
      */
     public static class ImportedContacts extends Object {
 
@@ -12340,9 +12335,9 @@ public class TdApi {
      * @gifWidth - Width of the GIF
      * @gifHeight - Height of the GIF
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageAnimation, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageAnimation, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultAnimatedGif extends InputInlineQueryResult {
 
@@ -12393,9 +12388,9 @@ public class TdApi {
      * @mpeg4Width - Width of the video
      * @mpeg4Height - Height of the video
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageAnimation, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageAnimation, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultAnimatedMpeg4 extends InputInlineQueryResult {
 
@@ -12446,9 +12441,9 @@ public class TdApi {
      * @thumbnailWidth - Thumbnail width, if known
      * @thumbnailHeight - Thumbnail height, if known
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultArticle extends InputInlineQueryResult {
 
@@ -12498,9 +12493,9 @@ public class TdApi {
      * @audioUrl - The URL of the audio file
      * @audioDuration - Audio file duration, in seconds
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageAudio, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageAudio, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultAudio extends InputInlineQueryResult {
 
@@ -12544,9 +12539,9 @@ public class TdApi {
      * @thumbnailWidth - Thumbnail width, if known
      * @thumbnailHeight - Thumbnail height, if known
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultContact extends InputInlineQueryResult {
 
@@ -12589,14 +12584,14 @@ public class TdApi {
      * @description - Short description of the result, if known
      * @documentUrl - URL of the file
      * @mimeType - MIME type of the file content
-     * Only "application/pdf" and "application/zip" are currently allowed
+     *             Only "application/pdf" and "application/zip" are currently allowed
      * @thumbnailUrl - The URL of the file thumbnail, if it exists
      * @thumbnailWidth - Width of the thumbnail
      * @thumbnailHeight - Height of the thumbnail
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageDocument, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageDocument, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultDocument extends InputInlineQueryResult {
 
@@ -12643,7 +12638,7 @@ public class TdApi {
      * @id - Unique identifier of the query result
      * @gameShortName - Short name of the game
      * @replyMarkup - Message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      */
     public static class InputInlineQueryResultGame extends InputInlineQueryResult {
 
@@ -12681,9 +12676,9 @@ public class TdApi {
      * @thumbnailWidth - Thumbnail width, if known
      * @thumbnailHeight - Thumbnail height, if known
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultLocation extends InputInlineQueryResult {
 
@@ -12733,9 +12728,9 @@ public class TdApi {
      * @photoWidth - Width of the photo
      * @photoHeight - Height of the photo
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessagePhoto, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessagePhoto, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultPhoto extends InputInlineQueryResult {
 
@@ -12783,9 +12778,9 @@ public class TdApi {
      * @stickerWidth - Width of the sticker
      * @stickerHeight - Height of the sticker
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, inputMessageSticker, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, inputMessageSticker, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultSticker extends InputInlineQueryResult {
 
@@ -12829,9 +12824,9 @@ public class TdApi {
      * @thumbnailWidth - Thumbnail width, if known
      * @thumbnailHeight - Thumbnail height, if known
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultVenue extends InputInlineQueryResult {
 
@@ -12879,9 +12874,9 @@ public class TdApi {
      * @videoHeight - Height of the video
      * @videoDuration - Video duration, in seconds
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageVideo, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageVideo, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultVideo extends InputInlineQueryResult {
 
@@ -12932,9 +12927,9 @@ public class TdApi {
      * @voiceNoteUrl - The URL of the voice note file
      * @voiceNoteDuration - Duration of the voice note, in seconds
      * @replyMarkup - The message reply markup
-     * Must be of type replyMarkupInlineKeyboard or null
+     *                Must be of type replyMarkupInlineKeyboard or null
      * @inputMessageContent - The content of the message to be sent
-     * Must be one of the following types: InputMessageText, InputMessageVoiceNote, InputMessageLocation, InputMessageVenue or InputMessageContact
+     *                        Must be one of the following types: InputMessageText, InputMessageVoiceNote, InputMessageLocation, InputMessageVenue or InputMessageContact
      */
     public static class InputInlineQueryResultVoiceNote extends InputInlineQueryResult {
 
@@ -13379,7 +13374,7 @@ public class TdApi {
      *
      * @inlineQueryId - Unique identifier of the inline query
      * @nextOffset - The offset for the next request
-     * If empty, there are no more results
+     *               If empty, there are no more results
      * @results - Results of the query
      * @switchPmText - If non-empty, this text should be shown on the button, which opens a private chat with the bot and sends the bot a start message with the switch_pm_parameter
      * @switchPmParameter - Parameter for the bot start message
@@ -14093,9 +14088,9 @@ public class TdApi {
      * The supergroup sticker set was changed
      *
      * @oldStickerSetId - Previous identifier of the chat sticker set
-     * 0 if none
+     *                    0 if none
      * @newStickerSetId - New identifier of the chat sticker set
-     * 0 if none
+     *                    0 if none
      */
     public static class ChatEventStickerSetChanged extends ChatEventAction {
 
@@ -14438,12 +14433,12 @@ public class TdApi {
      *
      * @id - Unique language pack identifier
      * @baseLanguagePackId - Identifier of a base language pack
-     * If a string is missed in the language pack, then it should be fetched from base language pack
-     * Unsupported in custom language packs
+     *                       If a string is missed in the language pack, then it should be fetched from base language pack
+     *                       Unsupported in custom language packs
      * @name - Language name
      * @nativeName - Name of the language in that language
      * @pluralCode - A language code to be used to apply plural forms
-     * See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more info
+     *               See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more info
      * @isOfficial - True, if the language pack is official
      * @isRtl - True, if the language pack strings are RTL
      * @isBeta - True, if the language pack is a beta language pack
@@ -14452,7 +14447,7 @@ public class TdApi {
      * @translatedStringCount - Total number of translated strings from the language pack
      * @localStringCount - Total number of non-deleted strings from the language pack available locally
      * @translationUrl - Link to language translation interface
-     * Empty for custom local language packs
+     *                   Empty for custom local language packs
      */
     public static class LanguagePackInfo extends Object {
 
@@ -14537,13 +14532,12 @@ public class TdApi {
      * A token for Firebase Cloud Messaging
      *
      * @token - Device registration token
-     * May be empty to de-register a device
+     *          May be empty to de-register a device
      * @encrypt - True, if push notifications should be additionally encrypted
      */
     public static class DeviceTokenFirebaseCloudMessaging extends DeviceToken {
 
-        @Nullable
-        public String token;
+        @Nullable public String token;
         public boolean encrypt;
 
         public DeviceTokenFirebaseCloudMessaging() {
@@ -14568,13 +14562,12 @@ public class TdApi {
      * A token for Apple Push Notification service
      *
      * @deviceToken - Device token
-     * May be empty to de-register a device
+     *                May be empty to de-register a device
      * @isAppSandbox - True, if App Sandbox is enabled
      */
     public static class DeviceTokenApplePush extends DeviceToken {
 
-        @Nullable
-        public String deviceToken;
+        @Nullable public String deviceToken;
         public boolean isAppSandbox;
 
         public DeviceTokenApplePush() {
@@ -14599,14 +14592,13 @@ public class TdApi {
      * A token for Apple Push Notification service VoIP notifications
      *
      * @deviceToken - Device token
-     * May be empty to de-register a device
+     *                May be empty to de-register a device
      * @isAppSandbox - True, if App Sandbox is enabled
      * @encrypt - True, if push notifications should be additionally encrypted
      */
     public static class DeviceTokenApplePushVoIP extends DeviceToken {
 
-        @Nullable
-        public String deviceToken;
+        @Nullable public String deviceToken;
         public boolean isAppSandbox;
         public boolean encrypt;
 
@@ -14633,12 +14625,11 @@ public class TdApi {
      * A token for Windows Push Notification Services
      *
      * @accessToken - The access token that will be used to send notifications
-     * May be empty to de-register a device
+     *                May be empty to de-register a device
      */
     public static class DeviceTokenWindowsPush extends DeviceToken {
 
-        @Nullable
-        public String accessToken;
+        @Nullable public String accessToken;
 
         public DeviceTokenWindowsPush() {
         }
@@ -14661,12 +14652,11 @@ public class TdApi {
      * A token for Microsoft Push Notification Service
      *
      * @channelUri - Push notification channel URI
-     * May be empty to de-register a device
+     *               May be empty to de-register a device
      */
     public static class DeviceTokenMicrosoftPush extends DeviceToken {
 
-        @Nullable
-        public String channelUri;
+        @Nullable public String channelUri;
 
         public DeviceTokenMicrosoftPush() {
         }
@@ -14689,12 +14679,11 @@ public class TdApi {
      * A token for Microsoft Push Notification Service VoIP channel
      *
      * @channelUri - Push notification channel URI
-     * May be empty to de-register a device
+     *               May be empty to de-register a device
      */
     public static class DeviceTokenMicrosoftPushVoIP extends DeviceToken {
 
-        @Nullable
-        public String channelUri;
+        @Nullable public String channelUri;
 
         public DeviceTokenMicrosoftPushVoIP() {
         }
@@ -14717,14 +14706,13 @@ public class TdApi {
      * A token for web Push API
      *
      * @endpoint - Absolute URL exposed by the push service where the application server can send push messages
-     * May be empty to de-register a device
+     *             May be empty to de-register a device
      * @p256dhBase64url - Base64url-encoded P-256 elliptic curve Diffie-Hellman public key
      * @authBase64url - Base64url-encoded authentication secret
      */
     public static class DeviceTokenWebPush extends DeviceToken {
 
-        @Nullable
-        public String endpoint;
+        @Nullable public String endpoint;
         public String p256dhBase64url;
         public String authBase64url;
 
@@ -14751,12 +14739,11 @@ public class TdApi {
      * A token for Simple Push API for Firefox OS
      *
      * @endpoint - Absolute URL exposed by the push service where the application server can send push messages
-     * May be empty to de-register a device
+     *             May be empty to de-register a device
      */
     public static class DeviceTokenSimplePush extends DeviceToken {
 
-        @Nullable
-        public String endpoint;
+        @Nullable public String endpoint;
 
         public DeviceTokenSimplePush() {
         }
@@ -14779,12 +14766,11 @@ public class TdApi {
      * A token for Ubuntu Push Client service
      *
      * @token - Token
-     * May be empty to de-register a device
+     *          May be empty to de-register a device
      */
     public static class DeviceTokenUbuntuPush extends DeviceToken {
 
-        @Nullable
-        public String token;
+        @Nullable public String token;
 
         public DeviceTokenUbuntuPush() {
         }
@@ -14807,12 +14793,11 @@ public class TdApi {
      * A token for BlackBerry Push Service
      *
      * @token - Token
-     * May be empty to de-register a device
+     *          May be empty to de-register a device
      */
     public static class DeviceTokenBlackBerryPush extends DeviceToken {
 
-        @Nullable
-        public String token;
+        @Nullable public String token;
 
         public DeviceTokenBlackBerryPush() {
         }
@@ -14835,12 +14820,11 @@ public class TdApi {
      * A token for Tizen Push Service
      *
      * @regId - Push service registration identifier
-     * May be empty to de-register a device
+     *          May be empty to de-register a device
      */
     public static class DeviceTokenTizenPush extends DeviceToken {
 
-        @Nullable
-        public String regId;
+        @Nullable public String regId;
 
         public DeviceTokenTizenPush() {
         }
@@ -14923,7 +14907,7 @@ public class TdApi {
      * @topColor - A top color of the background in the RGB24 format
      * @bottomColor - A bottom color of the background in the RGB24 format
      * @rotationAngle - Clockwise rotation angle of the gradient, in degrees
-     * Should be always divisible by 45
+     *                  Should be always divisible by 45
      */
     public static class BackgroundFillGradient extends BackgroundFill {
 
@@ -15051,7 +15035,7 @@ public class TdApi {
      * @isDark - True, if the background is dark and is recommended to be used with dark theme
      * @name - Unique background name
      * @document - Document with the background
-     * Null only for filled backgrounds
+     *             Null only for filled backgrounds
      * @type - Type of the background
      */
     public static class Background extends Object {
@@ -15122,8 +15106,8 @@ public class TdApi {
      * A background from a local file
      *
      * @background - Background file to use
-     * Only inputFileLocal and inputFileGenerated are supported
-     * The file must be in JPEG format for wallpapers and in PNG format for patterns
+     *               Only inputFileLocal and inputFileGenerated are supported
+     *               The file must be in JPEG format for wallpapers and in PNG format for patterns
      */
     public static class InputBackgroundLocal extends InputBackground {
 
@@ -15394,8 +15378,7 @@ public class TdApi {
      */
     public static class PushMessageContentAnimation extends PushMessageContent {
 
-        @Nullable
-        public Animation animation;
+        @Nullable public Animation animation;
         public String caption;
         public boolean isPinned;
 
@@ -15426,8 +15409,7 @@ public class TdApi {
      */
     public static class PushMessageContentAudio extends PushMessageContent {
 
-        @Nullable
-        public Audio audio;
+        @Nullable public Audio audio;
         public boolean isPinned;
 
         public PushMessageContentAudio() {
@@ -15498,8 +15480,7 @@ public class TdApi {
      */
     public static class PushMessageContentDocument extends PushMessageContent {
 
-        @Nullable
-        public Document document;
+        @Nullable public Document document;
         public boolean isPinned;
 
         public PushMessageContentDocument() {
@@ -15649,8 +15630,7 @@ public class TdApi {
      */
     public static class PushMessageContentPhoto extends PushMessageContent {
 
-        @Nullable
-        public Photo photo;
+        @Nullable public Photo photo;
         public String caption;
         public boolean isSecret;
         public boolean isPinned;
@@ -15793,8 +15773,7 @@ public class TdApi {
      */
     public static class PushMessageContentVideo extends PushMessageContent {
 
-        @Nullable
-        public Video video;
+        @Nullable public Video video;
         public String caption;
         public boolean isSecret;
         public boolean isPinned;
@@ -15827,8 +15806,7 @@ public class TdApi {
      */
     public static class PushMessageContentVideoNote extends PushMessageContent {
 
-        @Nullable
-        public VideoNote videoNote;
+        @Nullable public VideoNote videoNote;
         public boolean isPinned;
 
         public PushMessageContentVideoNote() {
@@ -15857,8 +15835,7 @@ public class TdApi {
      */
     public static class PushMessageContentVoiceNote extends PushMessageContent {
 
-        @Nullable
-        public VoiceNote voiceNote;
+        @Nullable public VoiceNote voiceNote;
         public boolean isPinned;
 
         public PushMessageContentVoiceNote() {
@@ -16141,31 +16118,36 @@ public class TdApi {
      * New message was received through a push notification
      *
      * @messageId - The message identifier
-     * The message will not be available in the chat history, but the ID can be used in viewMessages and as reply_to_message_id
+     *              The message will not be available in the chat history, but the ID can be used in viewMessages and as reply_to_message_id
      * @senderUserId - Sender of the message
-     * Corresponding user may be inaccessible
+     *                 0 if unknown
+     *                 Corresponding user may be inaccessible
+     * @senderName - Name of the sender
+     *               Can be different from the name of the sender user
      * @content - Push message content
      */
     public static class NotificationTypeNewPushMessage extends NotificationType {
 
         public long messageId;
         public int senderUserId;
+        public String senderName;
         public PushMessageContent content;
 
         public NotificationTypeNewPushMessage() {
         }
 
-        public NotificationTypeNewPushMessage(long messageId, int senderUserId, PushMessageContent content) {
+        public NotificationTypeNewPushMessage(long messageId, int senderUserId, String senderName, PushMessageContent content) {
 
             this.messageId = messageId;
             this.senderUserId = senderUserId;
+            this.senderName = senderName;
             this.content = content;
 
         }
 
         @Override
         public int getConstructor() {
-            return 1167232404;
+            return -435835322;
         }
 
     }
@@ -16884,7 +16866,7 @@ public class TdApi {
      * Contains information about the period of inactivity after which the current user's account will automatically be deleted
      *
      * @days - Number of days of inactivity before the account will be flagged for deletion
-     * Should range from 30-366 days
+     *         Should range from 30-366 days
      */
     public static class AccountTtl extends Object {
 
@@ -17529,7 +17511,7 @@ public class TdApi {
      * Contains the storage usage statistics for a specific chat
      *
      * @chatId - Chat identifier
-     * 0 if none
+     *           0 if none
      * @size - Total size of the files in the chat
      * @count - Total number of files in the chat
      * @byFileType - Statistics split by file types
@@ -17739,7 +17721,7 @@ public class TdApi {
      *
      * @fileType - Type of the file the data is part of
      * @networkType - Type of the network the data was sent through
-     * Call setNetworkType to maintain the actual network type
+     *                Call setNetworkType to maintain the actual network type
      * @sentBytes - Total number of bytes sent
      * @receivedBytes - Total number of bytes received
      */
@@ -17774,7 +17756,7 @@ public class TdApi {
      * Contains information about the total amount of data that was used for calls
      *
      * @networkType - Type of the network the data was sent through
-     * Call setNetworkType to maintain the actual network type
+     *                Call setNetworkType to maintain the actual network type
      * @sentBytes - Total number of bytes sent
      * @receivedBytes - Total number of bytes received
      * @duration - Total call duration, in seconds
@@ -17886,11 +17868,11 @@ public class TdApi {
      * Contains auto-download settings presets for the user
      *
      * @low - Preset with lowest settings
-     * Supposed to be used by default when roaming
+     *        Supposed to be used by default when roaming
      * @medium - Preset with medium settings
-     * Supposed to be used by default when using mobile data
+     *           Supposed to be used by default when using mobile data
      * @high - Preset with highest settings
-     * Supposed to be used by default when connected on Wi-Fi
+     *         Supposed to be used by default when connected on Wi-Fi
      */
     public static class AutoDownloadSettingsPresets extends Object {
 
@@ -18507,7 +18489,7 @@ public class TdApi {
      * @server - Proxy server IP address
      * @port - Proxy server port
      * @lastUsedDate - Point in time (Unix timestamp) when the proxy was last used
-     * 0 if never
+     *                 0 if never
      * @isEnabled - True, if the proxy is enabled now
      * @type - Type of the proxy
      */
@@ -18572,7 +18554,7 @@ public class TdApi {
      * Describes a sticker that should be added to a sticker set
      *
      * @pngSticker - PNG image with the sticker
-     * Must be up to 512 kB in size and fit in a 512x512 square
+     *               Must be up to 512 kB in size and fit in a 512x512 square
      * @emojis - Emoji corresponding to the sticker
      * @maskPosition - For masks, position where the mask should be placed
      */
@@ -18697,7 +18679,7 @@ public class TdApi {
      * A message has been successfully sent
      *
      * @message - Information about the sent message
-     * Usually only the message identifier, date, and content are changed, but almost all other fields can also change
+     *            Usually only the message identifier, date, and content are changed, but almost all other fields can also change
      * @oldMessageId - The previous temporary message identifier
      */
     public static class UpdateMessageSendSucceeded extends Update {
@@ -19498,7 +19480,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @pinnedMessageId - The new identifier of the pinned message
-     * 0 if there is no pinned message in the chat
+     *                    0 if there is no pinned message in the chat
      */
     public static class UpdateChatPinnedMessage extends Update {
 
@@ -19529,7 +19511,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @replyMarkupMessageId - Identifier of the message from which reply markup needs to be used
-     * 0 if there is no default custom reply markup in the chat
+     *                         0 if there is no default custom reply markup in the chat
      */
     public static class UpdateChatReplyMarkup extends Update {
 
@@ -20050,8 +20032,8 @@ public class TdApi {
      * Upon receiving this the client must show a popup with the content of the notification
      *
      * @type - Notification type
-     * If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" should be shown under notification
-     * If user presses the second, all local data should be destroyed using Destroy method
+     *         If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" should be shown under notification
+     *         If user presses the second, all local data should be destroyed using Destroy method
      * @content - Notification content
      */
     public static class UpdateServiceNotification extends Update {
@@ -20110,7 +20092,7 @@ public class TdApi {
      * @originalPath - The path to a file from which a new file is generated
      * @destinationPath - The path to a file that should be created and where the new file should be generated
      * @conversion - String specifying the conversion applied to the original file
-     * If conversion is "#url#" than original_path contains an HTTP/HTTPS URL of a file, which should be downloaded by the client
+     *               If conversion is "#url#" than original_path contains an HTTP/HTTPS URL of a file, which should be downloaded by the client
      */
     public static class UpdateFileGenerationStart extends Update {
 
@@ -20816,7 +20798,7 @@ public class TdApi {
      * @totalAmount - Total price for the product, in the minimal quantity of the currency
      * @invoicePayload - Invoice payload
      * @shippingOptionId - Identifier of a shipping option chosen by the user
-     * May be empty if not applicable
+     *                     May be empty if not applicable
      * @orderInfo - Information about the order
      */
     public static class UpdateNewPreCheckoutQuery extends Update {
@@ -21649,7 +21631,7 @@ public class TdApi {
      * Returns created session on success
      *
      * @link - A link from a QR code
-     * The link must be scanned by the in-app camera
+     *         The link must be scanned by the in-app camera
      */
     public static class ConfirmQrCodeAuthentication extends Function {
 
@@ -21735,7 +21717,7 @@ public class TdApi {
      *
      * @oldPassword - Previous password of the user
      * @newPassword - New password of the user
-     * May be empty to remove the password
+     *                May be empty to remove the password
      * @newHint - New password hint
      * @setRecoveryEmailAddress - Pass true if the recovery email address should be changed
      * @newRecoveryEmailAddress - New recovery email address
@@ -21912,7 +21894,7 @@ public class TdApi {
      *
      * @password - Persistent user password
      * @validFor - Time during which the temporary password will be valid, in seconds
-     * Should be between 60 and 86400
+     *             Should be between 60 and 86400
      */
     public static class CreateTemporaryPassword extends Function {
 
@@ -22390,7 +22372,7 @@ public class TdApi {
      * @offsetOrder - Chat order to return chats from
      * @offsetChatId - Chat identifier to return chats from
      * @limit - The maximum number of chats to be returned
-     * It is possible that fewer chats than the limit are returned even if the end of the list is not reached
+     *          It is possible that fewer chats than the limit are returned even if the end of the list is not reached
      */
     public static class GetChats extends Function {
 
@@ -22483,7 +22465,7 @@ public class TdApi {
      * Returns chats in the order seen in the chat list
      *
      * @query - Query to search for
-     * If the query is empty, returns up to 20 recently found chats
+     *          If the query is empty, returns up to 20 recently found chats
      * @limit - The maximum number of chats to be returned
      */
     public static class SearchChats extends Function {
@@ -22573,7 +22555,7 @@ public class TdApi {
      *
      * @category - Category of chats to be returned
      * @limit - The maximum number of chats to be returned
-     * Up to 30
+     *          Up to 30
      */
     public static class GetTopChats extends Function {
 
@@ -22699,7 +22681,7 @@ public class TdApi {
      * Checks whether a username can be set for a chat
      *
      * @chatId - Chat identifier
-     * Should be identifier of a supergroup chat, or a channel chat, or a private chat with self, or zero if chat is being created
+     *           Should be identifier of a supergroup chat, or a channel chat, or a private chat with self, or zero if chat is being created
      * @username - Username to be checked
      */
     public static class CheckChatUsername extends Function {
@@ -22812,7 +22794,7 @@ public class TdApi {
      *
      * @userId - User identifier
      * @offsetChatId - Chat identifier starting from which to return chats
-     * Use 0 for the first request
+     *                 Use 0 for the first request
      * @limit - The maximum number of chats to be returned
      */
     public static class GetGroupsInCommon extends Function {
@@ -22848,12 +22830,12 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @fromMessageId - Identifier of the message starting from which history must be fetched
-     * Use 0 to get results from the last message
+     *                  Use 0 to get results from the last message
      * @offset - Specify 0 to get results from exactly the from_message_id or a negative offset up to 99 to get additionally some newer messages
      * @limit - The maximum number of messages to be returned
-     * Must be positive and can't be greater than 100
-     * If the offset is negative, the limit must be greater or equal to -offset
-     * Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
+     *          Must be positive and can't be greater than 100
+     *          If the offset is negative, the limit must be greater or equal to -offset
+     *          Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
      * @onlyLocal - If true, returns only messages that are available locally without sending network requests
      */
     public static class GetChatHistory extends Function {
@@ -22928,14 +22910,14 @@ public class TdApi {
      * @chatId - Identifier of the chat in which to search messages
      * @query - Query to search for
      * @senderUserId - If not 0, only messages sent by the specified user will be returned
-     * Not supported in secret chats
+     *                 Not supported in secret chats
      * @fromMessageId - Identifier of the message starting from which history must be fetched
-     * Use 0 to get results from the last message
+     *                  Use 0 to get results from the last message
      * @offset - Specify 0 to get results from exactly the from_message_id or a negative offset to get the specified message and some newer messages
      * @limit - The maximum number of messages to be returned
-     * Must be positive and can't be greater than 100
-     * If the offset is negative, the limit must be greater than -offset
-     * Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
+     *          Must be positive and can't be greater than 100
+     *          If the offset is negative, the limit must be greater than -offset
+     *          Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
      * @filter - Filter for message content in the search results
      */
     public static class SearchChatMessages extends Function {
@@ -22977,14 +22959,14 @@ public class TdApi {
      * For optimal performance the number of returned messages is chosen by the library
      *
      * @chatList - Chat list in which to search messages
-     * Pass null to search in all chats regardless of their chat list
+     *             Pass null to search in all chats regardless of their chat list
      * @query - Query to search for
      * @offsetDate - The date of the message starting from which the results should be fetched
-     * Use 0 or any date in the future to get results from the last message
+     *               Use 0 or any date in the future to get results from the last message
      * @offsetChatId - The chat identifier of the last found message, or 0 for the first request
      * @offsetMessageId - The message identifier of the last found message, or 0 for the first request
      * @limit - The maximum number of messages to be returned, up to 100
-     * Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
+     *          Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
      */
     public static class SearchMessages extends Function {
 
@@ -23023,12 +23005,12 @@ public class TdApi {
      * For optimal performance the number of returned messages is chosen by the library
      *
      * @chatId - Identifier of the chat in which to search
-     * Specify 0 to search in all secret chats
+     *           Specify 0 to search in all secret chats
      * @query - Query to search for
-     * If empty, searchChatMessages should be used instead
+     *          If empty, searchChatMessages should be used instead
      * @fromSearchId - The identifier from the result of a previous request, use 0 to get results from the last message
      * @limit - The maximum number of messages to be returned
-     * Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
+     *          Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
      * @filter - A filter for the content of messages in the search results
      */
     public static class SearchSecretMessages extends Function {
@@ -23067,9 +23049,9 @@ public class TdApi {
      * For optimal performance the number of returned messages is chosen by the library
      *
      * @fromMessageId - Identifier of the message from which to search
-     * Use 0 to get results from the last message
+     *                  Use 0 to get results from the last message
      * @limit - The maximum number of messages to be returned
-     * Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
+     *          Fewer messages may be returned than specified by the limit, even if the end of the message history has not been reached
      * @onlyMissed - If true, returns only messages with missed calls
      */
     public static class SearchCallMessages extends Function {
@@ -23175,7 +23157,7 @@ public class TdApi {
      *
      * @chatId - Identifier of the chat in which to count messages
      * @filter - Filter for message content
-     * SearchMessagesFilterEmpty is unsupported in this function
+     *           SearchMessagesFilterEmpty is unsupported in this function
      * @returnLocal - If true, returns count that is available locally without sending network requests, returning -1 if the number of messages is unknown
      */
     public static class GetChatMessageCount extends Function {
@@ -23388,7 +23370,7 @@ public class TdApi {
      * @replyToMessageId - Identifier of the message to reply to or 0
      * @options - Options to be used to send the message
      * @replyMarkup - Markup for replying to the message
-     * For bots only
+     *                For bots only
      * @inputMessageContent - The content of the message to be sent
      */
     public static class SendMessage extends Function {
@@ -23503,7 +23485,7 @@ public class TdApi {
      * @queryId - Identifier of the inline query
      * @resultId - Identifier of the inline result
      * @hideViaBot - If true, there will be no mention of a bot, via which the message is sent
-     * Can be used only for bots GetOption("animation_search_bot_username"), GetOption("photo_search_bot_username") and GetOption("venue_search_bot_username")
+     *               Can be used only for bots GetOption("animation_search_bot_username"), GetOption("photo_search_bot_username") and GetOption("venue_search_bot_username")
      */
     public static class SendInlineQueryResultMessage extends Function {
 
@@ -23546,11 +23528,11 @@ public class TdApi {
      * @messageIds - Identifiers of the messages to forward
      * @options - Options to be used to send the messages
      * @asAlbum - True, if the messages should be grouped into an album after forwarding
-     * For this to work, no more than 10 messages may be forwarded, and all of them must be photo or video messages
+     *            For this to work, no more than 10 messages may be forwarded, and all of them must be photo or video messages
      * @sendCopy - True, if content of the messages needs to be copied without links to the original messages
-     * Always true if the messages are forwarded to a secret chat
+     *             Always true if the messages are forwarded to a secret chat
      * @removeCaption - True, if media captions of message copies needs to be removed
-     * Ignored if send_copy is false
+     *                  Ignored if send_copy is false
      */
     public static class ForwardMessages extends Function {
 
@@ -23594,7 +23576,7 @@ public class TdApi {
      *
      * @chatId - Identifier of the chat to send messages
      * @messageIds - Identifiers of the messages to resend
-     * Message identifiers must be in a strictly increasing order
+     *               Message identifiers must be in a strictly increasing order
      */
     public static class ResendMessages extends Function {
 
@@ -23682,7 +23664,7 @@ public class TdApi {
      *
      * @chatId - Target chat
      * @senderUserId - Identifier of the user who will be shown as the sender of the message
-     * May be 0 for channel posts
+     *                 May be 0 for channel posts
      * @replyToMessageId - Identifier of the message to reply to or 0
      * @disableNotification - Pass true to disable notification for the message
      * @inputMessageContent - The content of the message to be added
@@ -23722,7 +23704,7 @@ public class TdApi {
      * @chatId - Chat identifier
      * @messageIds - Identifiers of the messages to be deleted
      * @revoke - Pass true to try to delete messages for all chat members
-     * Always true for supergroups, channels and secret chats
+     *           Always true for supergroups, channels and secret chats
      */
     public static class DeleteMessages extends Function {
 
@@ -23787,9 +23769,9 @@ public class TdApi {
      * @chatId - The chat the message belongs to
      * @messageId - Identifier of the message
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      * @inputMessageContent - New text content of the message
-     * Should be of type InputMessageText
+     *                        Should be of type InputMessageText
      */
     public static class EditMessageText extends Function {
 
@@ -23826,9 +23808,9 @@ public class TdApi {
      * @chatId - The chat the message belongs to
      * @messageId - Identifier of the message
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      * @location - New location content of the message
-     * Pass null to stop sharing the live location
+     *             Pass null to stop sharing the live location
      */
     public static class EditMessageLiveLocation extends Function {
 
@@ -23868,9 +23850,9 @@ public class TdApi {
      * @chatId - The chat the message belongs to
      * @messageId - Identifier of the message
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      * @inputMessageContent - New content of the message
-     * Must be one of the following types: InputMessageAnimation, InputMessageAudio, InputMessageDocument, InputMessagePhoto or InputMessageVideo
+     *                        Must be one of the following types: InputMessageAnimation, InputMessageAudio, InputMessageDocument, InputMessagePhoto or InputMessageVideo
      */
     public static class EditMessageMedia extends Function {
 
@@ -23906,9 +23888,9 @@ public class TdApi {
      * @chatId - The chat the message belongs to
      * @messageId - Identifier of the message
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      * @caption - New message content caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class EditMessageCaption extends Function {
 
@@ -23978,7 +23960,7 @@ public class TdApi {
      * @inlineMessageId - Inline message identifier
      * @replyMarkup - The new message reply markup
      * @inputMessageContent - New text content of the message
-     * Should be of type InputMessageText
+     *                        Should be of type InputMessageText
      */
     public static class EditInlineMessageText extends Function {
 
@@ -24012,7 +23994,7 @@ public class TdApi {
      * @inlineMessageId - Inline message identifier
      * @replyMarkup - The new message reply markup
      * @location - New location content of the message
-     * Pass null to stop sharing the live location
+     *             Pass null to stop sharing the live location
      */
     public static class EditInlineMessageLiveLocation extends Function {
 
@@ -24046,9 +24028,9 @@ public class TdApi {
      *
      * @inlineMessageId - Inline message identifier
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      * @inputMessageContent - New content of the message
-     * Must be one of the following types: InputMessageAnimation, InputMessageAudio, InputMessageDocument, InputMessagePhoto or InputMessageVideo
+     *                        Must be one of the following types: InputMessageAnimation, InputMessageAudio, InputMessageDocument, InputMessagePhoto or InputMessageVideo
      */
     public static class EditInlineMessageMedia extends Function {
 
@@ -24082,7 +24064,7 @@ public class TdApi {
      * @inlineMessageId - Inline message identifier
      * @replyMarkup - The new message reply markup
      * @caption - New message content caption
-     * 0-GetOption("message_caption_length_max") characters
+     *            0-GetOption("message_caption_length_max") characters
      */
     public static class EditInlineMessageCaption extends Function {
 
@@ -24146,7 +24128,7 @@ public class TdApi {
      * @chatId - The chat the message belongs to
      * @messageId - Identifier of the message
      * @schedulingState - The new message scheduling state
-     * Pass null to send the message immediately
+     *                    Pass null to send the message immediately
      */
     public static class EditMessageSchedulingState extends Function {
 
@@ -24429,7 +24411,7 @@ public class TdApi {
      * @chatId - Identifier of the chat to which the poll belongs
      * @messageId - Identifier of the message containing the poll
      * @optionIds - 0-based identifiers of answer options, chosen by the user
-     * User can choose more than 1 answer option only is the poll allows multiple answers
+     *              User can choose more than 1 answer option only is the poll allows multiple answers
      */
     public static class SetPollAnswer extends Function {
 
@@ -24465,8 +24447,8 @@ public class TdApi {
      * @optionId - 0-based identifier of the answer option
      * @offset - Number of users to skip in the result
      * @limit - The maximum number of users to be returned
-     * Must be positive and can't be greater than 50
-     * Fewer users may be returned than specified by the limit, even if the end of the voter list has not been reached
+     *          Must be positive and can't be greater than 50
+     *          Fewer users may be returned than specified by the limit, even if the end of the voter list has not been reached
      */
     public static class GetPollVoters extends Function {
 
@@ -24504,7 +24486,7 @@ public class TdApi {
      * @chatId - Identifier of the chat to which the poll belongs
      * @messageId - Identifier of the message containing the poll
      * @replyMarkup - The new message reply markup
-     * For bots only
+     *                For bots only
      */
     public static class StopPoll extends Function {
 
@@ -24649,7 +24631,7 @@ public class TdApi {
      * @results - The results of the query
      * @cacheTime - Allowed time to cache the results of the query, in seconds
      * @nextOffset - Offset for the next inline query
-     * Pass an empty string if there are no more results
+     *               Pass an empty string if there are no more results
      * @switchPmText - If non-empty, this text should be shown on the button that opens a private chat with the bot and sends a start message to the bot with the parameter switch_pm_parameter
      * @switchPmParameter - The parameter for the bot start message
      */
@@ -24831,7 +24813,7 @@ public class TdApi {
      * @userId - User identifier
      * @score - The new score
      * @force - Pass true to update the score even if it decreases
-     * If the score is 0, the user will be deleted from the high score table
+     *          If the score is 0, the user will be deleted from the high score table
      */
     public static class SetGameScore extends Function {
 
@@ -24873,7 +24855,7 @@ public class TdApi {
      * @userId - User identifier
      * @score - The new score
      * @force - Pass true to update the score even if it decreases
-     * If the score is 0, the user will be deleted from the high score table
+     *          If the score is 0, the user will be deleted from the high score table
      */
     public static class SetInlineGameScore extends Function {
 
@@ -25175,7 +25157,7 @@ public class TdApi {
      *
      * @userId - User identifier
      * @force - If true, the chat will be created without network request
-     * In this case all information about the chat except its type, title and photo can be incorrect
+     *          In this case all information about the chat except its type, title and photo can be incorrect
      */
     public static class CreatePrivateChat extends Function {
 
@@ -25205,7 +25187,7 @@ public class TdApi {
      *
      * @basicGroupId - Basic group identifier
      * @force - If true, the chat will be created without network request
-     * In this case all information about the chat except its type, title and photo can be incorrect
+     *          In this case all information about the chat except its type, title and photo can be incorrect
      */
     public static class CreateBasicGroupChat extends Function {
 
@@ -25235,7 +25217,7 @@ public class TdApi {
      *
      * @supergroupId - Supergroup or channel identifier
      * @force - If true, the chat will be created without network request
-     * In this case all information about the chat except its type, title and photo can be incorrect
+     *          In this case all information about the chat except its type, title and photo can be incorrect
      */
     public static class CreateSupergroupChat extends Function {
 
@@ -25477,8 +25459,8 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @photo - New chat photo
-     * You can use a zero InputFileId to delete the chat photo
-     * Files that are accessible only by HTTP URL are not acceptable
+     *          You can use a zero InputFileId to delete the chat photo
+     *          Files that are accessible only by HTTP URL are not acceptable
      */
     public static class SetChatPhoto extends Function {
 
@@ -25570,7 +25552,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @notificationSettings - New notification settings for the chat
-     * If the chat is muted for more than 1 week, it is considered to be muted forever
+     *                         If the chat is muted for more than 1 week, it is considered to be muted forever
      */
     public static class SetChatNotificationSettings extends Function {
 
@@ -25748,12 +25730,12 @@ public class TdApi {
      * Requires can_change_info rights in the channel if it is specified
      *
      * @chatId - Identifier of the channel chat
-     * Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages rights in the supergroup)
+     *           Pass 0 to remove a link from the supergroup passed in the second argument to a linked channel chat (requires can_pin_messages rights in the supergroup)
      * @discussionChatId - Identifier of a new channel's discussion group
-     * Use 0 to remove the discussion group
-     * Use the method getSuitableDiscussionChats to find all suitable groups
-     * Basic group chats needs to be first upgraded to supergroup chats
-     * If new chat members don't have access to old messages in the supergroup, then toggleSupergroupIsAllHistoryAvailable needs to be used first to change that
+     *                     Use 0 to remove the discussion group
+     *                     Use the method getSuitableDiscussionChats to find all suitable groups
+     *                     Basic group chats needs to be first upgraded to supergroup chats
+     *                     If new chat members don't have access to old messages in the supergroup, then toggleSupergroupIsAllHistoryAvailable needs to be used first to change that
      */
     public static class SetChatDiscussionGroup extends Function {
 
@@ -25784,7 +25766,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @location - New location for the chat
-     * Must be valid and not null
+     *             Must be valid and not null
      */
     public static class SetChatLocation extends Function {
 
@@ -25816,7 +25798,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @slowModeDelay - New slow mode delay for the chat
-     * Must be one of 0, 10, 30, 60, 300, 900, 3600
+     *                  Must be one of 0, 10, 30, 60, 300, 900, 3600
      */
     public static class SetChatSlowModeDelay extends Function {
 
@@ -25963,7 +25945,7 @@ public class TdApi {
      * @chatId - Chat identifier
      * @userId - Identifier of the user
      * @forwardLimit - The number of earlier messages from the chat to be forwarded to the new member
-     * Ignored for supergroups and channels
+     *                 Ignored for supergroups and channels
      */
     public static class AddChatMember extends Function {
 
@@ -26079,7 +26061,7 @@ public class TdApi {
      *
      * @chatId - Chat identifier
      * @userId - Identifier of the user to which transfer the ownership
-     * The ownership can't be transferred to a bot or to a deleted user
+     *           The ownership can't be transferred to a bot or to a deleted user
      * @password - The password of the current user
      */
     public static class TransferChatOwnership extends Function {
@@ -26144,7 +26126,7 @@ public class TdApi {
      * @query - Query to search for
      * @limit - The maximum number of users to be returned
      * @filter - The type of users to return
-     * By default, chatMembersFilterMembers
+     *           By default, chatMembersFilterMembers
      */
     public static class SearchChatMembers extends Function {
 
@@ -26358,13 +26340,13 @@ public class TdApi {
      *
      * @fileId - Identifier of the file to download
      * @priority - Priority of the download (1-32)
-     * The higher the priority, the earlier the file will be downloaded
-     * If the priorities of two files are equal, then the last one for which downloadFile was called will be downloaded first
+     *             The higher the priority, the earlier the file will be downloaded
+     *             If the priorities of two files are equal, then the last one for which downloadFile was called will be downloaded first
      * @offset - The starting position from which the file should be downloaded
      * @limit - Number of bytes which should be downloaded starting from the "offset" position before the download will be automatically cancelled
-     * Use 0 to download without a limit
+     *          Use 0 to download without a limit
      * @synchronous - If false, this request returns file state just after the download has been started
-     * If true, this request returns file state only after the download has succeeded, has failed, has been cancelled or a new downloadFile request with different offset/limit parameters was sent
+     *                If true, this request returns file state only after the download has succeeded, has failed, has been cancelled or a new downloadFile request with different offset/limit parameters was sent
      */
     public static class DownloadFile extends Function {
 
@@ -26430,7 +26412,7 @@ public class TdApi {
      *
      * @fileId - Identifier of a file to stop downloading
      * @onlyIfPending - Pass true to stop downloading only if it hasn't been started, i.e
-     * Request hasn't been sent to server
+     *                  Request hasn't been sent to server
      */
     public static class CancelDownloadFile extends Function {
 
@@ -26463,8 +26445,8 @@ public class TdApi {
      * @file - File to upload
      * @fileType - File type
      * @priority - Priority of the upload (1-32)
-     * The higher the priority, the earlier the file will be uploaded
-     * If the priorities of two files are equal, then the first one for which uploadFile was called will be uploaded first
+     *             The higher the priority, the earlier the file will be uploaded
+     *             If the priorities of two files are equal, then the first one for which uploadFile was called will be uploaded first
      */
     public static class UploadFile extends Function {
 
@@ -26557,7 +26539,7 @@ public class TdApi {
      *
      * @generationId - The identifier of the generation process
      * @expectedSize - Expected size of the generated file, in bytes
-     * 0 if unknown
+     *                 0 if unknown
      * @localPrefixSize - The number of bytes already generated
      */
     public static class SetFileGenerationProgress extends Function {
@@ -26619,11 +26601,11 @@ public class TdApi {
      * This method is intended to be used only if the client has no direct access to TDLib's file system, because it is usually slower than a direct read from the file
      *
      * @fileId - Identifier of the file
-     * The file must be located in the TDLib file cache
+     *           The file must be located in the TDLib file cache
      * @offset - The offset from which to read the file
      * @count - Number of bytes to read
-     * An error will be returned if there are not enough bytes available in the file from the specified position
-     * Pass 0 to read all available data from the specified position
+     *          An error will be returned if there are not enough bytes available in the file from the specified position
+     *          Pass 0 to read all available data from the specified position
      */
     public static class ReadFilePart extends Function {
 
@@ -27000,10 +26982,10 @@ public class TdApi {
      * Adds a user to the contact list or edits an existing contact by their user identifier
      *
      * @contact - The contact to add or edit
-     * Phone number can be empty and needs to be specified only if known, vCard is ignored
+     *            Phone number can be empty and needs to be specified only if known, vCard is ignored
      * @sharePhoneNumber - True, if the new contact needs to be allowed to see current user's phone number
-     * A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed
-     * Use the field UserFullInfo.need_phone_number_privacy_exception to check whether the current user needs to be asked to share their phone number
+     *                     A corresponding rule to userPrivacySettingShowPhoneNumber will be added if needed
+     *                     Use the field UserFullInfo.need_phone_number_privacy_exception to check whether the current user needs to be asked to share their phone number
      */
     public static class AddContact extends Function {
 
@@ -27033,7 +27015,7 @@ public class TdApi {
      * Contacts' user identifiers are ignored
      *
      * @contacts - The list of contacts to import or edit
-     * Contacts' vCard are ignored and are not imported
+     *             Contacts' vCard are ignored and are not imported
      */
     public static class ImportContacts extends Function {
 
@@ -27073,7 +27055,7 @@ public class TdApi {
      * Searches for the specified query in the first names, last names and usernames of the known user contacts
      *
      * @query - Query to search for
-     * May be empty to return all contacts
+     *          May be empty to return all contacts
      * @limit - The maximum number of users to be returned
      */
     public static class SearchContacts extends Function {
@@ -27184,7 +27166,7 @@ public class TdApi {
      * Supposed to be called when the user clicks on chatActionBarSharePhoneNumber
      *
      * @userId - Identifier of the user with whom to share the phone number
-     * The user must be a mutual contact
+     *           The user must be a mutual contact
      */
     public static class SharePhoneNumber extends Function {
 
@@ -27245,7 +27227,7 @@ public class TdApi {
      * If the emoji is not empty, favorite and recently used stickers may also be returned
      *
      * @emoji - String representation of emoji
-     * If empty, returns all known installed stickers
+     *          If empty, returns all known installed stickers
      * @limit - The maximum number of stickers to be returned
      */
     public static class GetStickers extends Function {
@@ -27304,7 +27286,7 @@ public class TdApi {
      * Returns a list of installed sticker sets
      *
      * @isMasks - Pass true to return mask sticker sets
-     * Pass false to return ordinary sticker sets
+     *            Pass false to return ordinary sticker sets
      */
     public static class GetInstalledStickerSets extends Function {
 
@@ -27331,7 +27313,7 @@ public class TdApi {
      * Returns a list of archived sticker sets
      *
      * @isMasks - Pass true to return mask stickers sets
-     * Pass false to return ordinary sticker sets
+     *            Pass false to return ordinary sticker sets
      * @offsetStickerSetId - Identifier of the sticker set from which to return the result
      * @limit - The maximum number of sticker sets to return
      */
@@ -27456,7 +27438,7 @@ public class TdApi {
      * Searches for installed sticker sets by looking for specified query in their title and name
      *
      * @isMasks - Pass true to return mask sticker sets
-     * Pass false to return ordinary sticker sets
+     *            Pass false to return ordinary sticker sets
      * @query - Query to search for
      * @limit - The maximum number of sticker sets to return
      */
@@ -27518,7 +27500,7 @@ public class TdApi {
      * @setId - Identifier of the sticker set
      * @isInstalled - The new value of is_installed
      * @isArchived - The new value of is_archived
-     * A sticker set can't be installed and archived simultaneously
+     *               A sticker set can't be installed and archived simultaneously
      */
     public static class ChangeStickerSet extends Function {
 
@@ -27575,7 +27557,7 @@ public class TdApi {
      * Changes the order of installed sticker sets
      *
      * @isMasks - Pass true to change the order of mask sticker sets
-     * Pass false to change the order of ordinary sticker sets
+     *            Pass false to change the order of ordinary sticker sets
      * @stickerSetIds - Identifiers of installed sticker sets in the new correct order
      */
     public static class ReorderInstalledStickerSets extends Function {
@@ -27605,7 +27587,7 @@ public class TdApi {
      * Returns a list of recently used stickers
      *
      * @isAttached - Pass true to return stickers and masks that were recently attached to photos or video files
-     * Pass false to return recently sent stickers
+     *               Pass false to return recently sent stickers
      */
     public static class GetRecentStickers extends Function {
 
@@ -27635,7 +27617,7 @@ public class TdApi {
      * Only stickers belonging to a sticker set can be added to this list
      *
      * @isAttached - Pass true to add the sticker to the list of stickers recently attached to photo or video files
-     * Pass false to add the sticker to the list of recently sent stickers
+     *               Pass false to add the sticker to the list of recently sent stickers
      * @sticker - Sticker file to add
      */
     public static class AddRecentSticker extends Function {
@@ -27665,7 +27647,7 @@ public class TdApi {
      * Removes a sticker from the list of recently used stickers
      *
      * @isAttached - Pass true to remove the sticker from the list of stickers recently attached to photo or video files
-     * Pass false to remove the sticker from the list of recently sent stickers
+     *               Pass false to remove the sticker from the list of recently sent stickers
      * @sticker - Sticker file to delete
      */
     public static class RemoveRecentSticker extends Function {
@@ -27695,7 +27677,7 @@ public class TdApi {
      * Clears the list of recently used stickers
      *
      * @isAttached - Pass true to clear the list of stickers recently attached to photo or video files
-     * Pass false to clear the list of recently sent stickers
+     *               Pass false to clear the list of recently sent stickers
      */
     public static class ClearRecentStickers extends Function {
 
@@ -27820,7 +27802,7 @@ public class TdApi {
      * @text - Text to search for
      * @exactMatch - True, if only emojis, which exactly match text needs to be returned
      * @inputLanguageCode - IETF language tag of the user's input language
-     * May be empty if unknown
+     *                      May be empty if unknown
      */
     public static class SearchEmojis extends Function {
 
@@ -27894,8 +27876,8 @@ public class TdApi {
      * Only non-secret video animations with MIME type "video/mp4" can be added to the list
      *
      * @animation - The animation file to be added
-     * Only animations known to the server (i.e
-     * Successfully sent via a message) can be added to the list
+     *              Only animations known to the server (i.e
+     *              Successfully sent via a message) can be added to the list
      */
     public static class AddSavedAnimation extends Function {
 
@@ -28075,7 +28057,7 @@ public class TdApi {
      * If something changes, updateUser will be sent
      *
      * @photo - Profile photo to set
-     * InputFileId and inputFileRemote may still be unsupported
+     *          InputFileId and inputFileRemote may still be unsupported
      */
     public static class SetProfilePhoto extends Function {
 
@@ -28186,7 +28168,7 @@ public class TdApi {
      * If something changes, updateUser will be sent
      *
      * @username - The new value of the username
-     * Use an empty string to remove the username
+     *             Use an empty string to remove the username
      */
     public static class SetUsername extends Function {
 
@@ -28415,7 +28397,7 @@ public class TdApi {
      *
      * @supergroupId - Identifier of the supergroup or channel
      * @username - New value of the username
-     * Use an empty string to remove the username
+     *             Use an empty string to remove the username
      */
     public static class SetSupergroupUsername extends Function {
 
@@ -28446,7 +28428,7 @@ public class TdApi {
      *
      * @supergroupId - Identifier of the supergroup
      * @stickerSetId - New value of the supergroup sticker set identifier
-     * Use 0 to remove the supergroup sticker set
+     *                 Use 0 to remove the supergroup sticker set
      */
     public static class SetSupergroupStickerSet extends Function {
 
@@ -28538,7 +28520,7 @@ public class TdApi {
      * @supergroupId - Supergroup identifier
      * @userId - User identifier
      * @messageIds - Identifiers of messages sent in the supergroup by the user
-     * This list must be non-empty
+     *               This list must be non-empty
      */
     public static class ReportSupergroupSpam extends Function {
 
@@ -28572,10 +28554,10 @@ public class TdApi {
      *
      * @supergroupId - Identifier of the supergroup or channel
      * @filter - The type of users to return
-     * By default, supergroupMembersRecent
+     *           By default, supergroupMembersRecent
      * @offset - Number of users to skip
      * @limit - The maximum number of users be returned
-     * Up to 200
+     *          Up to 200
      */
     public static class GetSupergroupMembers extends Function {
 
@@ -28669,12 +28651,12 @@ public class TdApi {
      * @chatId - Chat identifier
      * @query - Search query by which to filter events
      * @fromEventId - Identifier of an event from which to return results
-     * Use 0 to get results from the latest events
+     *                Use 0 to get results from the latest events
      * @limit - The maximum number of events to return
      * @filters - The types of events to return
-     * By default, all types will be returned
+     *            By default, all types will be returned
      * @userIds - User identifiers by which to filter events
-     * By default, events relating to all users will be returned
+     *            By default, events relating to all users will be returned
      */
     public static class GetChatEventLog extends Function {
 
@@ -28978,8 +28960,8 @@ public class TdApi {
      *
      * @background - The input background to use, null for filled backgrounds
      * @type - Background type
-     * Null for default background
-     * The method will return error 404 if type is null
+     *         Null for default background
+     *         The method will return error 404 if type is null
      * @forDarkTheme - True, if the background is chosen for dark theme
      */
     public static class SetBackground extends Function {
@@ -29108,7 +29090,7 @@ public class TdApi {
      *
      * @languagePackId - Language pack identifier of the strings to be returned
      * @keys - Language pack keys of the strings to be returned
-     * Leave empty to request all available strings
+     *         Leave empty to request all available strings
      */
     public static class GetLanguagePackStrings extends Function {
 
@@ -29166,7 +29148,7 @@ public class TdApi {
      * Can be called before authorization
      *
      * @languagePackId - Identifier of a language pack to be added
-     * May be different from a name that is used in an "https://t.me/setlanguage/" link
+     *                   May be different from a name that is used in an "https://t.me/setlanguage/" link
      */
     public static class AddCustomServerLanguagePack extends Function {
 
@@ -29193,8 +29175,8 @@ public class TdApi {
      * Adds or changes a custom local language pack to the current localization target
      *
      * @info - Information about the language pack
-     * Language pack ID must start with 'X', consist only of English letters, digits and hyphens, and must not exceed 64 characters
-     * Can be called before authorization
+     *         Language pack ID must start with 'X', consist only of English letters, digits and hyphens, and must not exceed 64 characters
+     *         Can be called before authorization
      * @strings - Strings of the new language pack
      */
     public static class SetCustomLanguagePack extends Function {
@@ -29579,8 +29561,7 @@ public class TdApi {
      */
     public static class DeleteAccount extends Function {
 
-        @Nullable
-        public String reason;
+        @Nullable public String reason;
 
         public DeleteAccount() {
         }
@@ -29697,8 +29678,8 @@ public class TdApi {
      * Can be called before authorization
      *
      * @chatLimit - The maximum number of chats with the largest storage usage for which separate statistics should be returned
-     * All other chats will be grouped in entries with chat_id == 0
-     * If the chat info database is not used, the chat_limit is ignored and is always set to 0
+     *              All other chats will be grouped in entries with chat_id == 0
+     *              If the chat info database is not used, the chat_limit is ignored and is always set to 0
      */
     public static class GetStorageStatistics extends Function {
 
@@ -29754,21 +29735,21 @@ public class TdApi {
      * Secret thumbnails can't be deleted
      *
      * @size - Limit on the total size of files after deletion
-     * Pass -1 to use the default limit
+     *         Pass -1 to use the default limit
      * @ttl - Limit on the time that has passed since the last time a file was accessed (or creation time for some filesystems)
-     * Pass -1 to use the default limit
+     *        Pass -1 to use the default limit
      * @count - Limit on the total count of files after deletion
-     * Pass -1 to use the default limit
+     *          Pass -1 to use the default limit
      * @immunityDelay - The amount of time after the creation of a file during which it can't be deleted, in seconds
-     * Pass -1 to use the default value
+     *                  Pass -1 to use the default value
      * @fileTypes - If not empty, only files with the given type(s) are considered
-     * By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted
+     *              By default, all types except thumbnails, profile photos, stickers and wallpapers are deleted
      * @chatIds - If not empty, only files from the given chats are considered
-     * Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos)
+     *            Use 0 as chat identifier to delete files not belonging to any chat (e.g., profile photos)
      * @excludeChatIds - If not empty, files from the given chats are excluded
-     * Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos)
+     *                   Use 0 as chat identifier to exclude all files not belonging to any chat (e.g., profile photos)
      * @chatLimit - Same as in getStorageStatistics
-     * Affects only returned statistics
+     *              Affects only returned statistics
      */
     public static class OptimizeStorage extends Function {
 
@@ -29812,7 +29793,7 @@ public class TdApi {
      * Network type is used to check whether the library can use the network at all and also for collecting detailed network data usage statistics
      *
      * @type - The new network type
-     * By default, networkTypeOther
+     *         By default, networkTypeOther
      */
     public static class SetNetworkType extends Function {
 
@@ -30477,7 +30458,7 @@ public class TdApi {
      *
      * @userId - Sticker file owner
      * @pngSticker - PNG image with the sticker
-     * Must be up to 512 kB in size and fit in 512x512 square
+     *               Must be up to 512 kB in size and fit in 512x512 square
      */
     public static class UploadStickerFile extends Function {
 
@@ -30510,8 +30491,8 @@ public class TdApi {
      * @userId - Sticker set owner
      * @title - Sticker set title
      * @name - Sticker set name
-     * Can contain only English letters, digits and underscores
-     * Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive)
+     *         Can contain only English letters, digits and underscores
+     *         Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive)
      * @isMasks - True, if stickers are masks
      * @stickers - List of stickers to be added to the set
      */
@@ -30647,7 +30628,7 @@ public class TdApi {
      * @height - Map height in pixels before applying scale
      * @scale - Map scale
      * @chatId - Identifier of a chat, in which the thumbnail will be shown
-     * Use 0 if unknown
+     *           Use 0 if unknown
      */
     public static class GetMapThumbnailFile extends Function {
 
@@ -31089,7 +31070,7 @@ public class TdApi {
      * Can be called before authorization
      *
      * @proxyId - Proxy identifier
-     * Use 0 to ping a Telegram server without a proxy
+     *            Use 0 to ping a Telegram server without a proxy
      */
     public static class PingProxy extends Function {
 
@@ -31164,7 +31145,7 @@ public class TdApi {
      * Can be called synchronously
      *
      * @newVerbosityLevel - New value of the verbosity level for logging
-     * Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings, value 3 corresponds to informational, value 4 corresponds to debug, value 5 corresponds to verbose debug, value greater than 5 and up to 1023 can be used to enable even more logging
+     *                      Value 0 corresponds to fatal errors, value 1 corresponds to errors, value 2 corresponds to warnings and debug warnings, value 3 corresponds to informational, value 4 corresponds to debug, value 5 corresponds to verbose debug, value greater than 5 and up to 1023 can be used to enable even more logging
      */
     public static class SetLogVerbosityLevel extends Function {
 

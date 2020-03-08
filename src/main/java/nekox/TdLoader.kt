@@ -1,19 +1,3 @@
-/*
- * Copyright (c) 2019 - 2020 KazamaWataru
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package nekox
 
 import cn.hutool.core.util.RuntimeUtil
@@ -63,17 +47,20 @@ object TdLoader {
 
                 val arch = when {
 
-                    abi in arrayOf("aarch64","arm64") -> "aarch64"
+                    abi in arrayOf("x86_64", "amd64") -> "x86_64"
+                    /*
                     abi == "x86" || abi.matches("i[3-6]86".toRegex()) -> "x86"
-                    abi in arrayOf("x86_64","amd64") -> "x86_64"
+                    abi in arrayOf("aarch64","arm64") -> "aarch64"
                     abi.matches("armv[7-8].*".toRegex()) -> "armv7"
                     abi.startsWith("arm") -> "armv5"
 
-                    else -> error("unknown abi")
+                     */
+
+                    else -> error("unsupported abi")
 
                 }
 
-                val url = "https://gitlab.com/tooko/td/raw/$arch/libtdjni.so"
+                val url = "https://github.com/NekogramX/LibTDJni/releases/download/td%40c407b24/libtdjni.so"
 
                 defaultLog.info("下载 TDLib 二进制文件")
 
