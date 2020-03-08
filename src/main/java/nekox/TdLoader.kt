@@ -13,7 +13,7 @@ object TdLoader {
 
             val target = NativeTarget.current()
 
-            System.load("$libsDir/${target.name}tdjni.${target.ext}")
+            System.load("$libsDir/${target.prefix}tdjni.${target.ext}")
 
         }.recover {
 
