@@ -7,8 +7,14 @@
 
     <groupId>nekox</groupId>
     <artifactId>lib</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0</version>
+
+    <parent>
+        <groupId>nekox</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0</version>
+    </parent>
 
     <properties>
 
@@ -110,8 +116,8 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
 
