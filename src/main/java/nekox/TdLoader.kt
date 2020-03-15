@@ -3,6 +3,7 @@ package nekox
 import cn.hutool.core.util.RuntimeUtil
 import cn.hutool.http.HttpUtil
 import nekox.core.defaultLog
+import nekox.core.raw.setLogVerbosityLevel
 import java.io.File
 
 object TdLoader {
@@ -31,6 +32,8 @@ object TdLoader {
 
         }
 
+        setLogVerbosityLevel(2)
+
     }
 
     fun tryLoad(libsDir : File = TdEnv.getFile("libs")) {
@@ -56,7 +59,13 @@ object TdLoader {
 
                      */
 
-                    else -> error("unsupported abi")
+                    else -> {
+
+                        println("unsupported abi $abi")
+
+                        error("unsupported abi")
+
+                    }
 
                 }
 
@@ -65,6 +74,10 @@ object TdLoader {
                 defaultLog.info("下载 TDLib 二进制文件")
 
                 HttpUtil.downloadFile(url,jniFile)
+
+            }.onFailure {
+
+                defaultLog.warn(it)
 
             }
 

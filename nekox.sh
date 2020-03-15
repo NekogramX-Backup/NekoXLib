@@ -2,13 +2,19 @@
 
 if [ ! "$1" ]; then
 
-  echo "./run.sh [ init | update | run | log | start | stop | ... ]"
+  echo "[ init | update | run | log | start | stop | ... ]"
 
   exit
 
 fi
 
-if [ "$1" == "init" ]; then
+if [ "$1" == "setup" ]; then
+
+  git submodule init
+  git submodule update
+  mvn compile install
+
+elif [ "$1" == "init" ]; then
 
   echo ">> 写入服务"
 
@@ -37,7 +43,7 @@ EOF
 
   echo ">> 写入启动项"
 
-  systemctl enable "$servicde" &>/dev/null
+  systemctl enable "$service" &>/dev/null
 
   echo "<< 完毕."
 
@@ -47,7 +53,9 @@ elif [ "$1" == "run" ]; then
 
   [ -d "target/classes" ] || mvn compile
 
-  mvn exec:java -Dexec.mainClass="nekox.Launcher"
+  shift 1
+
+  mvn exec:java -Dexec.mainClass="nekox.Launcher" -Dexec.args="$*"
 
 elif [ "$1" == "start" ]; then
 
