@@ -32,7 +32,7 @@ object TdLoader {
 
         }
 
-        setLogVerbosityLevel(2)
+        setLogVerbosityLevel(1)
 
     }
 

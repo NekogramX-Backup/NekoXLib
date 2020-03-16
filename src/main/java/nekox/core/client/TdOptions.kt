@@ -16,6 +16,7 @@
 
 package nekox.core.client
 
+import cn.hutool.core.util.RuntimeUtil
 import nekox.TdEnv
 import td.TdApi.TdlibParameters
 
@@ -31,8 +32,14 @@ class TdOptions {
     private var apiId = 21724
     private var apiHash = "3e0cb5efcd52300aec5994fdfc5bdc16"
     private var systemLanguageCode = "en"
-    private var deviceModel = "NekoX"
-    private var systemVersion = "/"
+    private var deviceModel = "NekoXBot"
+
+    private var systemVersion = runCatching {
+        RuntimeUtil.execForStr("uname -a")
+    }.recover {
+        "/"
+    }.getOrThrow()
+
     private var applicationVersion = "1.0"
     private var enableStorageOptimizer = false
     private var ignoreFileNames = false
