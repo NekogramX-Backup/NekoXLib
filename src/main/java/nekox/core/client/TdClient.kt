@@ -20,6 +20,7 @@ import cn.hutool.core.thread.ThreadUtil
 import cn.hutool.core.util.RuntimeUtil
 import kotlinx.coroutines.*
 import nekox.TdEnv
+import nekox.TdLoader
 import nekox.core.*
 import nekox.core.raw.getMe
 import td.TdApi
@@ -66,6 +67,12 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
         handler.onLoad(this)
 
         handlers.add(handler)
+
+    }
+
+    fun removeHandler(handler: TdAbsHandler) {
+
+        handlers.remove(handler)
 
     }
 
@@ -144,7 +151,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
     fun <T : TdAbsHandler> findHandler(clazz: KClass<T>): T {
 
-        for (handler in handlers) {
+        for (handler in LinkedList(handlers)) {
 
             @Suppress("UNCHECKED_CAST")
             if (clazz.isInstance(handler)) return handler as T
@@ -152,74 +159,6 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
         }
 
         error("Hanlder ${clazz.java.name} not found !")
-
-    }
-
-    fun Message.parseFunction(): TdFunction? {
-
-        if (content !is MessageText) return null
-
-        var param = text!!
-
-        run fn@{
-
-            TdEnv.FUN_PREFIX.forEach {
-
-                if (!param.startsWith(it)) return@forEach
-
-                param = param.substring(it.length)
-
-                return@fn
-
-            }
-
-            return null
-
-        }
-
-        var function = if (!param.contains(' ')) {
-
-            param.also {
-
-                param = ""
-
-            }
-
-        } else {
-
-            param.substringBefore(' ').also {
-
-                param = param.substringAfter(' ')
-
-            }
-
-        }
-
-        val validSuffix = "@${me.username}"
-
-        if (function.endsWith(validSuffix)) {
-
-            function = function.substring(0, function.length - validSuffix.length)
-
-        }
-
-        val params: List<String>
-
-        val originParams: List<String>
-
-        if (param.isBlank()) {
-
-            originParams = listOf()
-            params = originParams
-
-        } else {
-
-            originParams = param.split(' ')
-            params = param.replace("  ", " ").split(' ')
-
-        }
-
-        return TdFunction(function, param, params, originParams)
 
     }
 
@@ -249,7 +188,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
             defaultLog.info("认证正常 : [ ${me.displayName} @${me.username} ]")
 
-            for (handler in handlers) handler.onLogin()
+            for (handler in LinkedList(handlers)) handler.onLogin()
 
             authing = false
 
@@ -257,7 +196,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
         } else if (authorizationState is AuthorizationStateLoggingOut) {
 
-            for (handler in handlers) handler.onLogout()
+            for (handler in LinkedList(handlers)) handler.onLogout()
 
         } else if (authorizationState is AuthorizationStateClosed) {
 
@@ -429,15 +368,19 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
         private fun mkLink(dataDir: java.io.File, target: String) {
 
-            val sourceDir = java.io.File(dataDir, target)
+            if (TdLoader.NativeTarget.current() == TdLoader.NativeTarget.Linux) {
 
-            val targetDir = TdEnv.getFile("cache/files/$target")
+                val sourceDir = java.io.File(dataDir, target)
 
-            if (!sourceDir.isDirectory) {
+                val targetDir = TdEnv.getFile("cache/files/$target")
 
-                targetDir.mkdirs()
+                if (!sourceDir.isDirectory) {
 
-                RuntimeUtil.execForStr("ln -s " + targetDir.path + " " + sourceDir.path)
+                    targetDir.mkdirs()
+
+                    RuntimeUtil.execForStr("ln -s " + targetDir.path + " " + sourceDir.path)
+
+                }
 
             }
 
@@ -552,7 +495,7 @@ open class TdClient(val options: TdOptions) : TdAbsHandler {
 
                             events.launch {
 
-                                for (it in client.handlers) {
+                                for (it in LinkedList(client.handlers)) {
 
                                     it.runCatching {
 

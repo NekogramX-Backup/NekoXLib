@@ -22,27 +22,27 @@ import td.TdApi.TdlibParameters
 
 class TdOptions {
 
-    private var useTestDc = false
-    private var databaseDirectory = TdEnv.getPath("data")
-    private var filesDirectory = TdEnv.getPath("cache/files")
-    private var useFileDatabase = true
-    private var useChatInfoDatabase = true
-    private var useMessageDatabase = true
-    private var useSecretChats = false
-    private var apiId = 21724
-    private var apiHash = "3e0cb5efcd52300aec5994fdfc5bdc16"
-    private var systemLanguageCode = "en"
-    private var deviceModel = "NekoXBot"
+    var useTestDc = false
+    var databaseDirectory = TdEnv.getPath("data")
+    var filesDirectory = TdEnv.getPath("cache/files")
+    var useFileDatabase = true
+    var useChatInfoDatabase = true
+    var useMessageDatabase = true
+    var useSecretChats = false
+    var apiId = 21724
+    var apiHash = "3e0cb5efcd52300aec5994fdfc5bdc16"
+    var systemLanguageCode = "en"
+    var deviceModel = "NekoXBot"
 
-    private var systemVersion = runCatching {
+    var systemVersion = runCatching {
         RuntimeUtil.execForStr("uname -a")
     }.recover {
         "/"
     }.getOrThrow()
 
-    private var applicationVersion = "1.0"
-    private var enableStorageOptimizer = false
-    private var ignoreFileNames = false
+    var applicationVersion = "1.0"
+    var enableStorageOptimizer = false
+    var ignoreFileNames = false
 
     fun build(): TdlibParameters {
 

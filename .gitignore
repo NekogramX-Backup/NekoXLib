@@ -1,3 +1,6 @@
 /target
 /libs
-/config.yml
+/data
+/.idea
+*.iml
+config.yml

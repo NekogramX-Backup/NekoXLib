@@ -17,9 +17,11 @@
 package nekox.core.client
 
 import kotlinx.coroutines.CoroutineScope
+import nekox.TdEnv
 import td.TdApi
 import td.TdApi.*
 import nekox.core.raw.*
+import nekox.core.text
 import nekox.core.utils.*
 import java.util.*
 import kotlin.collections.HashMap
@@ -296,6 +298,74 @@ interface TdAbsHandler {
             }
 
         }
+
+    fun Message.parseFunction(): TdFunction? {
+
+        if (content !is MessageText) return null
+
+        var param = text!!
+
+        run fn@{
+
+            TdEnv.FUN_PREFIX.forEach {
+
+                if (!param.startsWith(it)) return@forEach
+
+                param = param.substring(it.length)
+
+                return@fn
+
+            }
+
+            return null
+
+        }
+
+        var function = if (!param.contains(' ')) {
+
+            param.also {
+
+                param = ""
+
+            }
+
+        } else {
+
+            param.substringBefore(' ').also {
+
+                param = param.substringAfter(' ')
+
+            }
+
+        }
+
+        val validSuffix = "@${sudo.me.username}"
+
+        if (function.endsWith(validSuffix)) {
+
+            function = function.substring(0, function.length - validSuffix.length)
+
+        }
+
+        val params: List<String>
+
+        val originParams: List<String>
+
+        if (param.isBlank()) {
+
+            originParams = listOf()
+            params = originParams
+
+        } else {
+
+            originParams = param.split(' ')
+            params = param.replace("  ", " ").split(' ')
+
+        }
+
+        return TdFunction(function, param, params, originParams)
+
+    }
 
     class Finish : RuntimeException("Finish Event")
 

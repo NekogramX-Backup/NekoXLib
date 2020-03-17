@@ -1,14 +1,97 @@
 package nekox
 
-import cn.hutool.core.util.RuntimeUtil
-import cn.hutool.http.HttpUtil
 import nekox.core.defaultLog
 import nekox.core.raw.setLogVerbosityLevel
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import java.io.File
+import java.util.concurrent.TimeUnit
 
 object TdLoader {
 
-    fun load(libsDir : File = TdEnv.getFile("libs")) {
+    val version = "c407b24"
+
+    val okHttpClient = OkHttpClient.Builder()
+            .readTimeout(10, TimeUnit.MINUTES)
+            .followRedirects(true)
+            .followSslRedirects(true)
+            .build()
+
+    fun tryLoad(libsDir: File = TdEnv.getFile("libs")) {
+
+        val target = NativeTarget.current()
+
+        val jniFile = File(libsDir, "${target.prefix}tdjni.${target.ext}")
+
+        if (!jniFile.isFile) {
+
+            runCatching {
+
+                val url = if (target == NativeTarget.Linux) {
+
+                    /*
+
+                        val abi = RuntimeUtil.execForStr("uname -m")
+
+                        val arch = when {
+
+                            abi in arrayOf("x86_64", "amd64") -> "x86_64"
+                            abi == "x86" || abi.matches("i[3-6]86".toRegex()) -> "x86"
+                            abi in arrayOf("aarch64", "arm64") -> "aarch64"
+                            abi.matches("armv[7-8].*".toRegex()) -> "armv7"
+                            abi.startsWith("arm") -> "armv5"
+
+                            else -> {
+
+                                println("unsupported abi $abi")
+
+                                error("unsupported abi")
+
+                            }
+
+                        }
+
+                         */
+
+
+                    "https://github.com/NekogramX/LibTDJni/releases/download/td@$version/libtdjni.so"
+
+
+                } else if (target == NativeTarget.Win64) {
+
+                    "https://github.com/NekogramX/LibTDJni/releases/download/td@$version/tdjni.dll"
+
+                } else error("unknown dist")
+
+                defaultLog.info("下载 TDLib 二进制文件: $url")
+
+                okHttpClient.newCall(Request.Builder()
+                        .url(url)
+                        .build())
+                        .execute().body?.byteStream()?.use {
+
+                    jniFile.parentFile?.mkdirs()
+
+                    jniFile.createNewFile()
+
+                    jniFile.outputStream().use { out -> it.copyTo(out) }
+
+                }
+
+
+            }.onFailure {
+
+                defaultLog.warn(it)
+
+            }
+
+        }
+
+        load(libsDir)
+
+    }
+
+    fun load(libsDir: File = TdEnv.getFile("libs")) {
 
         runCatching {
 
@@ -26,64 +109,9 @@ object TdLoader {
 
             }
 
-        }.onFailure {
-
-            error("Unable to TDLib")
-
-        }
+        }.getOrThrow()
 
         setLogVerbosityLevel(1)
-
-    }
-
-    fun tryLoad(libsDir : File = TdEnv.getFile("libs")) {
-
-        val target = NativeTarget.current()
-
-        val jniFile = File(libsDir,"${target.name}tdjni.${target.ext}")
-
-        if (!jniFile.isFile && target == NativeTarget.Linux) {
-
-            runCatching {
-
-                val abi = RuntimeUtil.execForStr("uname -m")
-
-                val arch = when {
-
-                    abi in arrayOf("x86_64", "amd64") -> "x86_64"
-                    /*
-                    abi == "x86" || abi.matches("i[3-6]86".toRegex()) -> "x86"
-                    abi in arrayOf("aarch64","arm64") -> "aarch64"
-                    abi.matches("armv[7-8].*".toRegex()) -> "armv7"
-                    abi.startsWith("arm") -> "armv5"
-
-                     */
-
-                    else -> {
-
-                        println("unsupported abi $abi")
-
-                        error("unsupported abi")
-
-                    }
-
-                }
-
-                val url = "https://github.com/NekogramX/LibTDJni/releases/download/td%40c407b24/libtdjni.so"
-
-                defaultLog.info("下载 TDLib 二进制文件")
-
-                HttpUtil.downloadFile(url,jniFile)
-
-            }.onFailure {
-
-                defaultLog.warn(it)
-
-            }
-
-        }
-
-        load(libsDir)
 
     }
 

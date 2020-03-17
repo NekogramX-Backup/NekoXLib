@@ -50,8 +50,6 @@ class TookoLog(name: String) : ConsoleLog(name) {
 
             var logWithExc = if (t.message != format) format.input(arguments) + "\n" else ""
 
-            val out = ByteArrayOutputStream()
-
             logWithExc += Fn.parseError(t)
 
             logWithExc
