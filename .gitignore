@@ -1,6 +1,6 @@
-/target
-/libs
-/data
-/.idea
-*.iml
-config.yml
+/target/
+/libs/
+/data/
+/src/main/resources/objectbox-modules.json.bak
+/config.yml
+/objectbox-jni-windows-x64.dll
